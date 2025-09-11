@@ -63,6 +63,46 @@ def add_ee_layer(folium_map, ee_object, vis_params, name):
         st.error(f"Failed to add EE layer: {e}")
 
 
+def add_pothole_csv_layer(folium_map, csv_path):
+    try:
+        df = pd.read_csv(csv_path)
+
+        # Filter only OPEN requests
+        open_reqs = df[df["SR_STATUS_FLAG"].str.upper() == "OPEN"]
+
+        # Create a feature group for the layer
+        pothole_layer = folium.FeatureGroup(name="Open Pothole Requests", show=True)
+
+        for _, row in open_reqs.iterrows():
+            lat, lon = row["LATITUDE"], row["LONGITUDE"]
+
+            if pd.notna(lat) and pd.notna(lon):
+                popup_html = f"""
+                <b>SR #{row["SR_NUMBER"]}</b><br>
+                Status: {row["SR_STATUS"]}<br>
+                Type: {row["SR_TYPE_DESC"]}<br>
+                Address: {row["ADDRESS"]}<br>
+                Created: {row["DATE_CREATED"]}<br>
+                Neighborhood: {row.get("NEIGHBORHOOD", "")}<br>
+                Num Potholes: {row.get("NUM_POTHOLES", "")}
+                """
+
+                folium.CircleMarker(
+                    location=[lat, lon],
+                    radius=6,
+                    color="red",
+                    fill=True,
+                    fill_opacity=0.7,
+                    popup=folium.Popup(popup_html, max_width=300),
+                    tooltip=f"SR #{row['SR_NUMBER']} (Open)",
+                ).add_to(pothole_layer)
+
+        pothole_layer.add_to(folium_map)
+
+    except Exception as e:
+        st.error(f"Error adding pothole CSV layer: {e}")
+
+
 # Try to initialize with existing credentials right away
 initialized, msg = try_initialize_ee()
 
@@ -189,6 +229,12 @@ with left:
             "Earth Engine not initialized. Upload credentials or authenticate from the sidebar to load imagery layers."
         )
 
+    # Add pothole requests from CSV
+    csv_path = "data/Pothole Data.csv"  # <-- change this to your CSV path
+    if os.path.exists(csv_path):
+        add_pothole_csv_layer(m, csv_path)
+    else:
+        st.warning("Pothole requests CSV not found.")
     if "pothole_requests" in st.session_state:
         for req in st.session_state.pothole_requests:
             try:

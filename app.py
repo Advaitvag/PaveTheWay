@@ -16,7 +16,8 @@ from datetime import datetime
 st.set_page_config(layout="wide", page_title="Cincinnati GEE Map")
 
 # --- Helper functions -------------------------------------------------
-
+# Path for user-submitted requests
+USER_REQS_PATH = os.path.join("data", "User_Requests.csv")
 CINCINNATI_COORDS = (39.1031182, -84.5120196)  # (lat, lon)
 
 
@@ -103,39 +104,70 @@ def add_pothole_csv_layer(folium_map, csv_path):
         st.error(f"Error adding pothole CSV layer: {e}")
 
 
+def add_user_requests_layer(folium_map, csv_path):
+    if os.path.exists(csv_path):
+        df = pd.read_csv(csv_path)
+
+        user_layer = folium.FeatureGroup(name="User Repair Requests", show=True)
+
+        for _, row in df.iterrows():
+            folium.Marker(
+                location=[row["lat"], row["lon"]],
+                popup=folium.Popup(
+                    f"<b>{row['name']}</b><br/>{row['description']}<br/>Severity: {row['severity']}",
+                    max_width=300,
+                ),
+                tooltip=row["severity"],
+                icon=folium.Icon(color="blue", icon="wrench", prefix="fa"),
+            ).add_to(user_layer)
+
+        user_layer.add_to(folium_map)
+
+
 # Try to initialize with existing credentials right away
 initialized, msg = try_initialize_ee()
 
 # --- Main layout: map on the left, controls on the right ----------------
 left, right = st.columns([3, 1])
 
+
 with right:
     st.header("Pothole Repair Requests")
+
+    # Show current map click location
+    st.write("Click on the map to choose location for your request.")
+
+    clicked_lat = st.session_state.get("clicked_lat")
+    clicked_lon = st.session_state.get("clicked_lon")
+
     with st.form("request_form", clear_on_submit=True):
         name = st.text_input("Reporter name")
         description = st.text_area("Description / notes")
-        lat = st.number_input("Latitude", value=CINCINNATI_COORDS[0], format="%.6f")
-        lon = st.number_input("Longitude", value=CINCINNATI_COORDS[1], format="%.6f")
         severity = st.selectbox("Severity", ["Low", "Medium", "High"])
         submitted = st.form_submit_button("Submit repair request")
 
         if submitted:
-            req = {
-                "id": datetime.utcnow().isoformat(),
-                "name": name,
-                "description": description,
-                "lat": float(lat),
-                "lon": float(lon),
-                "severity": severity,
-                "timestamp": datetime.utcnow().isoformat(),
-            }
-            if "pothole_requests" not in st.session_state:
-                st.session_state.pothole_requests = []
-            st.session_state.pothole_requests.append(req)
-            df = pd.DataFrame(st.session_state.pothole_requests)
-            save_path = os.path.join(tempfile.gettempdir(), "pothole_requests.csv")
-            df.to_csv(save_path, index=False)
-            st.success("Repair request submitted and saved locally.")
+            if clicked_lat and clicked_lon:
+                req = {
+                    "id": datetime.utcnow().isoformat(),
+                    "name": name,
+                    "description": description,
+                    "lat": float(clicked_lat),
+                    "lon": float(clicked_lon),
+                    "severity": severity,
+                    "timestamp": datetime.utcnow().isoformat(),
+                }
+                # Append to CSV in data dir
+                if os.path.exists(USER_REQS_PATH):
+                    df = pd.read_csv(USER_REQS_PATH)
+                    df = pd.concat([df, pd.DataFrame([req])], ignore_index=True)
+                else:
+                    df = pd.DataFrame([req])
+                df.to_csv(USER_REQS_PATH, index=False)
+
+                st.success("Repair request submitted and saved")
+            else:
+                st.error("Please click on the map to set location before submitting.")
 
     st.markdown("---")
     st.write("Saved requests: ")
@@ -235,6 +267,14 @@ with left:
         add_pothole_csv_layer(m, csv_path)
     else:
         st.warning("Pothole requests CSV not found.")
+
+    add_user_requests_layer(m, USER_REQS_PATH)
+    if "clicked_lat" in st.session_state and "clicked_lon" in st.session_state:
+        folium.Marker(
+            location=[st.session_state["clicked_lat"], st.session_state["clicked_lon"]],
+            icon=folium.Icon(color="green", icon="plus", prefix="fa"),
+            tooltip="Selected location",
+        ).add_to(m)
     if "pothole_requests" in st.session_state:
         for req in st.session_state.pothole_requests:
             try:
@@ -251,6 +291,11 @@ with left:
 
     folium.LayerControl().add_to(m)
     st_data = st_folium(m, width=900, height=700)
+    # Save last clicked point
+    if st_data and st_data.get("last_clicked"):
+        st.session_state["clicked_lat"] = st_data["last_clicked"]["lat"]
+        st.session_state["clicked_lon"] = st_data["last_clicked"]["lng"]
+
 
 st.markdown("---")
 st.caption(

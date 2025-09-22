@@ -13,7 +13,7 @@ import os
 import pandas as pd
 from datetime import datetime
 
-st.set_page_config(layout="wide", page_title="Cincinnati GEE Map")
+st.set_page_config(layout="wide", page_title="StreetSmart")
 
 # --- Helper functions -------------------------------------------------
 # Path for user-submitted requests
@@ -169,24 +169,24 @@ with right:
             else:
                 st.error("Please click on the map to set location before submitting.")
 
-    st.markdown("---")
-    st.write("Saved requests: ")
-    if "pothole_requests" in st.session_state and st.session_state.pothole_requests:
-        df_preview = pd.DataFrame(st.session_state.pothole_requests).drop(
-            columns=["description"], errors="ignore"
-        )
-        st.dataframe(df_preview)
-    else:
-        st.info("No repair requests yet.")
-
-    st.markdown("---")
-    if st.button("Run Pothole Detection (placeholder)"):
-        st.info(
-            "Pothole detection is not yet implemented. Future step: run ML model on imagery tiles and add markers."
-        )
+    # st.markdown("---")
+    # st.write("Saved requests: ")
+    # if "pothole_requests" in st.session_state and st.session_state.pothole_requests:
+    #     df_preview = pd.DataFrame(st.session_state.pothole_requests).drop(
+    #         columns=["description"], errors="ignore"
+    #     )
+    #     st.dataframe(df_preview)
+    # else:
+    #     st.info("No repair requests yet.")
+    #
+    # st.markdown("---")
+    # if st.button("Run Pothole Detection (placeholder)"):
+    #     st.info(
+    #         "Pothole detection is not yet implemented. Future step: run ML model on imagery tiles and add markers."
+    #     )
 
 with left:
-    st.header("Cincinnati — Earth Engine Map View")
+    st.header("StreetSmart - Cincinnati")
 
     # Create base folium map centered on Cincinnati
     m = folium.Map(
@@ -297,8 +297,8 @@ with left:
         st.session_state["clicked_lon"] = st_data["last_clicked"]["lng"]
 
 
-st.markdown("---")
-st.caption(
-    "Notes: This is a starting template. Next steps: (1) integrate a pothole detection ML model that runs on imagery tiles or street-level photos; "
-    "(2) validate detections with user confirmations; (3) move user submissions to a secure database; (4) add user accounts and edit history."
-)
+# st.markdown("---")
+# st.caption(
+#     "Notes: This is a starting template. Next steps: (1) integrate a pothole detection ML model that runs on imagery tiles or street-level photos; "
+#     "(2) validate detections with user confirmations; (3) move user submissions to a secure database; (4) add user accounts and edit history."
+# )

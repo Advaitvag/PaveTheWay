@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Mapillary — Cincinnati Map</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+  <!-- MapillaryJS -->
+  <script src="https://unpkg.com/mapillary-js@4.1.2/dist/mapillary.js"></script>
+<link
+  href="https://unpkg.com/mapillary-js@4.1.2/dist/mapillary.css"
+  rel="stylesheet"
+/>  <style>
+    html,body { height:100%; margin:0; }
+    #map { height:100vh; width:100%; }
+    #viewer {
+      position: fixed;
+      top: 10%;
+      left: 10%;
+      width: 80%;
+      height: 80%;
+      background: #000;
+      z-index: 1000;
+      display: none;
+    }
+    #closeBtn {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      z-index: 1001;
+      background: white;
+      padding: 4px 8px;
+      cursor: pointer;
+      border: 1px solid #888;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="viewer">
+    <div id="closeBtn">Close ✖</div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <script>
+    const MAPILLARY_TOKEN = "MLY|24809069168781145|42439e0041a38fda5a362a1bda951fbc"; // <-- insert token
+    const BBOX = "-84.6400,39.0450,-84.4500,39.1700";
+    const LIMIT = 500;
+    const CENTER = [39.1031, -84.5120];
+    const START_ZOOM = 13;
+
+    const map = L.map('map').setView(CENTER, START_ZOOM);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    const markers = L.markerClusterGroup();
+    map.addLayer(markers);
+
+    const viewerDiv = document.getElementById("viewer");
+    const closeBtn = document.getElementById("closeBtn");
+    let viewer;
+
+    closeBtn.addEventListener("click", () => {
+      viewerDiv.style.display = "none";
+      viewer = null;
+    });
+
+    async function fetchMapillaryImages() {
+      markers.clearLayers();
+      const url = `https://graph.mapillary.com/images?access_token=${MAPILLARY_TOKEN}&fields=id,geometry&bbox=${BBOX}&limit=${LIMIT}`;
+
+      try {
+        const res = await fetch(url);
+        const json = await res.json();
+
+        json.data.forEach(item => {
+          const coords = item.geometry?.coordinates;
+          if (!coords) return;
+          const [lon, lat] = coords;
+
+          const marker = L.marker([lat, lon]);
+          marker.on("click", () => {
+            viewerDiv.style.display = "block";
+            if (!viewer) {
+              viewer = new mapillary.Viewer({
+                accessToken: MAPILLARY_TOKEN,
+                container: "viewer",
+                imageId: item.id,
+              });
+            } else {
+              viewer.moveTo(item.id);
+            }
+          });
+          markers.addLayer(marker);
+        });
+
+        if (markers.getLayers().length > 0) {
+          map.fitBounds(markers.getBounds(), { maxZoom: 16 });
+        }
+      } catch (err) {
+        console.error("Fetch error", err);
+        alert("Error fetching images.");
+      }
+    }
+
+    fetchMapillaryImages();
+  </script>
+</body>
+</html>

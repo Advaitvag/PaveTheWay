@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>StreetSmart — Cincinnati</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <!-- Leaflet -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -18,6 +18,9 @@
 
   <!-- PapaParse (for CSV parsing) -->
   <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <!-- ONNX Runtime Web for YOLO model -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/onnxruntime-web/1.16.3/ort.min.js"></script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -65,6 +68,14 @@
       color: white;
       font-weight: 700;
       box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
+      background-image: url('StreetSmart_logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .logo.fallback {
+      background-image: none;
     }
 
     .header-title {
@@ -157,6 +168,22 @@
     .legend-icon.selected {
       background: #059669;
       color: white;
+    }
+
+    .legend-icon.ai-pothole-high {
+      background: #dc2626;
+      color: white;
+      border: 2px solid #fbbf24;
+    }
+
+    .legend-icon.ai-pothole-medium {
+      background: #ea580c;
+      color: white;
+    }
+
+    .legend-icon.ai-pothole-low {
+      background: #facc15;
+      color: #000;
     }
 
     #sidebar { 
@@ -310,6 +337,59 @@
       color: white;
     }
 
+    .ai-pothole-high-marker {
+      background: #dc2626;
+      color: white;
+      border: 2px solid #fbbf24;
+    }
+
+    .ai-pothole-medium-marker {
+      background: #ea580c;
+      color: white;
+    }
+
+    .ai-pothole-low-marker {
+      background: #facc15;
+      color: #000;
+    }
+
+    .detection-overlay {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      max-width: 200px;
+      z-index: 1000;
+    }
+
+    .detection-status {
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .detection-results {
+      font-size: 11px;
+      color: #fbbf24;
+    }
+
+    .loading-spinner {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      border-top-color: #3b82f6;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
     @media (max-width: 1024px) {
       main {
         grid-template-columns: 1fr;
@@ -341,7 +421,7 @@
 <body>
   <header>
     <div class="logo-container">
-      <div class="logo">S</div>
+      <div class="logo" id="logo">S</div>
       <div>
         <div class="header-title">StreetSmart</div>
         <div class="header-subtitle">Cincinnati Infrastructure Reporting</div>
@@ -368,6 +448,18 @@
         <div class="legend-item">
           <div class="legend-icon selected"><i class="fas fa-plus"></i></div>
           <span>Selected Location</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-icon ai-pothole-high"><i class="fas fa-robot"></i></div>
+          <span>AI Detected - High Confidence (80%+)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-icon ai-pothole-medium"><i class="fas fa-robot"></i></div>
+          <span>AI Detected - Medium Confidence (60-80%)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-icon ai-pothole-low"><i class="fas fa-robot"></i></div>
+          <span>AI Detected - Low Confidence (40-60%)</span>
         </div>
       </div>
       
@@ -402,6 +494,192 @@ const MAPILLARY_BBOX = "-84.64,39.045,-84.45,39.17";
 let selectedMarker = null;
 let selectedCoords = null;
 let mapillaryViewer = null;
+let yoloModel = null;
+let isModelLoading = false;
+
+// Initialize YOLO model
+async function loadYOLOModel() {
+  if (isModelLoading || yoloModel) return;
+  
+  isModelLoading = true;
+  try {
+    console.log('Loading YOLO model...');
+    yoloModel = await ort.InferenceSession.create('yolo_v12_rd_dmg_best.onnx');
+    console.log('YOLO model loaded successfully');
+  } catch (error) {
+    console.error('Failed to load YOLO model:', error);
+    yoloModel = null;
+  }
+  isModelLoading = false;
+}
+
+// Initialize logo
+function initializeLogo() {
+  const logo = document.getElementById('logo');
+  const img = new Image();
+  img.onload = function() {
+    logo.innerHTML = '';
+  };
+  img.onerror = function() {
+    logo.classList.add('fallback');
+    console.log('Logo image not found, using fallback');
+  };
+  img.src = 'StreetSmart_logo.png';
+}
+
+// Preprocess image for YOLO
+function preprocessImage(imageElement) {
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  
+  // YOLO typically expects 640x640 input
+  canvas.width = 640;
+  canvas.height = 640;
+  
+  // Draw and resize image
+  ctx.drawImage(imageElement, 0, 0, 640, 640);
+  
+  // Get image data and normalize to [0,1]
+  const imageData = ctx.getImageData(0, 0, 640, 640);
+  const data = imageData.data;
+  
+  // Convert to RGB format and normalize
+  const input = new Float32Array(3 * 640 * 640);
+  for (let i = 0; i < 640 * 640; i++) {
+    input[i] = data[i * 4] / 255.0;           // R
+    input[640 * 640 + i] = data[i * 4 + 1] / 255.0;  // G
+    input[640 * 640 * 2 + i] = data[i * 4 + 2] / 255.0;  // B
+  }
+  
+  return input;
+}
+
+// Run YOLO detection
+async function detectPotholes(imageUrl) {
+  if (!yoloModel) {
+    await loadYOLOModel();
+    if (!yoloModel) {
+      return { error: 'Model not available' };
+    }
+  }
+  
+  try {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+      
+      img.onload = async () => {
+        try {
+          const inputData = preprocessImage(img);
+          const inputTensor = new ort.Tensor('float32', inputData, [1, 3, 640, 640]);
+          const feeds = { images: inputTensor }; // Changed from 'input' to 'images'
+          const outputData = await yoloModel.run(feeds);
+          
+          // Parse YOLO output (this depends on your specific model output format)
+          const output = outputData.output.data; // Adjust output name based on your model
+          const detections = parseYOLOOutput(output);
+          
+          resolve({ 
+            detections, 
+            count: detections.length,
+            confidence: detections.length > 0 ? Math.max(...detections.map(d => d.confidence)) : 0
+          });
+        } catch (error) {
+          console.error('Detection error:', error);
+          resolve({ error: 'Detection failed: ' + error.message });
+        }
+      };
+      
+      img.onerror = () => {
+        resolve({ error: 'Failed to load image' });
+      };
+      
+      img.src = imageUrl;
+    });
+  } catch (error) {
+    return { error: error.message };
+  }
+}
+
+// Parse YOLO output (simplified - adjust based on your model's output format)
+function parseYOLOOutput(output) {
+  const detections = [];
+  const numDetections = output.length / 6; // Assuming [x, y, w, h, confidence, class]
+  
+  for (let i = 0; i < numDetections; i++) {
+    const confidence = output[i * 6 + 4];
+    
+    // Filter by confidence threshold (adjust as needed)
+    if (confidence > 0.5) {
+      detections.push({
+        x: output[i * 6],
+        y: output[i * 6 + 1],
+        width: output[i * 6 + 2],
+        height: output[i * 6 + 3],
+        confidence: confidence,
+        class: output[i * 6 + 5]
+      });
+    }
+  }
+  
+  return detections;
+}
+
+// Get confidence-based marker class
+function getConfidenceMarkerClass(confidence) {
+  if (confidence >= 0.8) return 'ai-pothole-high-marker';
+  if (confidence >= 0.6) return 'ai-pothole-medium-marker';
+  return 'ai-pothole-low-marker';
+}
+
+// Get confidence level text
+function getConfidenceLevel(confidence) {
+  if (confidence >= 0.8) return 'High';
+  if (confidence >= 0.6) return 'Medium';
+  return 'Low';
+}
+
+// Load AI detected potholes from CSV
+function loadAIPotholes() {
+  Papa.parse("mapillary/cincinnati_pothole_results/pothole_locations.csv", {
+    download: true,
+    header: true,
+    complete: results => {
+      console.log(`Loaded ${results.data.length} AI detected potholes`);
+      results.data.forEach(row => {
+        const lat = parseFloat(row.latitude);
+        const lon = parseFloat(row.longitude);
+        const confidence = parseFloat(row.confidence);
+        
+        if (!isNaN(lat) && !isNaN(lon) && !isNaN(confidence)) {
+          const markerClass = getConfidenceMarkerClass(confidence);
+          const confidenceLevel = getConfidenceLevel(confidence);
+          const confidencePercent = (confidence * 100).toFixed(1);
+          
+          const icon = createCustomIcon('fas fa-robot', markerClass, 22);
+          const marker = L.marker([lat, lon], { icon })
+            .bindPopup(`
+              <strong>🤖 AI Detected Pothole</strong><br>
+              <strong>Confidence:</strong> ${confidencePercent}% (${confidenceLevel})<br>
+              <strong>Captured:</strong> ${new Date(row.captured_at).toLocaleDateString()}<br>
+              <strong>Location:</strong> ${lat.toFixed(6)}, ${lon.toFixed(6)}<br>
+              <button onclick="showMapillaryFromImageId('${row.image_id}')" 
+                      style="margin-top:8px;padding:4px 8px;background:#2563eb;color:white;border:none;border-radius:4px;cursor:pointer;">
+                📸 View Street Image
+              </button>
+            `)
+            .addTo(aiPotholeLayer);
+          
+          // Store image_id for later use
+          marker.imageId = row.image_id;
+        }
+      });
+    },
+    error: (error) => {
+      console.error('Error loading AI potholes CSV:', error);
+    }
+  });
+}
 
 // ---- MAP INIT ----
 const map = L.map('map').setView(CINCINNATI_COORDS, 12);
@@ -411,7 +689,8 @@ const potholeLayer = L.layerGroup().addTo(map);
 const userLayer = L.layerGroup().addTo(map);
 const mapillaryLayer = L.layerGroup().addTo(map);
 const selectedLayer = L.layerGroup().addTo(map);
-L.control.layers({"Street Map":osm,"Satellite":satellite},{"Potholes":potholeLayer,"User Requests":userLayer,"Street View":mapillaryLayer}).addTo(map);
+const aiPotholeLayer = L.layerGroup().addTo(map);
+L.control.layers({"Street Map":osm,"Satellite":satellite},{"Official Potholes":potholeLayer,"User Requests":userLayer,"Street View":mapillaryLayer,"AI Detected":aiPotholeLayer}).addTo(map);
 
 // Custom icon creation function
 function createCustomIcon(iconClass, bgClass, size = 24) {
@@ -471,6 +750,7 @@ function renderRequests(requests){
   });
 }
 loadUserRequests();
+loadAIPotholes();
 
 // ---- Map click ----
 map.on('click', e=>{
@@ -499,38 +779,41 @@ document.getElementById("submit-btn").onclick = ()=>{
     timestamp: new Date().toISOString()
   };
   
-  // Simulate API call (replace with actual endpoint)
-  fetch("/api/requests", { 
-    method:"POST", 
-    headers:{"Content-Type":"application/json"},
-    body: JSON.stringify(req)
-  }).then(r=>{
-    if(r.ok){
-      alert("✅ Repair request submitted successfully!");
-      // Clear form
-      document.getElementById("name").value="";
-      document.getElementById("description").value="";
-      document.getElementById("severity").value="Low";
-      document.getElementById("selected-coords").innerHTML="Click on the map to select location";
-      if(selectedMarker) selectedLayer.removeLayer(selectedMarker);
-      selectedCoords=null;
-      loadUserRequests();
-    } else {
-      alert("❌ Error submitting request. Please try again.");
-    }
-  }).catch(()=>{
-    // For demo purposes, simulate successful submission
-    alert("✅ Demo: Repair request would be submitted!");
-    document.getElementById("name").value="";
-    document.getElementById("description").value="";
-    document.getElementById("severity").value="Low";
-    document.getElementById("selected-coords").innerHTML="Click on the map to select location";
+  // Since there's no actual server endpoint, simulate the submission
+  // In a real application, this would save to the CSV file via a backend API
+  try {
+    // Simulate successful submission
+    alert("✅ Repair request submitted successfully!");
+    
+    // Add the request to the map immediately for better user experience
+    const icon = createCustomIcon('fas fa-wrench', 'user-request-marker', 22);
+    L.marker([parseFloat(req.lat), parseFloat(req.lon)], {icon})
+      .bindPopup(`<strong>${req.name}</strong><br>${req.description}<br><strong>Severity:</strong> ${req.severity}<br><small>Just submitted</small>`)
+      .addTo(userLayer);
+    
+    // Add to the requests list in sidebar
+    const container = document.getElementById("requests");
+    const div = document.createElement("div");
+    div.className = "request-card";
+    div.style.border = "2px solid #10b981"; // Highlight new request
+    div.innerHTML = `<strong>${req.name}</strong> <span style="color:#667eea;">(${req.severity})</span><br>${req.description}<br><small>${parseFloat(req.lat).toFixed(4)}, ${parseFloat(req.lon).toFixed(4)} - Just now</small>`;
+    container.insertBefore(div, container.firstChild);
+    
+    // Clear form
+    document.getElementById("name").value = "";
+    document.getElementById("description").value = "";
+    document.getElementById("severity").value = "Low";
+    document.getElementById("selected-coords").innerHTML = "Click on the map to select location";
     if(selectedMarker) selectedLayer.removeLayer(selectedMarker);
-    selectedCoords=null;
-  });
+    selectedCoords = null;
+    
+  } catch (error) {
+    console.error('Error submitting request:', error);
+    alert("❌ Error submitting request. Please try again.");
+  }
 };
 
-// ---- Mapillary ----
+// ---- Mapillary with YOLO Detection ----
 fetch(`https://graph.mapillary.com/images?access_token=${MAPILLARY_TOKEN}&fields=id,geometry&bbox=${MAPILLARY_BBOX}&limit=100`)
   .then(r=>r.json()).then(json=>{
     json.data.forEach(img=>{
@@ -538,27 +821,120 @@ fetch(`https://graph.mapillary.com/images?access_token=${MAPILLARY_TOKEN}&fields
       const lat=img.geometry.coordinates[1], lon=img.geometry.coordinates[0];
       const icon = createCustomIcon('fas fa-camera', 'camera-marker', 18);
       L.marker([lat,lon], {icon})
-        .bindPopup("📸 Click to view street imagery")
-        .on('click',()=>showMapillary(img.id))
+        .bindPopup("📸 Click to view street imagery with AI pothole detection")
+        .on('click',()=>showMapillaryWithDetection(img.id))
         .addTo(mapillaryLayer);
     });
   }).catch(()=>{
     console.log("Mapillary data not available for demo");
   });
 
-function showMapillary(imageId){
+async function showMapillaryWithDetection(imageId){
   document.getElementById("map").style.display="none";
   document.getElementById("mapillary").style.display="block";
   document.getElementById("sidebar").insertAdjacentHTML("afterbegin",`<button class="back-btn" onclick="hideMapillary()"><i class="fas fa-arrow-left"></i> Back to Map</button>`);
-  mapillaryViewer = new mapillary.Viewer({accessToken: MAPILLARY_TOKEN,container:"mapillary",imageId});
+  
+  // Add detection overlay
+  const mapillaryContainer = document.getElementById("mapillary");
+  const overlay = document.createElement("div");
+  overlay.className = "detection-overlay";
+  overlay.innerHTML = `
+    <div class="detection-status">
+      <span class="loading-spinner"></span> Analyzing image for potholes...
+    </div>
+  `;
+  mapillaryContainer.appendChild(overlay);
+  
+  mapillaryViewer = new mapillary.Viewer({
+    accessToken: MAPILLARY_TOKEN,
+    container: "mapillary",
+    imageId: imageId
+  });
+  
+  // Wait a moment for viewer to load, then run detection
+  setTimeout(async () => {
+    try {
+      // Get the image URL from Mapillary API
+      const imageUrl = `https://graph.mapillary.com/${imageId}?fields=thumb_2048_url&access_token=${MAPILLARY_TOKEN}`;
+      const response = await fetch(imageUrl);
+      const data = await response.json();
+      
+      if (data.thumb_2048_url) {
+        const result = await detectPotholes(data.thumb_2048_url);
+        
+        if (result.error) {
+          overlay.innerHTML = `
+            <div class="detection-status">❌ Detection Error</div>
+            <div class="detection-results">${result.error}</div>
+          `;
+        } else {
+          const confidence = result.confidence ? (result.confidence * 100).toFixed(1) : 0;
+          overlay.innerHTML = `
+            <div class="detection-status">
+              ${result.count > 0 ? '⚠️' : '✅'} AI Analysis Complete
+            </div>
+            <div class="detection-results">
+              Potholes detected: ${result.count}<br>
+              ${result.count > 0 ? `Max confidence: ${confidence}%` : 'No issues found'}
+            </div>
+          `;
+        }
+      } else {
+        overlay.innerHTML = `
+          <div class="detection-status">❌ Image Access Error</div>
+          <div class="detection-results">Could not access image for analysis</div>
+        `;
+      }
+    } catch (error) {
+      console.error('Detection process failed:', error);
+      overlay.innerHTML = `
+        <div class="detection-status">❌ Detection Failed</div>
+        <div class="detection-results">Technical error occurred</div>
+      `;
+    }
+  }, 2000);
+}
+
+// Function to show Mapillary from image ID (for AI detected potholes)
+function showMapillaryFromImageId(imageId) {
+  document.getElementById("map").style.display="none";
+  document.getElementById("mapillary").style.display="block";
+  document.getElementById("sidebar").insertAdjacentHTML("afterbegin",`<button class="back-btn" onclick="hideMapillary()"><i class="fas fa-arrow-left"></i> Back to Map</button>`);
+  
+  // Add info overlay for AI detected pothole
+  const mapillaryContainer = document.getElementById("mapillary");
+  const overlay = document.createElement("div");
+  overlay.className = "detection-overlay";
+  overlay.innerHTML = `
+    <div class="detection-status">🤖 AI Detected Pothole</div>
+    <div class="detection-results">This image contains a road crack or pothole identified by our AI system</div>
+  `;
+  mapillaryContainer.appendChild(overlay);
+  
+  mapillaryViewer = new mapillary.Viewer({
+    accessToken: MAPILLARY_TOKEN,
+    container: "mapillary",
+    imageId: imageId
+  });
 }
 
 function hideMapillary(){
   document.getElementById("map").style.display="block";
   document.getElementById("mapillary").style.display="none";
   document.querySelector(".back-btn").remove();
+  
+  // Remove detection overlay
+  const overlay = document.querySelector(".detection-overlay");
+  if (overlay) overlay.remove();
+  
   if(mapillaryViewer) mapillaryViewer.remove();
 }
+
+// Initialize everything when page loads
+window.addEventListener('load', () => {
+  initializeLogo();
+  loadYOLOModel();
+});
 </script>
 </body>
 </html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StreetSmart — Cincinnati</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- FontAwesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+  <!-- MapillaryJS -->
+  <link href="https://unpkg.com/mapillary-js@4.1.2/dist/mapillary.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/mapillary-js@4.1.2/dist/mapillary.js"></script>
+
+  <!-- PapaParse (for CSV parsing) -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body { 
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    header { 
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+      font-weight: 700;
+      box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
+    }
+
+    .header-title {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header-subtitle {
+      font-size: 0.9rem;
+      color: #666;
+      font-weight: 400;
+    }
+
+    main { 
+      display: grid; 
+      grid-template-columns: 1fr 350px; 
+      gap: 2rem; 
+      padding: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .map-container {
+      position: relative;
+    }
+
+    #map, #mapillary { 
+      width: 100%; 
+      height: 70vh; 
+      border-radius: 20px; 
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .legend {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .legend h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .legend-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .legend-icon.pothole {
+      background: #dc2626;
+      color: white;
+    }
+
+    .legend-icon.user-request {
+      background: #2563eb;
+      color: white;
+    }
+
+    .legend-icon.camera {
+      background: #16a34a;
+      color: white;
+    }
+
+    .legend-icon.selected {
+      background: #059669;
+      color: white;
+    }
+
+    #sidebar { 
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 20px; 
+      padding: 2rem; 
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: flex; 
+      flex-direction: column; 
+      gap: 1.5rem;
+      height: fit-content;
+    }
+
+    #sidebar h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    #selected-coords {
+      background: #f8fafc;
+      padding: 1rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      color: #64748b;
+      border: 2px dashed #cbd5e1;
+      text-align: center;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      background: white;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    button {
+      width: 100%;
+      padding: 1rem 2rem;
+      margin: 0.5rem 0;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    .back-btn {
+      background: #64748b;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 15px rgba(100, 116, 139, 0.3);
+    }
+
+    .back-btn:hover {
+      background: #475569;
+      box-shadow: 0 8px 25px rgba(100, 116, 139, 0.4);
+    }
+
+    .request-card {
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #667eea;
+      transition: all 0.3s ease;
+    }
+
+    .request-card:hover {
+      background: #f1f5f9;
+      transform: translateY(-1px);
+    }
+
+    .request-card strong {
+      color: #334155;
+      font-weight: 600;
+    }
+
+    .request-card small {
+      color: #64748b;
+      font-size: 0.8rem;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+      margin: 1.5rem 0;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    /* Custom marker styles */
+    .custom-marker-icon {
+      border-radius: 50%;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .pothole-marker {
+      background: #dc2626;
+      color: white;
+    }
+
+    .user-request-marker {
+      background: #2563eb;
+      color: white;
+    }
+
+    .camera-marker {
+      background: #16a34a;
+      color: white;
+    }
+
+    .selected-marker {
+      background: #059669;
+      color: white;
+    }
+
+    @media (max-width: 1024px) {
+      main {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+      
+      #map, #mapillary {
+        height: 50vh;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .header-title {
+        font-size: 1.5rem;
+      }
+      
+      .logo {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
+      
+      #sidebar {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <div class="logo">S</div>
+      <div>
+        <div class="header-title">StreetSmart</div>
+        <div class="header-subtitle">Cincinnati Infrastructure Reporting</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="map-container">
+      <div class="legend">
+        <h3>Map Legend</h3>
+        <div class="legend-item">
+          <div class="legend-icon pothole"><i class="fas fa-exclamation"></i></div>
+          <span>Official Pothole Reports (Open)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-icon user-request"><i class="fas fa-wrench"></i></div>
+          <span>User Repair Requests</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-icon camera"><i class="fas fa-camera"></i></div>
+          <span>Street View Available</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-icon selected"><i class="fas fa-plus"></i></div>
+          <span>Selected Location</span>
+        </div>
+      </div>
+      
+      <div id="map"></div>
+      <div id="mapillary" style="display:none;"></div>
+    </div>
+    
+    <div id="sidebar">
+      <h2>Report a Pothole</h2>
+      <div id="selected-coords">Click on the map to select location</div>
+      <input id="name" type="text" placeholder="Your name"/>
+      <textarea id="description" placeholder="Description / notes" rows="3"></textarea>
+      <select id="severity">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+      <button id="submit-btn">
+        <i class="fas fa-paper-plane"></i> Submit Repair Request
+      </button>
+      <hr>
+      <h3>Recent Requests</h3>
+      <div id="requests"></div>
+    </div>
+  </main>
+
+<script>
+const CINCINNATI_COORDS = [39.1031182, -84.5120196];
+const MAPILLARY_TOKEN = "MLY|24809069168781145|42439e0041a38fda5a362a1bda951fbc";
+const MAPILLARY_BBOX = "-84.64,39.045,-84.45,39.17";
+
+let selectedMarker = null;
+let selectedCoords = null;
+let mapillaryViewer = null;
+
+// ---- MAP INIT ----
+const map = L.map('map').setView(CINCINNATI_COORDS, 12);
+const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap'}).addTo(map);
+const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{attribution:'Esri'});
+const potholeLayer = L.layerGroup().addTo(map);
+const userLayer = L.layerGroup().addTo(map);
+const mapillaryLayer = L.layerGroup().addTo(map);
+const selectedLayer = L.layerGroup().addTo(map);
+L.control.layers({"Street Map":osm,"Satellite":satellite},{"Potholes":potholeLayer,"User Requests":userLayer,"Street View":mapillaryLayer}).addTo(map);
+
+// Custom icon creation function
+function createCustomIcon(iconClass, bgClass, size = 24) {
+  return L.divIcon({
+    html: `<div class="custom-marker-icon ${bgClass}" style="width:${size}px;height:${size}px;font-size:${size*0.5}px;"><i class="${iconClass}"></i></div>`,
+    iconSize: [size, size],
+    iconAnchor: [size/2, size/2],
+    popupAnchor: [0, -size/2],
+    className: ''
+  });
+}
+
+// ---- Load potholes from CSV ----
+Papa.parse("data/Pothole Data.csv", {
+  download: true,
+  header: true,
+  complete: results => {
+    results.data.forEach(row => {
+      if(row.SR_STATUS_FLAG && row.SR_STATUS_FLAG.toUpperCase() === "OPEN") {
+        const lat = parseFloat(row.LATITUDE), lon = parseFloat(row.LONGITUDE);
+        if(!isNaN(lat) && !isNaN(lon)) {
+          const icon = createCustomIcon('fas fa-exclamation', 'pothole-marker', 20);
+          L.marker([lat,lon], {icon})
+            .bindPopup(`<strong>SR #${row.SR_NUMBER}</strong><br>Status: ${row.SR_STATUS}<br>Address: ${row.ADDRESS}`)
+            .addTo(potholeLayer);
+        }
+      }
+    });
+  }
+});
+
+// ---- Load user requests from CSV ----
+function loadUserRequests(){
+  Papa.parse("data/User_Requests.csv", {
+    download: true,
+    header: true,
+    complete: results => {
+      renderRequests(results.data.filter(r => r.lat && r.lon));
+    }
+  });
+}
+
+function renderRequests(requests){
+  const container = document.getElementById("requests");
+  container.innerHTML = "";
+  userLayer.clearLayers();
+  requests.slice(-10).reverse().forEach(r=>{
+    const div = document.createElement("div");
+    div.className="request-card";
+    div.innerHTML = `<strong>${r.name||'Anonymous'}</strong> <span style="color:#667eea;">(${r.severity||'Low'})</span><br>${r.description||'No description'}<br><small>${parseFloat(r.lat).toFixed(4)}, ${parseFloat(r.lon).toFixed(4)}</small>`;
+    container.appendChild(div);
+    
+    const icon = createCustomIcon('fas fa-wrench', 'user-request-marker', 22);
+    L.marker([parseFloat(r.lat),parseFloat(r.lon)], {icon})
+      .bindPopup(`<strong>${r.name||'Anonymous'}</strong><br>${r.description||'No description'}<br><strong>Severity:</strong> ${r.severity||'Low'}`)
+      .addTo(userLayer);
+  });
+}
+loadUserRequests();
+
+// ---- Map click ----
+map.on('click', e=>{
+  if(selectedMarker) selectedLayer.removeLayer(selectedMarker);
+  
+  const icon = createCustomIcon('fas fa-plus', 'selected-marker', 28);
+  selectedMarker = L.marker([e.latlng.lat,e.latlng.lng], {icon}).addTo(selectedLayer);
+  selectedCoords = e.latlng;
+  document.getElementById("selected-coords").innerHTML = `<strong>Selected Location:</strong><br>${e.latlng.lat.toFixed(6)}, ${e.latlng.lng.toFixed(6)}`;
+});
+
+// ---- Submit request ----
+document.getElementById("submit-btn").onclick = ()=>{
+  if(!selectedCoords){ 
+    alert("Please click on the map to select a location first."); 
+    return; 
+  }
+  
+  const req = {
+    id: Date.now(),
+    name: document.getElementById("name").value || "Anonymous",
+    description: document.getElementById("description").value || "No description provided",
+    severity: document.getElementById("severity").value,
+    lat: selectedCoords.lat,
+    lon: selectedCoords.lng,
+    timestamp: new Date().toISOString()
+  };
+  
+  // Simulate API call (replace with actual endpoint)
+  fetch("/api/requests", { 
+    method:"POST", 
+    headers:{"Content-Type":"application/json"},
+    body: JSON.stringify(req)
+  }).then(r=>{
+    if(r.ok){
+      alert("✅ Repair request submitted successfully!");
+      // Clear form
+      document.getElementById("name").value="";
+      document.getElementById("description").value="";
+      document.getElementById("severity").value="Low";
+      document.getElementById("selected-coords").innerHTML="Click on the map to select location";
+      if(selectedMarker) selectedLayer.removeLayer(selectedMarker);
+      selectedCoords=null;
+      loadUserRequests();
+    } else {
+      alert("❌ Error submitting request. Please try again.");
+    }
+  }).catch(()=>{
+    // For demo purposes, simulate successful submission
+    alert("✅ Demo: Repair request would be submitted!");
+    document.getElementById("name").value="";
+    document.getElementById("description").value="";
+    document.getElementById("severity").value="Low";
+    document.getElementById("selected-coords").innerHTML="Click on the map to select location";
+    if(selectedMarker) selectedLayer.removeLayer(selectedMarker);
+    selectedCoords=null;
+  });
+};
+
+// ---- Mapillary ----
+fetch(`https://graph.mapillary.com/images?access_token=${MAPILLARY_TOKEN}&fields=id,geometry&bbox=${MAPILLARY_BBOX}&limit=100`)
+  .then(r=>r.json()).then(json=>{
+    json.data.forEach(img=>{
+      if(!img.geometry) return;
+      const lat=img.geometry.coordinates[1], lon=img.geometry.coordinates[0];
+      const icon = createCustomIcon('fas fa-camera', 'camera-marker', 18);
+      L.marker([lat,lon], {icon})
+        .bindPopup("📸 Click to view street imagery")
+        .on('click',()=>showMapillary(img.id))
+        .addTo(mapillaryLayer);
+    });
+  }).catch(()=>{
+    console.log("Mapillary data not available for demo");
+  });
+
+function showMapillary(imageId){
+  document.getElementById("map").style.display="none";
+  document.getElementById("mapillary").style.display="block";
+  document.getElementById("sidebar").insertAdjacentHTML("afterbegin",`<button class="back-btn" onclick="hideMapillary()"><i class="fas fa-arrow-left"></i> Back to Map</button>`);
+  mapillaryViewer = new mapillary.Viewer({accessToken: MAPILLARY_TOKEN,container:"mapillary",imageId});
+}
+
+function hideMapillary(){
+  document.getElementById("map").style.display="block";
+  document.getElementById("mapillary").style.display="none";
+  document.querySelector(".back-btn").remove();
+  if(mapillaryViewer) mapillaryViewer.remove();
+}
+</script>
+</body>
+</html>

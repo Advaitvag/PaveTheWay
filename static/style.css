@@ -1,0 +1,518 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body { 
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; 
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #333;
+      min-height: 100vh;
+    }
+
+    header { 
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: white;
+      font-weight: 700;
+      box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
+      background-image: url('StreetSmart_logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .logo.fallback {
+      background-image: none;
+    }
+
+    .header-title {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header-subtitle {
+      font-size: 0.9rem;
+      color: #666;
+      font-weight: 400;
+    }
+
+    main { 
+      display: grid; 
+      grid-template-columns: 1fr 350px; 
+      gap: 2rem; 
+      padding: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .map-container {
+      position: relative;
+    }
+
+    #map, #mapillary { 
+      width: 100%; 
+      height: 70vh; 
+      border-radius: 20px; 
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .legend {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .legend h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .legend-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      flex-shrink: 0;
+    }
+
+    .legend-icon.pothole {
+      background: #dc2626;
+      color: white;
+    }
+
+    .legend-icon.user-request {
+      background: #2563eb;
+      color: white;
+    }
+
+    .legend-icon.camera {
+      background: #16a34a;
+      color: white;
+    }
+
+    .legend-icon.selected {
+      background: #059669;
+      color: white;
+    }
+
+    .legend-icon.ai-pothole-high {
+      background: #dc2626;
+      color: white;
+      border: 2px solid #fbbf24;
+    }
+
+    .legend-icon.ai-pothole-medium {
+      background: #ea580c;
+      color: white;
+    }
+
+    .legend-icon.ai-pothole-low {
+      background: #facc15;
+      color: #000;
+    }
+
+    #sidebar { 
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 20px; 
+      padding: 2rem; 
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: flex; 
+      flex-direction: column; 
+      gap: 1.5rem;
+      height: fit-content;
+    }
+
+    #sidebar h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    #selected-coords {
+      background: #f8fafc;
+      padding: 1rem;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      color: #64748b;
+      border: 2px dashed #cbd5e1;
+      text-align: center;
+    }
+
+    #location-name {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #059669;
+      font-weight: 500;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      font-family: inherit;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      background: white;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    button {
+      width: 100%;
+      padding: 1rem 2rem;
+      margin: 0.5rem 0;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    .back-btn {
+      background: #64748b;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 15px rgba(100, 116, 139, 0.3);
+    }
+
+    .back-btn:hover {
+      background: #475569;
+      box-shadow: 0 8px 25px rgba(100, 116, 139, 0.4);
+    }
+
+    .request-card {
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #667eea;
+      transition: all 0.3s ease;
+    }
+
+    .request-card:hover {
+      background: #f1f5f9;
+      transform: translateY(-1px);
+    }
+
+    .request-card strong {
+      color: #334155;
+      font-weight: 600;
+    }
+
+    .request-card small {
+      color: #64748b;
+      font-size: 0.8rem;
+    }
+
+    .upvote-section {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .upvote-btn {
+      background: #10b981;
+      color: white;
+      border: none;
+      padding: 4px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      width: auto;
+      margin: 0;
+      box-shadow: none;
+      transition: background 0.2s;
+    }
+
+    .upvote-btn:hover {
+      background: #059669;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .upvote-count {
+      color: #059669;
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+
+    .instructions {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 1200px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .instructions h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .instruction-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .instruction-card {
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 1.5rem;
+      border-left: 4px solid #667eea;
+    }
+
+    .instruction-card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .instruction-card p {
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+
+    .instruction-card ul {
+      color: #64748b;
+      padding-left: 1.2rem;
+    }
+
+    .instruction-card li {
+      margin-bottom: 0.4rem;
+      line-height: 1.5;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+      margin: 1.5rem 0;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    /* Custom marker styles */
+    .custom-marker-icon {
+      border-radius: 50%;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .pothole-marker {
+      background: #dc2626;
+      color: white;
+    }
+
+    .user-request-marker {
+      background: #2563eb;
+      color: white;
+    }
+
+    .camera-marker {
+      background: #16a34a;
+      color: white;
+    }
+
+    .selected-marker {
+      background: #059669;
+      color: white;
+    }
+
+    .ai-pothole-high-marker {
+      background: #dc2626;
+      color: white;
+      border: 2px solid #fbbf24;
+    }
+
+    .ai-pothole-medium-marker {
+      background: #ea580c;
+      color: white;
+    }
+
+    .ai-pothole-low-marker {
+      background: #facc15;
+      color: #000;
+    }
+
+    .detection-overlay {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 12px;
+      max-width: 200px;
+      z-index: 1000;
+    }
+
+    .detection-status {
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .detection-results {
+      font-size: 11px;
+      color: #fbbf24;
+    }
+
+    .loading-spinner {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border: 2px solid #ffffff;
+      border-radius: 50%;
+      border-top-color: #3b82f6;
+      animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .detection-debug {
+      background: rgba(0, 0, 0, 0.9);
+      color: #fff;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      right: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 10px;
+      font-family: monospace;
+      max-height: 150px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+
+    @media (max-width: 1024px) {
+      main {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+      }
+      
+      #map, #mapillary {
+        height: 50vh;
+      }
+
+      .instruction-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .header-title {
+        font-size: 1.5rem;
+      }
+      
+      .logo {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+      }
+      
+      #sidebar {
+        padding: 1.5rem;
+      }
+
+      .instructions {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+    }

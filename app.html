@@ -68,7 +68,7 @@
       color: white;
       font-weight: 700;
       box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
-      background-image: url('StreetSmart_logo.png');
+      background-image: url('static/StreetSmart_logo.png');
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -216,6 +216,13 @@
       text-align: center;
     }
 
+    #location-name {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #059669;
+      font-weight: 500;
+    }
+
     input, textarea, select {
       width: 100%;
       padding: 1rem;
@@ -292,6 +299,101 @@
     .request-card small {
       color: #64748b;
       font-size: 0.8rem;
+    }
+
+    .upvote-section {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .upvote-btn {
+      background: #10b981;
+      color: white;
+      border: none;
+      padding: 4px 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      width: auto;
+      margin: 0;
+      box-shadow: none;
+      transition: background 0.2s;
+    }
+
+    .upvote-btn:hover {
+      background: #059669;
+      transform: none;
+      box-shadow: none;
+    }
+
+    .upvote-count {
+      color: #059669;
+      font-weight: 600;
+      font-size: 0.8rem;
+    }
+
+    .instructions {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 1200px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .instructions h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .instruction-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .instruction-card {
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 1.5rem;
+      border-left: 4px solid #667eea;
+    }
+
+    .instruction-card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .instruction-card p {
+      color: #64748b;
+      line-height: 1.6;
+      margin-bottom: 0.8rem;
+    }
+
+    .instruction-card ul {
+      color: #64748b;
+      padding-left: 1.2rem;
+    }
+
+    .instruction-card li {
+      margin-bottom: 0.4rem;
+      line-height: 1.5;
     }
 
     hr {
@@ -399,6 +501,10 @@
       #map, #mapillary {
         height: 50vh;
       }
+
+      .instruction-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 640px) {
@@ -414,6 +520,11 @@
       
       #sidebar {
         padding: 1.5rem;
+      }
+
+      .instructions {
+        padding: 1.5rem;
+        margin: 1rem;
       }
     }
   </style>
@@ -469,7 +580,10 @@
     
     <div id="sidebar">
       <h2>Report a Pothole</h2>
-      <div id="selected-coords">Click on the map to select location</div>
+      <div id="selected-coords">
+        Click on the map to select location
+        <div id="location-name"></div>
+      </div>
       <input id="name" type="text" placeholder="Your name"/>
       <textarea id="description" placeholder="Description / notes" rows="3"></textarea>
       <select id="severity">
@@ -485,6 +599,77 @@
       <div id="requests"></div>
     </div>
   </main>
+
+  <div class="instructions">
+    <h2><i class="fas fa-info-circle"></i> How to Use StreetSmart Cincinnati</h2>
+    <div class="instruction-grid">
+      <div class="instruction-card">
+        <h3><i class="fas fa-map-marker-alt"></i> Report a Pothole</h3>
+        <p>Help improve Cincinnati's roads by reporting potholes you encounter:</p>
+        <ul>
+          <li>Click anywhere on the map to select the pothole location</li>
+          <li>Fill in your name (optional) and description</li>
+          <li>Select severity: Low, Medium, or High</li>
+          <li>Click "Submit Repair Request" to send your report</li>
+        </ul>
+      </div>
+      
+      <div class="instruction-card">
+        <h3><i class="fas fa-eye"></i> Explore Different Data</h3>
+        <p>Use the layer control (top right of map) to view different types of information:</p>
+        <ul>
+          <li><strong>Official Potholes:</strong> City-reported open pothole cases</li>
+          <li><strong>User Requests:</strong> Community-submitted reports</li>
+          <li><strong>Street View:</strong> Available Mapillary street imagery</li>
+          <li><strong>AI Detected:</strong> Machine learning identified road damage</li>
+        </ul>
+      </div>
+      
+      <div class="instruction-card">
+        <h3><i class="fas fa-robot"></i> AI-Powered Detection</h3>
+        <p>Our system uses advanced AI to automatically identify potholes:</p>
+        <ul>
+          <li><strong>Red with gold border:</strong> High confidence detections (80%+)</li>
+          <li><strong>Orange:</strong> Medium confidence detections (60-80%)</li>
+          <li><strong>Yellow:</strong> Lower confidence detections (40-60%)</li>
+          <li>Click any AI marker to view the street image where damage was detected</li>
+        </ul>
+      </div>
+      
+      <div class="instruction-card">
+        <h3><i class="fas fa-camera"></i> Street View Integration</h3>
+        <p>View actual street-level imagery of reported locations:</p>
+        <ul>
+          <li>Click green camera markers to view available street imagery</li>
+          <li>Real-time AI analysis runs on street view images</li>
+          <li>Navigate through Mapillary imagery to see road conditions</li>
+          <li>Use the back button to return to the main map</li>
+        </ul>
+      </div>
+      
+      <div class="instruction-card">
+        <h3><i class="fas fa-thumbs-up"></i> Community Engagement</h3>
+        <p>Support important community reports by voting:</p>
+        <ul>
+          <li>Click upvote buttons on user-submitted reports</li>
+          <li>Higher-voted reports get more visibility</li>
+          <li>Help prioritize the most critical infrastructure issues</li>
+          <li>View upvote counts in both the map popups and sidebar list</li>
+        </ul>
+      </div>
+      
+      <div class="instruction-card">
+        <h3><i class="fas fa-mobile-alt"></i> Mobile & Desktop</h3>
+        <p>StreetSmart works seamlessly across all devices:</p>
+        <ul>
+          <li>Responsive design adapts to your screen size</li>
+          <li>Touch-friendly controls for mobile and tablet use</li>
+          <li>GPS integration for location-based reporting</li>
+          <li>Fast loading and smooth performance on all devices</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 <script>
 const CINCINNATI_COORDS = [39.1031182, -84.5120196];
@@ -504,7 +689,7 @@ async function loadYOLOModel() {
   isModelLoading = true;
   try {
     console.log('Loading YOLO model...');
-    yoloModel = await ort.InferenceSession.create('yolo_v12_rd_dmg_best.onnx');
+    yoloModel = await ort.InferenceSession.create('data/yolo_v12_rd_dmg_best.onnx');
     console.log('YOLO model loaded successfully');
   } catch (error) {
     console.error('Failed to load YOLO model:', error);
@@ -524,7 +709,39 @@ function initializeLogo() {
     logo.classList.add('fallback');
     console.log('Logo image not found, using fallback');
   };
-  img.src = 'StreetSmart_logo.png';
+  img.src = 'static/StreetSmart_logo.png';
+}
+
+// Get location name using reverse geocoding (free service)
+async function getLocationName(lat, lon) {
+  try {
+    const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}&zoom=18&addressdetails=1`);
+    const data = await response.json();
+    if (data && data.display_name) {
+      // Extract relevant parts of the address
+      const address = data.address;
+      let locationName = '';
+      
+      if (address.house_number && address.road) {
+        locationName = `${address.house_number} ${address.road}`;
+      } else if (address.road) {
+        locationName = address.road;
+      } else if (address.neighbourhood) {
+        locationName = address.neighbourhood;
+      } else {
+        locationName = data.display_name.split(',')[0];
+      }
+      
+      if (address.suburb) {
+        locationName += `, ${address.suburb}`;
+      }
+      
+      return locationName;
+    }
+  } catch (error) {
+    console.error('Geocoding error:', error);
+  }
+  return null;
 }
 
 // Preprocess image for YOLO
@@ -572,11 +789,11 @@ async function detectPotholes(imageUrl) {
         try {
           const inputData = preprocessImage(img);
           const inputTensor = new ort.Tensor('float32', inputData, [1, 3, 640, 640]);
-          const feeds = { images: inputTensor }; // Changed from 'input' to 'images'
+          const feeds = { images: inputTensor };
           const outputData = await yoloModel.run(feeds);
           
           // Parse YOLO output (this depends on your specific model output format)
-          const output = outputData.output.data; // Adjust output name based on your model
+          const output = outputData.output.data;
           const detections = parseYOLOOutput(output);
           
           resolve({ 
@@ -639,9 +856,40 @@ function getConfidenceLevel(confidence) {
   return 'Low';
 }
 
+// Upvote a request
+
+async function upvoteRequest(requestId) {
+  try {
+    const response = await fetch('/api/upvote', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id: requestId })
+    });
+
+    if (response.ok) {
+      // Update frontend count immediately
+      document.querySelectorAll(`[onclick="upvoteRequest('${requestId}')"]`).forEach(btn => {
+        const countEl = btn.parentElement.querySelector('.upvote-count, span');
+        if (countEl) {
+          let current = parseInt(countEl.innerText) || 0;
+          countEl.innerText = `${current + 1} upvotes`;
+        }
+      });
+
+      // Also reload to stay in sync with CSV
+      loadUserRequests();
+    } else {
+      alert('Failed to upvote request');
+    }
+  } catch (error) {
+    console.error('Error upvoting request:', error);
+    alert('Error upvoting request');
+  }
+}
+
 // Load AI detected potholes from CSV
 function loadAIPotholes() {
-  Papa.parse("mapillary/cincinnati_pothole_results/pothole_locations.csv", {
+  Papa.parse("data/pothole_locations.csv", {
     download: true,
     header: true,
     complete: results => {
@@ -738,14 +986,36 @@ function renderRequests(requests){
   container.innerHTML = "";
   userLayer.clearLayers();
   requests.slice(-10).reverse().forEach(r=>{
+    const rating = r.rating || 0;
     const div = document.createElement("div");
     div.className="request-card";
-    div.innerHTML = `<strong>${r.name||'Anonymous'}</strong> <span style="color:#667eea;">(${r.severity||'Low'})</span><br>${r.description||'No description'}<br><small>${parseFloat(r.lat).toFixed(4)}, ${parseFloat(r.lon).toFixed(4)}</small>`;
+    div.innerHTML = `
+      <strong>${r.name||'Anonymous'}</strong> <span style="color:#667eea;">(${r.severity||'Low'})</span><br>
+      ${r.description||'No description'}<br>
+      <small>${parseFloat(r.lat).toFixed(4)}, ${parseFloat(r.lon).toFixed(4)}</small>
+      <div class="upvote-section">
+        <button class="upvote-btn" onclick="upvoteRequest('${r.id}')">
+          <i class="fas fa-thumbs-up"></i> Upvote
+        </button>
+        <span class="upvote-count">${rating} upvotes</span>
+      </div>
+    `;
     container.appendChild(div);
     
     const icon = createCustomIcon('fas fa-wrench', 'user-request-marker', 22);
     L.marker([parseFloat(r.lat),parseFloat(r.lon)], {icon})
-      .bindPopup(`<strong>${r.name||'Anonymous'}</strong><br>${r.description||'No description'}<br><strong>Severity:</strong> ${r.severity||'Low'}`)
+      .bindPopup(`
+        <strong>${r.name||'Anonymous'}</strong><br>
+        ${r.description||'No description'}<br>
+        <strong>Severity:</strong> ${r.severity||'Low'}<br>
+        <div style="margin-top:8px;">
+          <button onclick="upvoteRequest('${r.id}')" 
+                  style="padding:4px 8px;background:#10b981;color:white;border:none;border-radius:4px;cursor:pointer;margin-right:8px;">
+            <i class="fas fa-thumbs-up"></i> Upvote
+          </button>
+          <span style="color:#059669;font-weight:600;">${rating} upvotes</span>
+        </div>
+      `)
       .addTo(userLayer);
   });
 }
@@ -753,24 +1023,39 @@ loadUserRequests();
 loadAIPotholes();
 
 // ---- Map click ----
-map.on('click', e=>{
+map.on('click', async e=>{
   if(selectedMarker) selectedLayer.removeLayer(selectedMarker);
   
   const icon = createCustomIcon('fas fa-plus', 'selected-marker', 28);
   selectedMarker = L.marker([e.latlng.lat,e.latlng.lng], {icon}).addTo(selectedLayer);
   selectedCoords = e.latlng;
-  document.getElementById("selected-coords").innerHTML = `<strong>Selected Location:</strong><br>${e.latlng.lat.toFixed(6)}, ${e.latlng.lng.toFixed(6)}`;
+  
+  // Update coordinates display
+  
+document.getElementById("selected-coords").innerHTML =
+  `<strong>Selected Location:</strong><br>${e.latlng.lat.toFixed(6)}, ${e.latlng.lng.toFixed(6)}
+   <div id="location-name"></div>`;
+  
+  // Get location name (free reverse geocoding)
+  const locationName = await getLocationName(e.latlng.lat, e.latlng.lng);
+  const locationDiv = document.getElementById("location-name");
+  if (locationName) {
+    locationDiv.innerHTML = `📍 ${locationName}`;
+    locationDiv.style.display = 'block';
+  } else {
+    locationDiv.style.display = 'none';
+  }
 });
 
 // ---- Submit request ----
-document.getElementById("submit-btn").onclick = ()=>{
+document.getElementById("submit-btn").onclick = async ()=>{
   if(!selectedCoords){ 
     alert("Please click on the map to select a location first."); 
     return; 
   }
   
   const req = {
-    id: Date.now(),
+    id: Date.now().toString(),
     name: document.getElementById("name").value || "Anonymous",
     description: document.getElementById("description").value || "No description provided",
     severity: document.getElementById("severity").value,
@@ -779,37 +1064,70 @@ document.getElementById("submit-btn").onclick = ()=>{
     timestamp: new Date().toISOString()
   };
   
-  // Since there's no actual server endpoint, simulate the submission
-  // In a real application, this would save to the CSV file via a backend API
   try {
-    // Simulate successful submission
-    alert("✅ Repair request submitted successfully!");
+    // Submit to FastAPI backend
+    const response = await fetch('/api/requests', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(req)
+    });
     
-    // Add the request to the map immediately for better user experience
-    const icon = createCustomIcon('fas fa-wrench', 'user-request-marker', 22);
-    L.marker([parseFloat(req.lat), parseFloat(req.lon)], {icon})
-      .bindPopup(`<strong>${req.name}</strong><br>${req.description}<br><strong>Severity:</strong> ${req.severity}<br><small>Just submitted</small>`)
-      .addTo(userLayer);
-    
-    // Add to the requests list in sidebar
-    const container = document.getElementById("requests");
-    const div = document.createElement("div");
-    div.className = "request-card";
-    div.style.border = "2px solid #10b981"; // Highlight new request
-    div.innerHTML = `<strong>${req.name}</strong> <span style="color:#667eea;">(${req.severity})</span><br>${req.description}<br><small>${parseFloat(req.lat).toFixed(4)}, ${parseFloat(req.lon).toFixed(4)} - Just now</small>`;
-    container.insertBefore(div, container.firstChild);
-    
-    // Clear form
-    document.getElementById("name").value = "";
-    document.getElementById("description").value = "";
-    document.getElementById("severity").value = "Low";
-    document.getElementById("selected-coords").innerHTML = "Click on the map to select location";
-    if(selectedMarker) selectedLayer.removeLayer(selectedMarker);
-    selectedCoords = null;
-    
+    if (response.ok) {
+      alert("✅ Repair request submitted successfully!");
+      
+      // Add the request to the map immediately for better user experience
+      const icon = createCustomIcon('fas fa-wrench', 'user-request-marker', 22);
+      L.marker([parseFloat(req.lat), parseFloat(req.lon)], {icon})
+        .bindPopup(`
+          <strong>${req.name}</strong><br>
+          ${req.description}<br>
+          <strong>Severity:</strong> ${req.severity}<br>
+          <small>Just submitted</small>
+          <div style="margin-top:8px;">
+            <button onclick="upvoteRequest('${req.id}')" 
+                    style="padding:4px 8px;background:#10b981;color:white;border:none;border-radius:4px;cursor:pointer;margin-right:8px;">
+              <i class="fas fa-thumbs-up"></i> Upvote
+            </button>
+            <span style="color:#059669;font-weight:600;">0 upvotes</span>
+          </div>
+        `)
+        .addTo(userLayer);
+      
+      // Add to the requests list in sidebar
+      const container = document.getElementById("requests");
+      const div = document.createElement("div");
+      div.className = "request-card";
+      div.style.border = "2px solid #10b981"; // Highlight new request
+      div.innerHTML = `
+        <strong>${req.name}</strong> <span style="color:#667eea;">(${req.severity})</span><br>
+        ${req.description}<br>
+        <small>${parseFloat(req.lat).toFixed(4)}, ${parseFloat(req.lon).toFixed(4)} - Just now</small>
+        <div class="upvote-section">
+          <button class="upvote-btn" onclick="upvoteRequest('${req.id}')">
+            <i class="fas fa-thumbs-up"></i> Upvote
+          </button>
+          <span class="upvote-count">0 upvotes</span>
+        </div>
+      `;
+      container.insertBefore(div, container.firstChild);
+      
+      // Clear form
+      document.getElementById("name").value = "";
+      document.getElementById("description").value = "";
+      document.getElementById("severity").value = "Low";
+      document.getElementById("selected-coords").innerHTML = 'Click on the map to select location <div id="location-name"></div>';      document.getElementById("location-name").style.display = 'none';
+      if(selectedMarker) selectedLayer.removeLayer(selectedMarker);
+      selectedCoords = null;
+      
+    } else {
+      const errorData = await response.json();
+      alert(`❌ Error submitting request: ${errorData.message || 'Unknown error'}`);
+    }
   } catch (error) {
     console.error('Error submitting request:', error);
-    alert("❌ Error submitting request. Please try again.");
+    alert("❌ Error submitting request. Please check your connection and try again.");
   }
 };
 

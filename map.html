@@ -60,7 +60,60 @@
       maxZoom: 19,
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
+L.control.layers(
+  {
+    "OSM": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map),
+    "NAIP": L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/USDA/NAIP/MapServer/tile/{z}/{y}/{x}", 
+      {
+        attribution: "USDA NAIP",
+        maxZoom: 19
+      }
+    ),
+    "Esri Satellite": L.tileLayer(
+      "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+      {
+        attribution: "Esri & Maxar",
+        maxZoom: 19
+      }
+    )
+  },
+  null,
+  { collapsed: false }
+).addTo(map);
 
+// Example: layer for user pothole reports
+const userReports = L.layerGroup().addTo(map);
+
+// Placeholder for loading CSV points dynamically
+async function loadUserReports() {
+  const res = await fetch("User_Requests.csv"); // served via Streamlit
+  const text = await res.text();
+  const rows = text.split("\n").slice(1);
+  rows.forEach(line => {
+    const parts = line.split(",");
+    if (parts.length >= 5) {
+      const lat = parseFloat(parts[3]);
+      const lon = parseFloat(parts[4]);
+      const name = parts[1];
+      const desc = parts[2];
+      const sev = parts[5];
+      if (!isNaN(lat) && !isNaN(lon)) {
+        L.marker([lat, lon], {
+          icon: L.icon({
+            iconUrl: "https://cdn-icons-png.flaticon.com/512/69/69881.png",
+            iconSize: [25, 25]
+          })
+        }).bindPopup(`<b>${name}</b><br>${desc}<br>Severity: ${sev}`).addTo(userReports);
+      }
+    }
+  });
+}
+
+loadUserReports();
     const markers = L.markerClusterGroup();
     map.addLayer(markers);
 

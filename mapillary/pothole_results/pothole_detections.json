@@ -1,0 +1,5927 @@
+[
+  {
+    "image_id": "3061781777466790",
+    "image_path": "pothole_results/images/3061781777466790.jpg",
+    "latitude": 39.082044444444,
+    "longitude": -84.3582075,
+    "captured_at": 1655317985774,
+    "compass_angle": 175.9149507,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:31.020834"
+  },
+  {
+    "image_id": "1543377096179261",
+    "image_path": "pothole_results/images/1543377096179261.jpg",
+    "latitude": 39.201612141931,
+    "longitude": -84.468297526039,
+    "captured_at": 1610509215800,
+    "compass_angle": 255.55847818903,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:31.331232"
+  },
+  {
+    "image_id": "2963203470636276",
+    "image_path": "pothole_results/images/2963203470636276.jpg",
+    "latitude": 39.048185555556,
+    "longitude": -84.364032222222,
+    "captured_at": 1655475485232,
+    "compass_angle": 62.9141797,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:31.378733"
+  },
+  {
+    "image_id": "3037956953095927",
+    "image_path": "pothole_results/images/3037956953095927.jpg",
+    "latitude": 39.092410277778,
+    "longitude": -84.332806944444,
+    "captured_at": 1655233680909,
+    "compass_angle": 349.515404,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:31.548810"
+  },
+  {
+    "image_id": "3051484105003229",
+    "image_path": "pothole_results/images/3051484105003229.jpg",
+    "latitude": 39.0771767,
+    "longitude": -84.3399308,
+    "captured_at": 1743606608500,
+    "compass_angle": 184.95,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:31.641390"
+  },
+  {
+    "image_id": "3066112576888276",
+    "image_path": "pothole_results/images/3066112576888276.jpg",
+    "latitude": 39.1044283,
+    "longitude": -84.3350169,
+    "captured_at": 1743692213500,
+    "compass_angle": 291.614,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:31.881771"
+  },
+  {
+    "image_id": "1646922682609597",
+    "image_path": "pothole_results/images/1646922682609597.jpg",
+    "latitude": 39.1076689,
+    "longitude": -84.3544142,
+    "captured_at": 1743693131000,
+    "compass_angle": 271.663,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:32.816729"
+  },
+  {
+    "image_id": "3211834989093684",
+    "image_path": "pothole_results/images/3211834989093684.jpg",
+    "latitude": 39.0865677,
+    "longitude": -84.506012999972,
+    "captured_at": 1568315626500,
+    "compass_angle": 71.645220258885,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          176337,
+          316505,
+          214342,
+          379421
+        ],
+        "confidence": 0.5452307462692261,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:10:33.098811"
+  },
+  {
+    "image_id": "3034073566912034",
+    "image_path": "pothole_results/images/3034073566912034.jpg",
+    "latitude": 39.255936878408,
+    "longitude": -84.312061383466,
+    "captured_at": 1587564566500,
+    "compass_angle": 4.27,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:33.473177"
+  },
+  {
+    "image_id": "4131589316917448",
+    "image_path": "pothole_results/images/4131589316917448.jpg",
+    "latitude": 39.253296417129,
+    "longitude": -84.314329767054,
+    "captured_at": 1587563667000,
+    "compass_angle": 288.54,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:33.758086"
+  },
+  {
+    "image_id": "3049470222045435",
+    "image_path": "pothole_results/images/3049470222045435.jpg",
+    "latitude": 39.045541666667,
+    "longitude": -84.615666666667,
+    "captured_at": 1503522107000,
+    "compass_angle": 321,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:34.100090"
+  },
+  {
+    "image_id": "3038373306381475",
+    "image_path": "pothole_results/images/3038373306381475.jpg",
+    "latitude": 39.094307499972,
+    "longitude": -84.565803299972,
+    "captured_at": 1569159330000,
+    "compass_angle": 350.11658545574,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:34.242185"
+  },
+  {
+    "image_id": "1882035591973258",
+    "image_path": "pothole_results/images/1882035591973258.jpg",
+    "latitude": 39.091227777778,
+    "longitude": -84.804280555556,
+    "captured_at": 1504814316000,
+    "compass_angle": 112,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:34.468717"
+  },
+  {
+    "image_id": "4169020323218141",
+    "image_path": "pothole_results/images/4169020323218141.jpg",
+    "latitude": 39.267933437139,
+    "longitude": -84.31619061862,
+    "captured_at": 1587737556500,
+    "compass_angle": 17.47,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:34.814805"
+  },
+  {
+    "image_id": "3051680731783630",
+    "image_path": "pothole_results/images/3051680731783630.jpg",
+    "latitude": 39.141130292554,
+    "longitude": -84.535073340768,
+    "captured_at": 1506001892777,
+    "compass_angle": 168.046875,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:35.027616"
+  },
+  {
+    "image_id": "3045389028919178",
+    "image_path": "pothole_results/images/3045389028919178.jpg",
+    "latitude": 39.248611136133,
+    "longitude": -84.353045517319,
+    "captured_at": 1587566662200,
+    "compass_angle": 266.63,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:35.054423"
+  },
+  {
+    "image_id": "3058537534423783",
+    "image_path": "pothole_results/images/3058537534423783.jpg",
+    "latitude": 39.1115441,
+    "longitude": -84.513933499972,
+    "captured_at": 1569157786000,
+    "compass_angle": 168.60753566128,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:35.542741"
+  },
+  {
+    "image_id": "3039307576373002",
+    "image_path": "pothole_results/images/3039307576373002.jpg",
+    "latitude": 39.098584444444,
+    "longitude": -84.331503055556,
+    "captured_at": 1655234902758,
+    "compass_angle": 220.86307776,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:35.786216"
+  },
+  {
+    "image_id": "1640626406324747",
+    "image_path": "pothole_results/images/1640626406324747.jpg",
+    "latitude": 39.068939166667,
+    "longitude": -84.369151111111,
+    "captured_at": 1655390701388,
+    "compass_angle": 215.3849304,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:36.021380"
+  },
+  {
+    "image_id": "4046074095536328",
+    "image_path": "pothole_results/images/4046074095536328.jpg",
+    "latitude": 39.0992153,
+    "longitude": -84.3346242,
+    "captured_at": 1743689651666,
+    "compass_angle": 265.157,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:36.360464"
+  },
+  {
+    "image_id": "3920913901363682",
+    "image_path": "pothole_results/images/3920913901363682.jpg",
+    "latitude": 39.148609,
+    "longitude": -84.7701037,
+    "captured_at": 1569160767500,
+    "compass_angle": 329.23019125563,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          -295,
+          337250,
+          63212,
+          405252
+        ],
+        "confidence": 0.5128508806228638,
+        "class_id": 0
+      }
+    ],
+    "processed_at": "2025-09-24T17:10:36.508040"
+  },
+  {
+    "image_id": "1639975286194041",
+    "image_path": "pothole_results/images/1639975286194041.jpg",
+    "latitude": 39.240244645785,
+    "longitude": -84.368738980949,
+    "captured_at": 1588001202000,
+    "compass_angle": 130.82,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:36.662751"
+  },
+  {
+    "image_id": "9368510396591036",
+    "image_path": "pothole_results/images/9368510396591036.jpg",
+    "latitude": 39.0807731,
+    "longitude": -84.3247361,
+    "captured_at": 1743604117500,
+    "compass_angle": 96.923,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:37.050029"
+  },
+  {
+    "image_id": "3062574544031790",
+    "image_path": "pothole_results/images/3062574544031790.jpg",
+    "latitude": 39.273297196483,
+    "longitude": -84.32807218754,
+    "captured_at": 1587560395333,
+    "compass_angle": 295.37,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:37.291761"
+  },
+  {
+    "image_id": "1730818557860213",
+    "image_path": "pothole_results/images/1730818557860213.jpg",
+    "latitude": 39.0794567,
+    "longitude": -84.4742975,
+    "captured_at": 1745422554000,
+    "compass_angle": 193.971,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:37.667356"
+  },
+  {
+    "image_id": "3936277703114443",
+    "image_path": "pothole_results/images/3936277703114443.jpg",
+    "latitude": 39.1300493,
+    "longitude": -84.4702118,
+    "captured_at": 1568467687000,
+    "compass_angle": 86.843784329574,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:37.934665"
+  },
+  {
+    "image_id": "3050869775143185",
+    "image_path": "pothole_results/images/3050869775143185.jpg",
+    "latitude": 39.264658451255,
+    "longitude": -84.339756556133,
+    "captured_at": 1588004142666,
+    "compass_angle": 86.04,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          126329,
+          283547,
+          142784,
+          323317
+        ],
+        "confidence": 0.6557365655899048,
+        "class_id": 0
+      }
+    ],
+    "processed_at": "2025-09-24T17:10:38.174451"
+  },
+  {
+    "image_id": "1656422805002310",
+    "image_path": "pothole_results/images/1656422805002310.jpg",
+    "latitude": 39.0996533,
+    "longitude": -84.3300569,
+    "captured_at": 1743689587000,
+    "compass_angle": 43.776,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:38.545711"
+  },
+  {
+    "image_id": "3934919790107719",
+    "image_path": "pothole_results/images/3934919790107719.jpg",
+    "latitude": 39.0900114,
+    "longitude": -84.4890942,
+    "captured_at": 1745349372000,
+    "compass_angle": 308.69,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:38.550208"
+  },
+  {
+    "image_id": "1633949060127849",
+    "image_path": "pothole_results/images/1633949060127849.jpg",
+    "latitude": 39.048389166667,
+    "longitude": -84.506379722222,
+    "captured_at": 1587060299074,
+    "compass_angle": 208.38669856,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:38.838748"
+  },
+  {
+    "image_id": "1725449381132071",
+    "image_path": "pothole_results/images/1725449381132071.jpg",
+    "latitude": 39.050552222222,
+    "longitude": -84.359864444444,
+    "captured_at": 1655474956481,
+    "compass_angle": 43.91068592,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:38.841645"
+  },
+  {
+    "image_id": "2920065214947527",
+    "image_path": "pothole_results/images/2920065214947527.jpg",
+    "latitude": 39.156748399972,
+    "longitude": -84.751992999972,
+    "captured_at": 1569161186000,
+    "compass_angle": 60.019877777133,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:39.649944"
+  },
+  {
+    "image_id": "1666445583559429",
+    "image_path": "pothole_results/images/1666445583559429.jpg",
+    "latitude": 39.051797222222,
+    "longitude": -84.558736111111,
+    "captured_at": 1482262973000,
+    "compass_angle": 84,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:39.936059"
+  },
+  {
+    "image_id": "4067945866851644",
+    "image_path": "pothole_results/images/4067945866851644.jpg",
+    "latitude": 39.0781089,
+    "longitude": -84.3239475,
+    "captured_at": 1743604211000,
+    "compass_angle": 281.157,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:39.939469"
+  },
+  {
+    "image_id": "3040938779467412",
+    "image_path": "pothole_results/images/3040938779467412.jpg",
+    "latitude": 39.2557691,
+    "longitude": -84.413191699972,
+    "captured_at": 1568484932000,
+    "compass_angle": 183.96136664043,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:40.601488"
+  },
+  {
+    "image_id": "3044600365774437",
+    "image_path": "pothole_results/images/3044600365774437.jpg",
+    "latitude": 39.25961162,
+    "longitude": -84.60251124,
+    "captured_at": 1489077849461,
+    "compass_angle": 18.813420295715,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:40.611673"
+  },
+  {
+    "image_id": "3150308415181631",
+    "image_path": "pothole_results/images/3150308415181631.jpg",
+    "latitude": 39.115748699972,
+    "longitude": -84.496404999972,
+    "captured_at": 1568314925000,
+    "compass_angle": 324.59483118116,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:41.070672"
+  },
+  {
+    "image_id": "3043700039194710",
+    "image_path": "pothole_results/images/3043700039194710.jpg",
+    "latitude": 39.242239477968,
+    "longitude": -84.347646963711,
+    "captured_at": 1587220959666,
+    "compass_angle": 200.06,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:41.291447"
+  },
+  {
+    "image_id": "1630014103861035",
+    "image_path": "pothole_results/images/1630014103861035.jpg",
+    "latitude": 39.065204722222,
+    "longitude": -84.508056388889,
+    "captured_at": 1587220371146,
+    "compass_angle": 23.75130072,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:41.808644"
+  },
+  {
+    "image_id": "5496038193795446",
+    "image_path": "pothole_results/images/5496038193795446.jpg",
+    "latitude": 39.133182777778,
+    "longitude": -84.36791,
+    "captured_at": 1655216498585,
+    "compass_angle": 355.8388,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:41.933488"
+  },
+  {
+    "image_id": "1636346163229079",
+    "image_path": "pothole_results/images/1636346163229079.jpg",
+    "latitude": 39.083752930936,
+    "longitude": -84.472274297987,
+    "captured_at": 1531673559774,
+    "compass_angle": 339.41644287109,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:42.288568"
+  },
+  {
+    "image_id": "1953540961466339",
+    "image_path": "pothole_results/images/1953540961466339.jpg",
+    "latitude": 39.268687196074,
+    "longitude": -84.354164180062,
+    "captured_at": 1578929428862,
+    "compass_angle": 221.39906311035,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:42.305600"
+  },
+  {
+    "image_id": "3049520931945690",
+    "image_path": "pothole_results/images/3049520931945690.jpg",
+    "latitude": 39.0527725,
+    "longitude": -84.506324444444,
+    "captured_at": 1587405466393,
+    "compass_angle": 121.0691715,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:42.630012"
+  },
+  {
+    "image_id": "3063756967217525",
+    "image_path": "pothole_results/images/3063756967217525.jpg",
+    "latitude": 39.063658611111,
+    "longitude": -84.356375277778,
+    "captured_at": 1655392052541,
+    "compass_angle": 169.4968438,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:42.739454"
+  },
+  {
+    "image_id": "1631983956992604",
+    "image_path": "pothole_results/images/1631983956992604.jpg",
+    "latitude": 39.078141944444,
+    "longitude": -84.517198055556,
+    "captured_at": 1587245642049,
+    "compass_angle": 295.30829648,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:43.002982"
+  },
+  {
+    "image_id": "1633416163969322",
+    "image_path": "pothole_results/images/1633416163969322.jpg",
+    "latitude": 39.1081667,
+    "longitude": -84.3525675,
+    "captured_at": 1743693216000,
+    "compass_angle": 88.194,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:43.272578"
+  },
+  {
+    "image_id": "3327843234024355",
+    "image_path": "pothole_results/images/3327843234024355.jpg",
+    "latitude": 39.0736356,
+    "longitude": -84.4869139,
+    "captured_at": 1745420846500,
+    "compass_angle": 192.72,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:43.374602"
+  },
+  {
+    "image_id": "4024967764209269",
+    "image_path": "pothole_results/images/4024967764209269.jpg",
+    "latitude": 39.264555810987,
+    "longitude": -84.440542208109,
+    "captured_at": 1545762151098,
+    "compass_angle": 176.72021484375,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:43.751414"
+  },
+  {
+    "image_id": "2916143241987158",
+    "image_path": "pothole_results/images/2916143241987158.jpg",
+    "latitude": 39.11497430802,
+    "longitude": -84.519775994224,
+    "captured_at": 1491758512035,
+    "compass_angle": 341.51905346887,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:44.092438"
+  },
+  {
+    "image_id": "3537636346371846",
+    "image_path": "pothole_results/images/3537636346371846.jpg",
+    "latitude": 39.0846025,
+    "longitude": -84.3130092,
+    "captured_at": 1743602408000,
+    "compass_angle": 198.513,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:44.348718"
+  },
+  {
+    "image_id": "1636806346708805",
+    "image_path": "pothole_results/images/1636806346708805.jpg",
+    "latitude": 39.138445150366,
+    "longitude": -84.487048137725,
+    "captured_at": 1595491581023,
+    "compass_angle": 233.83336121962,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:45.104768"
+  },
+  {
+    "image_id": "3038070513135263",
+    "image_path": "pothole_results/images/3038070513135263.jpg",
+    "latitude": 39.235577624904,
+    "longitude": -84.352185675093,
+    "captured_at": 1588004701000,
+    "compass_angle": 78.15,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:45.203995"
+  },
+  {
+    "image_id": "1631003580623650",
+    "image_path": "pothole_results/images/1631003580623650.jpg",
+    "latitude": 39.128089726295,
+    "longitude": -84.523138106773,
+    "captured_at": 1562611040741,
+    "compass_angle": 275.21859741211,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:45.358351"
+  },
+  {
+    "image_id": "4473288189396981",
+    "image_path": "pothole_results/images/4473288189396981.jpg",
+    "latitude": 39.242867597277,
+    "longitude": -84.355777926698,
+    "captured_at": 1587741420000,
+    "compass_angle": 167.8,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:45.649982"
+  },
+  {
+    "image_id": "5711657988876335",
+    "image_path": "pothole_results/images/5711657988876335.jpg",
+    "latitude": 39.208102578231,
+    "longitude": -84.713951104573,
+    "captured_at": 1619881653496,
+    "compass_angle": 303.05197143555,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:45.676860"
+  },
+  {
+    "image_id": "3057711341174831",
+    "image_path": "pothole_results/images/3057711341174831.jpg",
+    "latitude": 39.088433333333,
+    "longitude": -84.517508055556,
+    "captured_at": 1587070357070,
+    "compass_angle": 270.348732,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:45.903540"
+  },
+  {
+    "image_id": "3941828485898803",
+    "image_path": "pothole_results/images/3941828485898803.jpg",
+    "latitude": 39.068002777778,
+    "longitude": -84.647366666667,
+    "captured_at": 1450903430000,
+    "compass_angle": 328,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:46.260145"
+  },
+  {
+    "image_id": "4233522460069001",
+    "image_path": "pothole_results/images/4233522460069001.jpg",
+    "latitude": 39.277839363125,
+    "longitude": -84.367150519848,
+    "captured_at": 1587743256333,
+    "compass_angle": 0.67,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          118996,
+          262393,
+          169708,
+          309314
+        ],
+        "confidence": 0.6125439405441284,
+        "class_id": 0
+      }
+    ],
+    "processed_at": "2025-09-24T17:10:46.355371"
+  },
+  {
+    "image_id": "4033806076734681",
+    "image_path": "pothole_results/images/4033806076734681.jpg",
+    "latitude": 39.231547541022,
+    "longitude": -84.758103434075,
+    "captured_at": 1545526051115,
+    "compass_angle": 143.5632019043,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:46.619538"
+  },
+  {
+    "image_id": "3157544661167998",
+    "image_path": "pothole_results/images/3157544661167998.jpg",
+    "latitude": 39.1324995,
+    "longitude": -84.5178599,
+    "captured_at": 1568138676500,
+    "compass_angle": 186.27102762463,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:46.881351"
+  },
+  {
+    "image_id": "3048851192015519",
+    "image_path": "pothole_results/images/3048851192015519.jpg",
+    "latitude": 39.04129000857,
+    "longitude": -84.448718697255,
+    "captured_at": 1627149107570,
+    "compass_angle": 12.557254931299,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:47.142541"
+  },
+  {
+    "image_id": "2880510815539371",
+    "image_path": "pothole_results/images/2880510815539371.jpg",
+    "latitude": 39.086476140008,
+    "longitude": -84.304207966684,
+    "captured_at": 1578850524190,
+    "compass_angle": 275.35291042299,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:47.331547"
+  },
+  {
+    "image_id": "3065283836960422",
+    "image_path": "pothole_results/images/3065283836960422.jpg",
+    "latitude": 39.0717139,
+    "longitude": -84.4031194,
+    "captured_at": 1743520510333,
+    "compass_angle": 197.019,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:47.427405"
+  },
+  {
+    "image_id": "3042301002668684",
+    "image_path": "pothole_results/images/3042301002668684.jpg",
+    "latitude": 39.163891664187,
+    "longitude": -84.432737741047,
+    "captured_at": 1595692816517,
+    "compass_angle": 68.864318847656,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:47.476995"
+  },
+  {
+    "image_id": "1639680453100671",
+    "image_path": "pothole_results/images/1639680453100671.jpg",
+    "latitude": 39.13419,
+    "longitude": -84.363606944444,
+    "captured_at": 1655216343750,
+    "compass_angle": 300.5611774,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:47.602304"
+  },
+  {
+    "image_id": "1649577072588392",
+    "image_path": "pothole_results/images/1649577072588392.jpg",
+    "latitude": 39.0841214,
+    "longitude": -84.3117331,
+    "captured_at": 1743605146666,
+    "compass_angle": 88.904,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:47.725957"
+  },
+  {
+    "image_id": "3961625107290286",
+    "image_path": "pothole_results/images/3961625107290286.jpg",
+    "latitude": 39.022922069282,
+    "longitude": -84.339935447585,
+    "captured_at": 1578839337689,
+    "compass_angle": 311.83322029119,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          232427,
+          189116,
+          247225,
+          219389
+        ],
+        "confidence": 0.5032758116722107,
+        "class_id": 0
+      }
+    ],
+    "processed_at": "2025-09-24T17:10:48.455241"
+  },
+  {
+    "image_id": "4816516931696740",
+    "image_path": "pothole_results/images/4816516931696740.jpg",
+    "latitude": 39.238940668442,
+    "longitude": -84.356722896001,
+    "captured_at": 1587484759000,
+    "compass_angle": 359.66,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:48.608693"
+  },
+  {
+    "image_id": "1633804810607512",
+    "image_path": "pothole_results/images/1633804810607512.jpg",
+    "latitude": 39.0764989,
+    "longitude": -84.3177122,
+    "captured_at": 1743602005666,
+    "compass_angle": 148.515,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:48.863201"
+  },
+  {
+    "image_id": "3056805834478803",
+    "image_path": "pothole_results/images/3056805834478803.jpg",
+    "latitude": 39.0761419,
+    "longitude": -84.4707694,
+    "captured_at": 1745422236500,
+    "compass_angle": 217.478,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:48.868007"
+  },
+  {
+    "image_id": "3930080750408895",
+    "image_path": "pothole_results/images/3930080750408895.jpg",
+    "latitude": 39.1477489,
+    "longitude": -84.775141099972,
+    "captured_at": 1569160814000,
+    "compass_angle": 229.93297217299,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:48.897232"
+  },
+  {
+    "image_id": "1654405791609929",
+    "image_path": "pothole_results/images/1654405791609929.jpg",
+    "latitude": 39.1119025,
+    "longitude": -84.364596944444,
+    "captured_at": 1655300164026,
+    "compass_angle": 9.19377548,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:49.141856"
+  },
+  {
+    "image_id": "1657547181793181",
+    "image_path": "pothole_results/images/1657547181793181.jpg",
+    "latitude": 39.0734269,
+    "longitude": -84.3923806,
+    "captured_at": 1743531031000,
+    "compass_angle": 58.442,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:49.190846"
+  },
+  {
+    "image_id": "1637035783335329",
+    "image_path": "pothole_results/images/1637035783335329.jpg",
+    "latitude": 39.066494444444,
+    "longitude": -84.364324722222,
+    "captured_at": 1655390044000,
+    "compass_angle": 357.432523,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:49.384544"
+  },
+  {
+    "image_id": "5430256603714881",
+    "image_path": "pothole_results/images/5430256603714881.jpg",
+    "latitude": 39.203111333333,
+    "longitude": -84.220571,
+    "captured_at": 1539733472145,
+    "compass_angle": 51.085510253906,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:49.923868"
+  },
+  {
+    "image_id": "1630519080923338",
+    "image_path": "pothole_results/images/1630519080923338.jpg",
+    "latitude": 39.0714017,
+    "longitude": -84.3687083,
+    "captured_at": 1743536662000,
+    "compass_angle": 86.173,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:50.009854"
+  },
+  {
+    "image_id": "3043636039123281",
+    "image_path": "pothole_results/images/3043636039123281.jpg",
+    "latitude": 39.0751397,
+    "longitude": -84.4050156,
+    "captured_at": 1743521136333,
+    "compass_angle": 227.849,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:50.542115"
+  },
+  {
+    "image_id": "1628911891107102",
+    "image_path": "pothole_results/images/1628911891107102.jpg",
+    "latitude": 39.1148658,
+    "longitude": -84.3701969,
+    "captured_at": 1743694279500,
+    "compass_angle": 33.8,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:50.577174"
+  },
+  {
+    "image_id": "1654845788038644",
+    "image_path": "pothole_results/images/1654845788038644.jpg",
+    "latitude": 39.106844408978,
+    "longitude": -84.503299836552,
+    "captured_at": 1531673699394,
+    "compass_angle": 12.777075767517,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:50.818487"
+  },
+  {
+    "image_id": "1655014201351852",
+    "image_path": "pothole_results/images/1655014201351852.jpg",
+    "latitude": 39.062777777778,
+    "longitude": -84.656308333333,
+    "captured_at": 1443355978000,
+    "compass_angle": 1,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:50.960953"
+  },
+  {
+    "image_id": "1635896829953117",
+    "image_path": "pothole_results/images/1635896829953117.jpg",
+    "latitude": 39.23173784549,
+    "longitude": -84.368331371254,
+    "captured_at": 1587999990500,
+    "compass_angle": 357.29,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:51.204558"
+  },
+  {
+    "image_id": "3942279445827138",
+    "image_path": "pothole_results/images/3942279445827138.jpg",
+    "latitude": 39.07571,
+    "longitude": -84.520509444444,
+    "captured_at": 1587234081975,
+    "compass_angle": 26.4202415,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:51.424623"
+  },
+  {
+    "image_id": "5882791865079210",
+    "image_path": "pothole_results/images/5882791865079210.jpg",
+    "latitude": 39.191655166667,
+    "longitude": -84.352762833333,
+    "captured_at": 1539651175442,
+    "compass_angle": 54.088134765625,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          201476,
+          305114,
+          226090,
+          382783
+        ],
+        "confidence": 0.7416694164276123,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:10:51.840250"
+  },
+  {
+    "image_id": "3037587543072059",
+    "image_path": "pothole_results/images/3037587543072059.jpg",
+    "latitude": 39.0778608,
+    "longitude": -84.4902017,
+    "captured_at": 1745419129000,
+    "compass_angle": 50.198,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:52.116794"
+  },
+  {
+    "image_id": "2090720131087558",
+    "image_path": "pothole_results/images/2090720131087558.jpg",
+    "latitude": 39.081099166667,
+    "longitude": -84.317588333333,
+    "captured_at": 1655229839523,
+    "compass_angle": 289.571955,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:52.631160"
+  },
+  {
+    "image_id": "1777338255772396",
+    "image_path": "pothole_results/images/1777338255772396.jpg",
+    "latitude": 39.266557722816,
+    "longitude": -84.318379411835,
+    "captured_at": 1587560284000,
+    "compass_angle": 311.1,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:52.830559"
+  },
+  {
+    "image_id": "3054189881537240",
+    "image_path": "pothole_results/images/3054189881537240.jpg",
+    "latitude": 39.233124793852,
+    "longitude": -84.36427316533,
+    "captured_at": 1587483041000,
+    "compass_angle": 275.2,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:53.417690"
+  },
+  {
+    "image_id": "3778344432292527",
+    "image_path": "pothole_results/images/3778344432292527.jpg",
+    "latitude": 39.100798599972,
+    "longitude": -84.5537345,
+    "captured_at": 1569159594500,
+    "compass_angle": 154.6274347253,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:53.855234"
+  },
+  {
+    "image_id": "1651109598418493",
+    "image_path": "pothole_results/images/1651109598418493.jpg",
+    "latitude": 39.009019722222,
+    "longitude": -84.532916666667,
+    "captured_at": 1587049209587,
+    "compass_angle": 59.2621682,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:54.142908"
+  },
+  {
+    "image_id": "1639223476273644",
+    "image_path": "pothole_results/images/1639223476273644.jpg",
+    "latitude": 39.2196405,
+    "longitude": -84.58596059,
+    "captured_at": 1489076884768,
+    "compass_angle": 0.25466251373291,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:54.304054"
+  },
+  {
+    "image_id": "4216991785028454",
+    "image_path": "pothole_results/images/4216991785028454.jpg",
+    "latitude": 39.092589536666,
+    "longitude": -84.262624080032,
+    "captured_at": 1578842449190,
+    "compass_angle": 61.405460715726,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:54.330569"
+  },
+  {
+    "image_id": "1637492190014840",
+    "image_path": "pothole_results/images/1637492190014840.jpg",
+    "latitude": 39.063817222222,
+    "longitude": -84.362973888889,
+    "captured_at": 1655391623795,
+    "compass_angle": 204.3021548,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:54.597229"
+  },
+  {
+    "image_id": "1628913971093808",
+    "image_path": "pothole_results/images/1628913971093808.jpg",
+    "latitude": 39.0677114,
+    "longitude": -84.3193519,
+    "captured_at": 1743599610000,
+    "compass_angle": 180.908,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:54.666999"
+  },
+  {
+    "image_id": "3032027013718677",
+    "image_path": "pothole_results/images/3032027013718677.jpg",
+    "latitude": 39.091180555556,
+    "longitude": -84.804213888889,
+    "captured_at": 1504815410000,
+    "compass_angle": 108,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:55.056566"
+  },
+  {
+    "image_id": "3578976992395901",
+    "image_path": "pothole_results/images/3578976992395901.jpg",
+    "latitude": 39.0823811,
+    "longitude": -84.4993753,
+    "captured_at": 1745338836750,
+    "compass_angle": 127.579,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:55.397803"
+  },
+  {
+    "image_id": "1651386088401706",
+    "image_path": "pothole_results/images/1651386088401706.jpg",
+    "latitude": 39.130256299972,
+    "longitude": -84.4679385,
+    "captured_at": 1568467698000,
+    "compass_angle": 73.900047842348,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:55.546911"
+  },
+  {
+    "image_id": "1654976071806041",
+    "image_path": "pothole_results/images/1654976071806041.jpg",
+    "latitude": 39.0686356,
+    "longitude": -84.3543475,
+    "captured_at": 1743538589000,
+    "compass_angle": 50.741,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:55.713821"
+  },
+  {
+    "image_id": "3016586785249094",
+    "image_path": "pothole_results/images/3016586785249094.jpg",
+    "latitude": 39.274904358004,
+    "longitude": -84.367184693479,
+    "captured_at": 1587743236166,
+    "compass_angle": 0.66,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:56.005221"
+  },
+  {
+    "image_id": "1743408733226774",
+    "image_path": "pothole_results/images/1743408733226774.jpg",
+    "latitude": 39.0831244,
+    "longitude": -84.4824536,
+    "captured_at": 1745415199000,
+    "compass_angle": 295.495,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:56.581561"
+  },
+  {
+    "image_id": "4256715811073285",
+    "image_path": "pothole_results/images/4256715811073285.jpg",
+    "latitude": 39.25358246793,
+    "longitude": -84.317370028835,
+    "captured_at": 1587563535000,
+    "compass_angle": 107.43,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:56.729462"
+  },
+  {
+    "image_id": "1636916120011684",
+    "image_path": "pothole_results/images/1636916120011684.jpg",
+    "latitude": 39.0547475,
+    "longitude": -84.354275,
+    "captured_at": 1655474777566,
+    "compass_angle": 246.2942605,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:56.832494"
+  },
+  {
+    "image_id": "2871847919737344",
+    "image_path": "pothole_results/images/2871847919737344.jpg",
+    "latitude": 39.1749895,
+    "longitude": -84.295211666667,
+    "captured_at": 1539722054142,
+    "compass_angle": 19.322937011719,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          154531,
+          321711,
+          172385,
+          376646
+        ],
+        "confidence": 0.6920272707939148,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:10:56.931006"
+  },
+  {
+    "image_id": "4110461879063608",
+    "image_path": "pothole_results/images/4110461879063608.jpg",
+    "latitude": 39.208452135687,
+    "longitude": -84.714714711602,
+    "captured_at": 1526999155694,
+    "compass_angle": 301.12777709961,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:57.869126"
+  },
+  {
+    "image_id": "5112174982165263",
+    "image_path": "pothole_results/images/5112174982165263.jpg",
+    "latitude": 39.083078888889,
+    "longitude": -84.3423375,
+    "captured_at": 1655319499408,
+    "compass_angle": 70.6313596,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:58.142008"
+  },
+  {
+    "image_id": "1503390916680520",
+    "image_path": "pothole_results/images/1503390916680520.jpg",
+    "latitude": 39.264533833333,
+    "longitude": -84.2211395,
+    "captured_at": 1539472717219,
+    "compass_angle": 291.29858398438,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:58.271091"
+  },
+  {
+    "image_id": "3924949827584976",
+    "image_path": "pothole_results/images/3924949827584976.jpg",
+    "latitude": 39.167333333333,
+    "longitude": -84.804647222222,
+    "captured_at": 1503522960000,
+    "compass_angle": 33,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:58.378785"
+  },
+  {
+    "image_id": "3960186450775793",
+    "image_path": "pothole_results/images/3960186450775793.jpg",
+    "latitude": 39.220397348728,
+    "longitude": -84.733438772228,
+    "captured_at": 1619881732528,
+    "compass_angle": 309.9797668457,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:58.648993"
+  },
+  {
+    "image_id": "2908290896154407",
+    "image_path": "pothole_results/images/2908290896154407.jpg",
+    "latitude": 39.224733181746,
+    "longitude": -84.746676885516,
+    "captured_at": 1509474399498,
+    "compass_angle": 306.34066772461,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:59.141829"
+  },
+  {
+    "image_id": "3149340038631609",
+    "image_path": "pothole_results/images/3149340038631609.jpg",
+    "latitude": 39.051024722222,
+    "longitude": -84.500576944444,
+    "captured_at": 1587062186481,
+    "compass_angle": 177.9450731,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:59.584249"
+  },
+  {
+    "image_id": "3142092822684712",
+    "image_path": "pothole_results/images/3142092822684712.jpg",
+    "latitude": 39.099623220865,
+    "longitude": -84.279463677531,
+    "captured_at": 1578842314691,
+    "compass_angle": 115.29743870672,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:59.837002"
+  },
+  {
+    "image_id": "1647475505462524",
+    "image_path": "pothole_results/images/1647475505462524.jpg",
+    "latitude": 39.2589114,
+    "longitude": -84.412879799972,
+    "captured_at": 1568484901500,
+    "compass_angle": 184.78887648249,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:10:59.905167"
+  },
+  {
+    "image_id": "1648743381987403",
+    "image_path": "pothole_results/images/1648743381987403.jpg",
+    "latitude": 39.269363805278,
+    "longitude": -84.370025012413,
+    "captured_at": 1587743150666,
+    "compass_angle": 98.91,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:00.820877"
+  },
+  {
+    "image_id": "2078279252314645",
+    "image_path": "pothole_results/images/2078279252314645.jpg",
+    "latitude": 39.233547,
+    "longitude": -84.205387666667,
+    "captured_at": 1539723154459,
+    "compass_angle": 308.65441894531,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:00.880769"
+  },
+  {
+    "image_id": "6063262973745073",
+    "image_path": "pothole_results/images/6063262973745073.jpg",
+    "latitude": 39.217033333333,
+    "longitude": -84.732077777778,
+    "captured_at": 1482264516000,
+    "compass_angle": 304,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:01.116360"
+  },
+  {
+    "image_id": "2477453135734488",
+    "image_path": "pothole_results/images/2477453135734488.jpg",
+    "latitude": 39.176044099972,
+    "longitude": -84.210667799972,
+    "captured_at": 1569684500000,
+    "compass_angle": 85.674509758974,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:01.457351"
+  },
+  {
+    "image_id": "2963056867350208",
+    "image_path": "pothole_results/images/2963056867350208.jpg",
+    "latitude": 39.177269333333,
+    "longitude": -84.299405166667,
+    "captured_at": 1539724461425,
+    "compass_angle": 227.33349609375,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:01.489323"
+  },
+  {
+    "image_id": "3283474308593294",
+    "image_path": "pothole_results/images/3283474308593294.jpg",
+    "latitude": 39.257755533854,
+    "longitude": -84.442041015625,
+    "captured_at": 1610508823000,
+    "compass_angle": 244.2740736476,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:01.797961"
+  },
+  {
+    "image_id": "2811084955869670",
+    "image_path": "pothole_results/images/2811084955869670.jpg",
+    "latitude": 39.266246,
+    "longitude": -84.205226166667,
+    "captured_at": 1539472641264,
+    "compass_angle": 251.22436523438,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:02.437670"
+  },
+  {
+    "image_id": "1699638606899530",
+    "image_path": "pothole_results/images/1699638606899530.jpg",
+    "latitude": 39.206679952135,
+    "longitude": -84.710455071748,
+    "captured_at": 1526999139431,
+    "compass_angle": 283.44439697266,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          35311,
+          160965,
+          118136,
+          350486
+        ],
+        "confidence": 0.5290314555168152,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:11:02.461878"
+  },
+  {
+    "image_id": "2967493796797193",
+    "image_path": "pothole_results/images/2967493796797193.jpg",
+    "latitude": 39.220944056324,
+    "longitude": -84.739895761092,
+    "captured_at": 1539547798052,
+    "compass_angle": 304.79370117188,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:02.564652"
+  },
+  {
+    "image_id": "1779706245534122",
+    "image_path": "pothole_results/images/1779706245534122.jpg",
+    "latitude": 39.278184401427,
+    "longitude": -84.321501665853,
+    "captured_at": 1587220594500,
+    "compass_angle": 222.73,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:02.671019"
+  },
+  {
+    "image_id": "1648959088810783",
+    "image_path": "pothole_results/images/1648959088810783.jpg",
+    "latitude": 39.100491111111,
+    "longitude": -84.327803611111,
+    "captured_at": 1655234998413,
+    "compass_angle": 171.30473552,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:02.864732"
+  },
+  {
+    "image_id": "2159834967486215",
+    "image_path": "pothole_results/images/2159834967486215.jpg",
+    "latitude": 39.248094444444,
+    "longitude": -84.783391666667,
+    "captured_at": 1482264681000,
+    "compass_angle": 315,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:03.521852"
+  },
+  {
+    "image_id": "1652499665124417",
+    "image_path": "pothole_results/images/1652499665124417.jpg",
+    "latitude": 39.069189166667,
+    "longitude": -84.366447222222,
+    "captured_at": 1655390101167,
+    "compass_angle": 271.10554,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:04.101730"
+  },
+  {
+    "image_id": "1770656823142675",
+    "image_path": "pothole_results/images/1770656823142675.jpg",
+    "latitude": 39.059537222222,
+    "longitude": -84.4982275,
+    "captured_at": 1587237365347,
+    "compass_angle": 78.5714252,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:04.211613"
+  },
+  {
+    "image_id": "3055472224688526",
+    "image_path": "pothole_results/images/3055472224688526.jpg",
+    "latitude": 39.068824166667,
+    "longitude": -84.503328055556,
+    "captured_at": 1587064200562,
+    "compass_angle": 281.440579,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:04.407722"
+  },
+  {
+    "image_id": "1651457731709594",
+    "image_path": "pothole_results/images/1651457731709594.jpg",
+    "latitude": 39.025470277778,
+    "longitude": -84.516298055556,
+    "captured_at": 1587053460995,
+    "compass_angle": 292.361691,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:04.416111"
+  },
+  {
+    "image_id": "4467833903244782",
+    "image_path": "pothole_results/images/4467833903244782.jpg",
+    "latitude": 39.2647715,
+    "longitude": -84.2108415,
+    "captured_at": 1539472668289,
+    "compass_angle": 260.70935058594,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:05.001521"
+  },
+  {
+    "image_id": "2644001412563881",
+    "image_path": "pothole_results/images/2644001412563881.jpg",
+    "latitude": 39.087036111111,
+    "longitude": -84.785452777778,
+    "captured_at": 1504818483000,
+    "compass_angle": 88,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:05.274032"
+  },
+  {
+    "image_id": "1634103036781800",
+    "image_path": "pothole_results/images/1634103036781800.jpg",
+    "latitude": 39.189977166667,
+    "longitude": -84.47641,
+    "captured_at": 1539638593672,
+    "compass_angle": 190.33245849609,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:05.370694"
+  },
+  {
+    "image_id": "3954945777919813",
+    "image_path": "pothole_results/images/3954945777919813.jpg",
+    "latitude": 39.258413888889,
+    "longitude": -84.796461111111,
+    "captured_at": 1504813359000,
+    "compass_angle": 136,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:05.565766"
+  },
+  {
+    "image_id": "3030475220435163",
+    "image_path": "pothole_results/images/3030475220435163.jpg",
+    "latitude": 39.1013172,
+    "longitude": -84.4891242,
+    "captured_at": 1745338394666,
+    "compass_angle": 232.36,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:05.676908"
+  },
+  {
+    "image_id": "1534432820086279",
+    "image_path": "pothole_results/images/1534432820086279.jpg",
+    "latitude": 39.26015,
+    "longitude": -84.799505555556,
+    "captured_at": 1450904989000,
+    "compass_angle": 243,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:05.867546"
+  },
+  {
+    "image_id": "2810306602632692",
+    "image_path": "pothole_results/images/2810306602632692.jpg",
+    "latitude": 39.271605871654,
+    "longitude": -84.811159540047,
+    "captured_at": 1545525865108,
+    "compass_angle": 146.50714111328,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:06.047622"
+  },
+  {
+    "image_id": "2894354530852536",
+    "image_path": "pothole_results/images/2894354530852536.jpg",
+    "latitude": 39.213177777778,
+    "longitude": -84.752827777778,
+    "captured_at": 1503523183000,
+    "compass_angle": 57,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:06.449045"
+  },
+  {
+    "image_id": "3959912327409762",
+    "image_path": "pothole_results/images/3959912327409762.jpg",
+    "latitude": 39.1926712,
+    "longitude": -84.7712709,
+    "captured_at": 1448802157024,
+    "compass_angle": 255.47096252441,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:06.776955"
+  },
+  {
+    "image_id": "1601887533342298",
+    "image_path": "pothole_results/images/1601887533342298.jpg",
+    "latitude": 39.092683161143,
+    "longitude": -84.2625528333,
+    "captured_at": 1578842481190,
+    "compass_angle": 0,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          280978,
+          227010,
+          296626,
+          269791
+        ],
+        "confidence": 0.5554172992706299,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:11:06.893724"
+  },
+  {
+    "image_id": "2544395262522999",
+    "image_path": "pothole_results/images/2544395262522999.jpg",
+    "latitude": 39.228675607628,
+    "longitude": -84.754325542678,
+    "captured_at": 1545526065115,
+    "compass_angle": 128.16403198242,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:07.238342"
+  },
+  {
+    "image_id": "1799934637246633",
+    "image_path": "pothole_results/images/1799934637246633.jpg",
+    "latitude": 39.1022233,
+    "longitude": -84.3339056,
+    "captured_at": 1743689814333,
+    "compass_angle": 159.611,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:07.485160"
+  },
+  {
+    "image_id": "2038700569612257",
+    "image_path": "pothole_results/images/2038700569612257.jpg",
+    "latitude": 39.250333333333,
+    "longitude": -84.7862,
+    "captured_at": 1503523466000,
+    "compass_angle": 318,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:07.489450"
+  },
+  {
+    "image_id": "2896547780673141",
+    "image_path": "pothole_results/images/2896547780673141.jpg",
+    "latitude": 39.217825,
+    "longitude": -84.744277777778,
+    "captured_at": 1504813585000,
+    "compass_angle": 232,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:07.763734"
+  },
+  {
+    "image_id": "1650442155165824",
+    "image_path": "pothole_results/images/1650442155165824.jpg",
+    "latitude": 39.032647222222,
+    "longitude": -84.514750833333,
+    "captured_at": 1587053123532,
+    "compass_angle": 154.5457502,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:08.035695"
+  },
+  {
+    "image_id": "7302487323156762",
+    "image_path": "pothole_results/images/7302487323156762.jpg",
+    "latitude": 39.20854172995,
+    "longitude": -84.760838681005,
+    "captured_at": 1509474241387,
+    "compass_angle": 41.037445068359,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:08.356487"
+  },
+  {
+    "image_id": "4138369449563848",
+    "image_path": "pothole_results/images/4138369449563848.jpg",
+    "latitude": 39.088921849604,
+    "longitude": -84.235364919208,
+    "captured_at": 1562375861121,
+    "compass_angle": 270.65536499023,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:08.433331"
+  },
+  {
+    "image_id": "1641327459854456",
+    "image_path": "pothole_results/images/1641327459854456.jpg",
+    "latitude": 39.0573331,
+    "longitude": -84.3848403,
+    "captured_at": 1743533250750,
+    "compass_angle": 59.119,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:08.650283"
+  },
+  {
+    "image_id": "2888210854779528",
+    "image_path": "pothole_results/images/2888210854779528.jpg",
+    "latitude": 39.1578924,
+    "longitude": -84.757324699972,
+    "captured_at": 1569161138500,
+    "compass_angle": 107.70935860459,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:09.056617"
+  },
+  {
+    "image_id": "4022664727803381",
+    "image_path": "pothole_results/images/4022664727803381.jpg",
+    "latitude": 39.149252777778,
+    "longitude": -84.817266666667,
+    "captured_at": 1448798771000,
+    "compass_angle": 194,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:09.455791"
+  },
+  {
+    "image_id": "3179178922626970",
+    "image_path": "pothole_results/images/3179178922626970.jpg",
+    "latitude": 39.085493888889,
+    "longitude": -84.313391944444,
+    "captured_at": 1655230138748,
+    "compass_angle": 282.030128,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:09.643686"
+  },
+  {
+    "image_id": "3807813292675342",
+    "image_path": "pothole_results/images/3807813292675342.jpg",
+    "latitude": 39.274777777778,
+    "longitude": -84.815419444444,
+    "captured_at": 1504813277000,
+    "compass_angle": 116,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:10.064323"
+  },
+  {
+    "image_id": "1993030587528482",
+    "image_path": "pothole_results/images/1993030587528482.jpg",
+    "latitude": 39.237384749668,
+    "longitude": -84.369909135875,
+    "captured_at": 1588000334500,
+    "compass_angle": 220.7,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:10.221525"
+  },
+  {
+    "image_id": "1911822688974940",
+    "image_path": "pothole_results/images/1911822688974940.jpg",
+    "latitude": 39.094353691667,
+    "longitude": -84.261821752744,
+    "captured_at": 1511796032445,
+    "compass_angle": 107.45217895508,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          77146,
+          280335,
+          130240,
+          328008
+        ],
+        "confidence": 0.579246997833252,
+        "class_id": 0
+      }
+    ],
+    "processed_at": "2025-09-24T17:11:10.633832"
+  },
+  {
+    "image_id": "3852089551505901",
+    "image_path": "pothole_results/images/3852089551505901.jpg",
+    "latitude": 39.263944937884,
+    "longitude": -84.80363770396,
+    "captured_at": 1527534829115,
+    "compass_angle": 132.65057373047,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:10.922608"
+  },
+  {
+    "image_id": "3045506965716062",
+    "image_path": "pothole_results/images/3045506965716062.jpg",
+    "latitude": 39.091222222222,
+    "longitude": -84.804297222222,
+    "captured_at": 1504814217000,
+    "compass_angle": 112,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:11.194488"
+  },
+  {
+    "image_id": "3948090421953494",
+    "image_path": "pothole_results/images/3948090421953494.jpg",
+    "latitude": 39.180391692462,
+    "longitude": -84.798926074874,
+    "captured_at": 1619881982584,
+    "compass_angle": 202.39717102051,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:11.307096"
+  },
+  {
+    "image_id": "4256100157744840",
+    "image_path": "pothole_results/images/4256100157744840.jpg",
+    "latitude": 39.153264368173,
+    "longitude": -84.81693400334,
+    "captured_at": 1619882093490,
+    "compass_angle": 179.52673339844,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          53342,
+          314909,
+          176332,
+          409914
+        ],
+        "confidence": 0.5834877490997314,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:11:11.463973"
+  },
+  {
+    "image_id": "1528703200795137",
+    "image_path": "pothole_results/images/1528703200795137.jpg",
+    "latitude": 39.1439663,
+    "longitude": -84.765175099972,
+    "captured_at": 1569160713000,
+    "compass_angle": 229.44186961236,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:11.640860"
+  },
+  {
+    "image_id": "3516945995114821",
+    "image_path": "pothole_results/images/3516945995114821.jpg",
+    "latitude": 39.0752497,
+    "longitude": -84.4799794,
+    "captured_at": 1745421153500,
+    "compass_angle": 145.416,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:11.883579"
+  },
+  {
+    "image_id": "3920655178051575",
+    "image_path": "pothole_results/images/3920655178051575.jpg",
+    "latitude": 39.218887640163,
+    "longitude": -84.736286345869,
+    "captured_at": 1404564024000,
+    "compass_angle": 122.5,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:12.153257"
+  },
+  {
+    "image_id": "1810323999150657",
+    "image_path": "pothole_results/images/1810323999150657.jpg",
+    "latitude": 39.1440768,
+    "longitude": -84.727228299972,
+    "captured_at": 1569161351500,
+    "compass_angle": 117.85439280883,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:12.407246"
+  },
+  {
+    "image_id": "2982852855319707",
+    "image_path": "pothole_results/images/2982852855319707.jpg",
+    "latitude": 39.184028435816,
+    "longitude": -84.794056297043,
+    "captured_at": 1509474103672,
+    "compass_angle": 63.48779296875,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:12.480964"
+  },
+  {
+    "image_id": "9538791029569274",
+    "image_path": "pothole_results/images/9538791029569274.jpg",
+    "latitude": 39.0506953,
+    "longitude": -84.3559247,
+    "captured_at": 1743517334000,
+    "compass_angle": 250.178,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:12.697062"
+  },
+  {
+    "image_id": "2936466793317090",
+    "image_path": "pothole_results/images/2936466793317090.jpg",
+    "latitude": 39.048985833333,
+    "longitude": -84.319204444444,
+    "captured_at": 1655470169568,
+    "compass_angle": 353.29666,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:12.957255"
+  },
+  {
+    "image_id": "1819363621556459",
+    "image_path": "pothole_results/images/1819363621556459.jpg",
+    "latitude": 39.220583333333,
+    "longitude": -84.739088888889,
+    "captured_at": 1503523307000,
+    "compass_angle": 303,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:13.199819"
+  },
+  {
+    "image_id": "6180344685324992",
+    "image_path": "pothole_results/images/6180344685324992.jpg",
+    "latitude": 39.260873009256,
+    "longitude": -84.360186530646,
+    "captured_at": 1531522427809,
+    "compass_angle": 204.9609375,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:13.279471"
+  },
+  {
+    "image_id": "1678518932348707",
+    "image_path": "pothole_results/images/1678518932348707.jpg",
+    "latitude": 39.252958333333,
+    "longitude": -84.789763888889,
+    "captured_at": 1504813387000,
+    "compass_angle": 136,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:13.622751"
+  },
+  {
+    "image_id": "1551414761947681",
+    "image_path": "pothole_results/images/1551414761947681.jpg",
+    "latitude": 39.253763834635,
+    "longitude": -84.443896484375,
+    "captured_at": 1610454839000,
+    "compass_angle": 110.49698720497,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:13.650209"
+  },
+  {
+    "image_id": "6015968255083970",
+    "image_path": "pothole_results/images/6015968255083970.jpg",
+    "latitude": 39.111068055556,
+    "longitude": -84.377888888889,
+    "captured_at": 1655304848863,
+    "compass_angle": 20.9534293,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:13.679576"
+  },
+  {
+    "image_id": "2813893278872566",
+    "image_path": "pothole_results/images/2813893278872566.jpg",
+    "latitude": 39.273469444444,
+    "longitude": -84.812491666667,
+    "captured_at": 1482264794000,
+    "compass_angle": 321,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:13.869251"
+  },
+  {
+    "image_id": "3320198524750485",
+    "image_path": "pothole_results/images/3320198524750485.jpg",
+    "latitude": 39.1361447,
+    "longitude": -84.709603,
+    "captured_at": 1569160403000,
+    "compass_angle": 333.8388539979,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:14.543429"
+  },
+  {
+    "image_id": "1787398841593947",
+    "image_path": "pothole_results/images/1787398841593947.jpg",
+    "latitude": 39.193472,
+    "longitude": -84.242647666667,
+    "captured_at": 1539567211675,
+    "compass_angle": 255.95520019531,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:14.870678"
+  },
+  {
+    "image_id": "3799616590182225",
+    "image_path": "pothole_results/images/3799616590182225.jpg",
+    "latitude": 39.0937511,
+    "longitude": -84.4655478,
+    "captured_at": 1745326921666,
+    "compass_angle": 147.796,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:14.874075"
+  },
+  {
+    "image_id": "4191608260902481",
+    "image_path": "pothole_results/images/4191608260902481.jpg",
+    "latitude": 39.279211038426,
+    "longitude": -84.337257256616,
+    "captured_at": 1531674594252,
+    "compass_angle": 56.953125,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:15.590931"
+  },
+  {
+    "image_id": "2115067075300787",
+    "image_path": "pothole_results/images/2115067075300787.jpg",
+    "latitude": 39.234567786557,
+    "longitude": -84.3542456261,
+    "captured_at": 1588004602000,
+    "compass_angle": 265.01,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:16.161588"
+  },
+  {
+    "image_id": "1866480363506836",
+    "image_path": "pothole_results/images/1866480363506836.jpg",
+    "latitude": 39.244077480435,
+    "longitude": -84.776987442826,
+    "captured_at": 1539547918009,
+    "compass_angle": 308.19934082031,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:16.799987"
+  },
+  {
+    "image_id": "4029619777146331",
+    "image_path": "pothole_results/images/4029619777146331.jpg",
+    "latitude": 39.231947925107,
+    "longitude": -84.368347051047,
+    "captured_at": 1587999993000,
+    "compass_angle": 357.5,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:16.814690"
+  },
+  {
+    "image_id": "4387917374564401",
+    "image_path": "pothole_results/images/4387917374564401.jpg",
+    "latitude": 39.256810785964,
+    "longitude": -84.3578129922,
+    "captured_at": 1587570323000,
+    "compass_angle": 83.82,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:16.895300"
+  },
+  {
+    "image_id": "1740521503557298",
+    "image_path": "pothole_results/images/1740521503557298.jpg",
+    "latitude": 39.0834367,
+    "longitude": -84.4942964,
+    "captured_at": 1745346378000,
+    "compass_angle": 127.694,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:17.975376"
+  },
+  {
+    "image_id": "6284572138282781",
+    "image_path": "pothole_results/images/6284572138282781.jpg",
+    "latitude": 39.273630303813,
+    "longitude": -84.328995504177,
+    "captured_at": 1587560402666,
+    "compass_angle": 295.67,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:18.197362"
+  },
+  {
+    "image_id": "3784530521676209",
+    "image_path": "pothole_results/images/3784530521676209.jpg",
+    "latitude": 39.108381089791,
+    "longitude": -84.531570682381,
+    "captured_at": 1545788679166,
+    "compass_angle": 354.51110839844,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          141872,
+          273491,
+          212208,
+          390800
+        ],
+        "confidence": 0.779013991355896,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:11:18.231880"
+  },
+  {
+    "image_id": "4008292919489022",
+    "image_path": "pothole_results/images/4008292919489022.jpg",
+    "latitude": 39.0422803,
+    "longitude": -84.3258733,
+    "captured_at": 1743514072000,
+    "compass_angle": 330.874,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:19.421097"
+  },
+  {
+    "image_id": "3237965509795104",
+    "image_path": "pothole_results/images/3237965509795104.jpg",
+    "latitude": 39.089293055556,
+    "longitude": -84.313601388889,
+    "captured_at": 1655231302227,
+    "compass_angle": 251.058328,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:19.607229"
+  },
+  {
+    "image_id": "1924225907742689",
+    "image_path": "pothole_results/images/1924225907742689.jpg",
+    "latitude": 39.26733449472,
+    "longitude": -84.314771515199,
+    "captured_at": 1587738378000,
+    "compass_angle": 339.45,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:19.789534"
+  },
+  {
+    "image_id": "4348798298475314",
+    "image_path": "pothole_results/images/4348798298475314.jpg",
+    "latitude": 39.267899906486,
+    "longitude": -84.316228230809,
+    "captured_at": 1587738281500,
+    "compass_angle": 194.65,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:20.025857"
+  },
+  {
+    "image_id": "2095017867660930",
+    "image_path": "pothole_results/images/2095017867660930.jpg",
+    "latitude": 39.0447969,
+    "longitude": -84.3234097,
+    "captured_at": 1743514124750,
+    "compass_angle": 198.858,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:20.854397"
+  },
+  {
+    "image_id": "3782833771812156",
+    "image_path": "pothole_results/images/3782833771812156.jpg",
+    "latitude": 39.147075,
+    "longitude": -84.452772222222,
+    "captured_at": 1463245165000,
+    "compass_angle": 62,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:21.104794"
+  },
+  {
+    "image_id": "4070357596365877",
+    "image_path": "pothole_results/images/4070357596365877.jpg",
+    "latitude": 39.268943120871,
+    "longitude": -84.3666350424,
+    "captured_at": 1587743169800,
+    "compass_angle": 99.04,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:21.483663"
+  },
+  {
+    "image_id": "4006282129498431",
+    "image_path": "pothole_results/images/4006282129498431.jpg",
+    "latitude": 39.266164074678,
+    "longitude": -84.318245311061,
+    "captured_at": 1587560645500,
+    "compass_angle": 184.75,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:21.549331"
+  },
+  {
+    "image_id": "1750197225183935",
+    "image_path": "pothole_results/images/1750197225183935.jpg",
+    "latitude": 39.16789557,
+    "longitude": -84.80461208,
+    "captured_at": 1448802294139,
+    "compass_angle": 256.74423217773,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:21.860759"
+  },
+  {
+    "image_id": "5824943710933975",
+    "image_path": "pothole_results/images/5824943710933975.jpg",
+    "latitude": 39.278929389492,
+    "longitude": -84.441435599299,
+    "captured_at": 1610486643469,
+    "compass_angle": 177.04587863896,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:21.878656"
+  },
+  {
+    "image_id": "4108224022569570",
+    "image_path": "pothole_results/images/4108224022569570.jpg",
+    "latitude": 39.268134029797,
+    "longitude": -84.354435833729,
+    "captured_at": 1531674538151,
+    "compass_angle": 39.021625518799,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:21.951155"
+  },
+  {
+    "image_id": "4185709281493741",
+    "image_path": "pothole_results/images/4185709281493741.jpg",
+    "latitude": 39.270849747638,
+    "longitude": -84.439373312303,
+    "captured_at": 1518450440020,
+    "compass_angle": 342.52529907227,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:22.985009"
+  },
+  {
+    "image_id": "1998478433639737",
+    "image_path": "pothole_results/images/1998478433639737.jpg",
+    "latitude": 39.266767186853,
+    "longitude": -84.316157543771,
+    "captured_at": 1587738326000,
+    "compass_angle": 70.01,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:23.562287"
+  },
+  {
+    "image_id": "4855683797793033",
+    "image_path": "pothole_results/images/4855683797793033.jpg",
+    "latitude": 39.275371281582,
+    "longitude": -84.367181263729,
+    "captured_at": 1587743239600,
+    "compass_angle": 0.99,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:23.863050"
+  },
+  {
+    "image_id": "4583944818283267",
+    "image_path": "pothole_results/images/4583944818283267.jpg",
+    "latitude": 39.262588148544,
+    "longitude": -84.320243147341,
+    "captured_at": 1587561498500,
+    "compass_angle": 275.47,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:24.056120"
+  },
+  {
+    "image_id": "2632101603753975",
+    "image_path": "pothole_results/images/2632101603753975.jpg",
+    "latitude": 39.04068397,
+    "longitude": -84.2366632,
+    "captured_at": 1478354828179,
+    "compass_angle": 65.290463447571,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:24.769153"
+  },
+  {
+    "image_id": "4459383560819880",
+    "image_path": "pothole_results/images/4459383560819880.jpg",
+    "latitude": 39.259655171967,
+    "longitude": -84.313525824296,
+    "captured_at": 1587564183000,
+    "compass_angle": 61.56,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:25.287675"
+  },
+  {
+    "image_id": "4350637891691829",
+    "image_path": "pothole_results/images/4350637891691829.jpg",
+    "latitude": 39.260888042036,
+    "longitude": -84.323095370075,
+    "captured_at": 1587562053500,
+    "compass_angle": 6.95,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:26.002732"
+  },
+  {
+    "image_id": "1741036732734997",
+    "image_path": "pothole_results/images/1741036732734997.jpg",
+    "latitude": 39.1126524,
+    "longitude": -84.513193299972,
+    "captured_at": 1570896434500,
+    "compass_angle": 97.522782042075,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          154033,
+          259394,
+          195256,
+          410030
+        ],
+        "confidence": 0.5621789693832397,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:11:26.035371"
+  },
+  {
+    "image_id": "4007269892714630",
+    "image_path": "pothole_results/images/4007269892714630.jpg",
+    "latitude": 39.25779208529,
+    "longitude": -84.311715700192,
+    "captured_at": 1587564383500,
+    "compass_angle": 274.58,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:26.632488"
+  },
+  {
+    "image_id": "5567173613304604",
+    "image_path": "pothole_results/images/5567173613304604.jpg",
+    "latitude": 39.136741388889,
+    "longitude": -84.353135277778,
+    "captured_at": 1655217034155,
+    "compass_angle": 238.568615,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:27.030723"
+  },
+  {
+    "image_id": "2932558200381005",
+    "image_path": "pothole_results/images/2932558200381005.jpg",
+    "latitude": 39.081575277778,
+    "longitude": -84.312132222222,
+    "captured_at": 1655220520796,
+    "compass_angle": 86.2782623,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:27.577584"
+  },
+  {
+    "image_id": "3033385986881695",
+    "image_path": "pothole_results/images/3033385986881695.jpg",
+    "latitude": 39.087100173819,
+    "longitude": -84.203691330118,
+    "captured_at": 1562535408847,
+    "compass_angle": 111.54278564453,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:27.881115"
+  },
+  {
+    "image_id": "1946151708868664",
+    "image_path": "pothole_results/images/1946151708868664.jpg",
+    "latitude": 39.257737684281,
+    "longitude": -84.311893463151,
+    "captured_at": 1587564591500,
+    "compass_angle": 4.73,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:28.239740"
+  },
+  {
+    "image_id": "4380634368654510",
+    "image_path": "pothole_results/images/4380634368654510.jpg",
+    "latitude": 39.278139345456,
+    "longitude": -84.367147599648,
+    "captured_at": 1587743258400,
+    "compass_angle": 1.04,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:29.226831"
+  },
+  {
+    "image_id": "1703484243906308",
+    "image_path": "pothole_results/images/1703484243906308.jpg",
+    "latitude": 39.0494103,
+    "longitude": -84.3339475,
+    "captured_at": 1743515361000,
+    "compass_angle": 67.441,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:29.559218"
+  },
+  {
+    "image_id": "2998430063724713",
+    "image_path": "pothole_results/images/2998430063724713.jpg",
+    "latitude": 39.089728105243,
+    "longitude": -84.799138061165,
+    "captured_at": 1619882387571,
+    "compass_angle": 110.22030639648,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:29.912813"
+  },
+  {
+    "image_id": "6221738031177292",
+    "image_path": "pothole_results/images/6221738031177292.jpg",
+    "latitude": 39.250124143267,
+    "longitude": -84.352183416814,
+    "captured_at": 1587568752000,
+    "compass_angle": 58.4,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:29.914619"
+  },
+  {
+    "image_id": "9751309838222576",
+    "image_path": "pothole_results/images/9751309838222576.jpg",
+    "latitude": 39.0787964,
+    "longitude": -84.3153961,
+    "captured_at": 1743602910000,
+    "compass_angle": 85.404,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:29.943963"
+  },
+  {
+    "image_id": "2066556763854719",
+    "image_path": "pothole_results/images/2066556763854719.jpg",
+    "latitude": 39.0774375,
+    "longitude": -84.3269322,
+    "captured_at": 1743603922333,
+    "compass_angle": 270.495,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:30.337690"
+  },
+  {
+    "image_id": "9293736727402648",
+    "image_path": "pothole_results/images/9293736727402648.jpg",
+    "latitude": 39.0877125,
+    "longitude": -84.3380908,
+    "captured_at": 1743622952000,
+    "compass_angle": 84.661,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:31.137376"
+  },
+  {
+    "image_id": "1951493921680009",
+    "image_path": "pothole_results/images/1951493921680009.jpg",
+    "latitude": 39.269683166667,
+    "longitude": -84.411845166667,
+    "captured_at": 1539542863415,
+    "compass_angle": 3.6228637695312,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:31.726514"
+  },
+  {
+    "image_id": "4083413801768326",
+    "image_path": "pothole_results/images/4083413801768326.jpg",
+    "latitude": 39.25788148124,
+    "longitude": -84.316800273265,
+    "captured_at": 1587564031000,
+    "compass_angle": 96.26,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:31.742147"
+  },
+  {
+    "image_id": "4250011835089190",
+    "image_path": "pothole_results/images/4250011835089190.jpg",
+    "latitude": 39.268587382876,
+    "longitude": -84.314937303399,
+    "captured_at": 1587737695000,
+    "compass_angle": 63.74,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:32.089701"
+  },
+  {
+    "image_id": "5442388959136507",
+    "image_path": "pothole_results/images/5442388959136507.jpg",
+    "latitude": 39.231757298148,
+    "longitude": -84.450312573541,
+    "captured_at": 1539459260081,
+    "compass_angle": 180.08575439453,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:32.681267"
+  },
+  {
+    "image_id": "2060346741151540",
+    "image_path": "pothole_results/images/2060346741151540.jpg",
+    "latitude": 39.0861356,
+    "longitude": -84.3176986,
+    "captured_at": 1743602705000,
+    "compass_angle": 348.162,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:32.874726"
+  },
+  {
+    "image_id": "4346170405462040",
+    "image_path": "pothole_results/images/4346170405462040.jpg",
+    "latitude": 39.256551033382,
+    "longitude": -84.337385013201,
+    "captured_at": 1587566166000,
+    "compass_angle": 281.67,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:33.290930"
+  },
+  {
+    "image_id": "4197773716979321",
+    "image_path": "pothole_results/images/4197773716979321.jpg",
+    "latitude": 39.261363584313,
+    "longitude": -84.374056463319,
+    "captured_at": 1587743065142,
+    "compass_angle": 4.61,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:33.869474"
+  },
+  {
+    "image_id": "3898220320260418",
+    "image_path": "pothole_results/images/3898220320260418.jpg",
+    "latitude": 39.084902777778,
+    "longitude": -84.743002777778,
+    "captured_at": 1450903750000,
+    "compass_angle": 285,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:34.276884"
+  },
+  {
+    "image_id": "3675018726055913",
+    "image_path": "pothole_results/images/3675018726055913.jpg",
+    "latitude": 39.083058606618,
+    "longitude": -84.419911407641,
+    "captured_at": 1622561423279,
+    "compass_angle": 0,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:34.402879"
+  },
+  {
+    "image_id": "6165046380173934",
+    "image_path": "pothole_results/images/6165046380173934.jpg",
+    "latitude": 39.254613593306,
+    "longitude": -84.349251299391,
+    "captured_at": 1587569271000,
+    "compass_angle": 44.44,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:34.519532"
+  },
+  {
+    "image_id": "1557547234438230",
+    "image_path": "pothole_results/images/1557547234438230.jpg",
+    "latitude": 39.208856833333,
+    "longitude": -84.475353,
+    "captured_at": 1539638347668,
+    "compass_angle": 97.013763427734,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          215421,
+          310638,
+          246812,
+          387839
+        ],
+        "confidence": 0.6579068303108215,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:11:35.482320"
+  },
+  {
+    "image_id": "4430340740320704",
+    "image_path": "pothole_results/images/4430340740320704.jpg",
+    "latitude": 39.257030664212,
+    "longitude": -84.374541746562,
+    "captured_at": 1587743036000,
+    "compass_angle": 4.2,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:35.846544"
+  },
+  {
+    "image_id": "4304790756247990",
+    "image_path": "pothole_results/images/4304790756247990.jpg",
+    "latitude": 39.254715665704,
+    "longitude": -84.351547701553,
+    "captured_at": 1587569161000,
+    "compass_angle": 272.77,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:36.597027"
+  },
+  {
+    "image_id": "4214458381976422",
+    "image_path": "pothole_results/images/4214458381976422.jpg",
+    "latitude": 39.256608679267,
+    "longitude": -84.343476647836,
+    "captured_at": 1587738897000,
+    "compass_angle": 295.67,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:36.802060"
+  },
+  {
+    "image_id": "3797081090413779",
+    "image_path": "pothole_results/images/3797081090413779.jpg",
+    "latitude": 39.100928699972,
+    "longitude": -84.554726,
+    "captured_at": 1569158879000,
+    "compass_angle": 227.22859777868,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:37.161828"
+  },
+  {
+    "image_id": "4059709200794511",
+    "image_path": "pothole_results/images/4059709200794511.jpg",
+    "latitude": 39.242772825245,
+    "longitude": -84.347237457378,
+    "captured_at": 1587219939400,
+    "compass_angle": 21.61,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:38.862856"
+  },
+  {
+    "image_id": "4256879331069143",
+    "image_path": "pothole_results/images/4256879331069143.jpg",
+    "latitude": 39.255805370281,
+    "longitude": -84.351922009591,
+    "captured_at": 1587569114000,
+    "compass_angle": 87.34,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:39.204309"
+  },
+  {
+    "image_id": "2034489893366083",
+    "image_path": "pothole_results/images/2034489893366083.jpg",
+    "latitude": 39.253652586551,
+    "longitude": -84.318168879175,
+    "captured_at": 1587563497500,
+    "compass_angle": 257.07,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:39.353519"
+  },
+  {
+    "image_id": "4100143253437272",
+    "image_path": "pothole_results/images/4100143253437272.jpg",
+    "latitude": 39.254750049852,
+    "longitude": -84.351677318257,
+    "captured_at": 1587569163000,
+    "compass_angle": 300.81,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:39.629946"
+  },
+  {
+    "image_id": "1725357087666271",
+    "image_path": "pothole_results/images/1725357087666271.jpg",
+    "latitude": 39.083751388889,
+    "longitude": -84.508084166667,
+    "captured_at": 1587072377338,
+    "compass_angle": 190.617563,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:40.666615"
+  },
+  {
+    "image_id": "1958696560978855",
+    "image_path": "pothole_results/images/1958696560978855.jpg",
+    "latitude": 39.264624571325,
+    "longitude": -84.340529941811,
+    "captured_at": 1588004138600,
+    "compass_angle": 86.79,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:40.796438"
+  },
+  {
+    "image_id": "3051112261845934",
+    "image_path": "pothole_results/images/3051112261845934.jpg",
+    "latitude": 39.275061111111,
+    "longitude": -84.816213888889,
+    "captured_at": 1504813274000,
+    "compass_angle": 115,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:41.716916"
+  },
+  {
+    "image_id": "5473901259351937",
+    "image_path": "pothole_results/images/5473901259351937.jpg",
+    "latitude": 39.170903929807,
+    "longitude": -84.407099591151,
+    "captured_at": 1595491247023,
+    "compass_angle": 268.38335398648,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:41.729045"
+  },
+  {
+    "image_id": "2175589392742536",
+    "image_path": "pothole_results/images/2175589392742536.jpg",
+    "latitude": 39.252837117769,
+    "longitude": -84.36162051903,
+    "captured_at": 1588002967666,
+    "compass_angle": 23.02,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:41.939695"
+  },
+  {
+    "image_id": "2148669745274455",
+    "image_path": "pothole_results/images/2148669745274455.jpg",
+    "latitude": 39.251240975601,
+    "longitude": -84.358687306464,
+    "captured_at": 1588003115000,
+    "compass_angle": 246.36,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:42.163196"
+  },
+  {
+    "image_id": "3937407866380198",
+    "image_path": "pothole_results/images/3937407866380198.jpg",
+    "latitude": 39.09745,
+    "longitude": -84.520163888889,
+    "captured_at": 1480255521000,
+    "compass_angle": 123,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:42.919406"
+  },
+  {
+    "image_id": "4117224588549306",
+    "image_path": "pothole_results/images/4117224588549306.jpg",
+    "latitude": 39.0928778,
+    "longitude": -84.3244525,
+    "captured_at": 1743686852500,
+    "compass_angle": 83.103,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:43.457782"
+  },
+  {
+    "image_id": "4287258074673608",
+    "image_path": "pothole_results/images/4287258074673608.jpg",
+    "latitude": 39.250043637924,
+    "longitude": -84.352956635258,
+    "captured_at": 1587568686000,
+    "compass_angle": 349.41,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:43.666258"
+  },
+  {
+    "image_id": "2058373377645781",
+    "image_path": "pothole_results/images/2058373377645781.jpg",
+    "latitude": 39.249094483086,
+    "longitude": -84.346893142605,
+    "captured_at": 1587740092000,
+    "compass_angle": 183.52,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:43.935238"
+  },
+  {
+    "image_id": "1968026566725686",
+    "image_path": "pothole_results/images/1968026566725686.jpg",
+    "latitude": 39.252947591123,
+    "longitude": -84.444251302094,
+    "captured_at": 1610508842400,
+    "compass_angle": 245.17806535789,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:45.128494"
+  },
+  {
+    "image_id": "1482646722710342",
+    "image_path": "pothole_results/images/1482646722710342.jpg",
+    "latitude": 39.0624878,
+    "longitude": -84.3415042,
+    "captured_at": 1743596466666,
+    "compass_angle": 179.959,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:45.211800"
+  },
+  {
+    "image_id": "4129667307266534",
+    "image_path": "pothole_results/images/4129667307266534.jpg",
+    "latitude": 39.0466883,
+    "longitude": -84.3576203,
+    "captured_at": 1743517133666,
+    "compass_angle": 163.956,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:45.268270"
+  },
+  {
+    "image_id": "3045347042367912",
+    "image_path": "pothole_results/images/3045347042367912.jpg",
+    "latitude": 39.087975277778,
+    "longitude": -84.533816666667,
+    "captured_at": 1587311995387,
+    "compass_angle": 99.49730815,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:45.351518"
+  },
+  {
+    "image_id": "2051985328320251",
+    "image_path": "pothole_results/images/2051985328320251.jpg",
+    "latitude": 39.090636111111,
+    "longitude": -84.325779166667,
+    "captured_at": 1655233129023,
+    "compass_angle": 81.459333,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:46.508129"
+  },
+  {
+    "image_id": "4156876984392662",
+    "image_path": "pothole_results/images/4156876984392662.jpg",
+    "latitude": 39.257342884027,
+    "longitude": -84.349528289681,
+    "captured_at": 1587569842000,
+    "compass_angle": 303.83,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:47.233725"
+  },
+  {
+    "image_id": "4521640514534701",
+    "image_path": "pothole_results/images/4521640514534701.jpg",
+    "latitude": 39.245620795203,
+    "longitude": -84.37444944671,
+    "captured_at": 1588001474000,
+    "compass_angle": 99.06,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:47.409501"
+  },
+  {
+    "image_id": "4424246164293537",
+    "image_path": "pothole_results/images/4424246164293537.jpg",
+    "latitude": 39.255419611904,
+    "longitude": -84.359288554674,
+    "captured_at": 1588003033500,
+    "compass_angle": 101.4,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:47.980506"
+  },
+  {
+    "image_id": "3281950102079102",
+    "image_path": "pothole_results/images/3281950102079102.jpg",
+    "latitude": 39.108618164062,
+    "longitude": -84.53173828125,
+    "captured_at": 1610510064000,
+    "compass_angle": 225,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:48.041076"
+  },
+  {
+    "image_id": "4566932420004850",
+    "image_path": "pothole_results/images/4566932420004850.jpg",
+    "latitude": 39.243155548217,
+    "longitude": -84.339724565492,
+    "captured_at": 1587741087000,
+    "compass_angle": 45.81,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:48.277811"
+  },
+  {
+    "image_id": "3196849240465281",
+    "image_path": "pothole_results/images/3196849240465281.jpg",
+    "latitude": 39.0916661,
+    "longitude": -84.4791469,
+    "captured_at": 1745329275500,
+    "compass_angle": 180.742,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:49.454255"
+  },
+  {
+    "image_id": "4369570646434870",
+    "image_path": "pothole_results/images/4369570646434870.jpg",
+    "latitude": 39.241426131196,
+    "longitude": -84.352855751747,
+    "captured_at": 1587741338000,
+    "compass_angle": 267.44,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:49.743757"
+  },
+  {
+    "image_id": "1989802931187924",
+    "image_path": "pothole_results/images/1989802931187924.jpg",
+    "latitude": 39.244252329845,
+    "longitude": -84.3396050321,
+    "captured_at": 1587567517000,
+    "compass_angle": 183.1,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:50.163189"
+  },
+  {
+    "image_id": "4147601772028246",
+    "image_path": "pothole_results/images/4147601772028246.jpg",
+    "latitude": 39.268646634818,
+    "longitude": -84.314016724384,
+    "captured_at": 1587737717000,
+    "compass_angle": 157.92,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:50.561040"
+  },
+  {
+    "image_id": "5791930977525248",
+    "image_path": "pothole_results/images/5791930977525248.jpg",
+    "latitude": 39.107458888889,
+    "longitude": -84.380144444444,
+    "captured_at": 1655305288353,
+    "compass_angle": 75.3230404,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:50.572254"
+  },
+  {
+    "image_id": "3269656933260637",
+    "image_path": "pothole_results/images/3269656933260637.jpg",
+    "latitude": 39.218869333333,
+    "longitude": -84.527372,
+    "captured_at": 1539719030439,
+    "compass_angle": 90.626281738281,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:51.746949"
+  },
+  {
+    "image_id": "2015629748768868",
+    "image_path": "pothole_results/images/2015629748768868.jpg",
+    "latitude": 39.124145277778,
+    "longitude": -84.377643611111,
+    "captured_at": 1655301171566,
+    "compass_angle": 263.5151465,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:51.927054"
+  },
+  {
+    "image_id": "2011503685691377",
+    "image_path": "pothole_results/images/2011503685691377.jpg",
+    "latitude": 39.233151948958,
+    "longitude": -84.364729944795,
+    "captured_at": 1587483047000,
+    "compass_angle": 272.97,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:52.248709"
+  },
+  {
+    "image_id": "6596619307022269",
+    "image_path": "pothole_results/images/6596619307022269.jpg",
+    "latitude": 39.240341458717,
+    "longitude": -84.35829529147,
+    "captured_at": 1587484923500,
+    "compass_angle": 284.73,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:52.726810"
+  },
+  {
+    "image_id": "5802327046508267",
+    "image_path": "pothole_results/images/5802327046508267.jpg",
+    "latitude": 39.240783048956,
+    "longitude": -84.348323241228,
+    "captured_at": 1587220970000,
+    "compass_angle": 199.67,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:53.534657"
+  },
+  {
+    "image_id": "4489543757821038",
+    "image_path": "pothole_results/images/4489543757821038.jpg",
+    "latitude": 39.241409766641,
+    "longitude": -84.353363038711,
+    "captured_at": 1587741354000,
+    "compass_angle": 275.43,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:53.840741"
+  },
+  {
+    "image_id": "1961929060649177",
+    "image_path": "pothole_results/images/1961929060649177.jpg",
+    "latitude": 39.245301225196,
+    "longitude": -84.371810021433,
+    "captured_at": 1588001503333,
+    "compass_angle": 99.19,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:54.138056"
+  },
+  {
+    "image_id": "3301511650116181",
+    "image_path": "pothole_results/images/3301511650116181.jpg",
+    "latitude": 39.128189536653,
+    "longitude": -84.524712042231,
+    "captured_at": 1563045039405,
+    "compass_angle": 92.241577148438,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:54.278233"
+  },
+  {
+    "image_id": "1753689012223744",
+    "image_path": "pothole_results/images/1753689012223744.jpg",
+    "latitude": 39.0839322,
+    "longitude": -84.4836511,
+    "captured_at": 1745417987000,
+    "compass_angle": 223.418,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:55.412480"
+  },
+  {
+    "image_id": "4258306017581068",
+    "image_path": "pothole_results/images/4258306017581068.jpg",
+    "latitude": 39.253484407693,
+    "longitude": -84.353738871821,
+    "captured_at": 1587569038000,
+    "compass_angle": 79.6,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:55.573412"
+  },
+  {
+    "image_id": "4133331370096672",
+    "image_path": "pothole_results/images/4133331370096672.jpg",
+    "latitude": 39.269167486207,
+    "longitude": -84.313498635453,
+    "captured_at": 1587737926000,
+    "compass_angle": 357.91,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:56.141575"
+  },
+  {
+    "image_id": "4177529838994778",
+    "image_path": "pothole_results/images/4177529838994778.jpg",
+    "latitude": 39.241263668633,
+    "longitude": -84.376012616893,
+    "captured_at": 1587742848333,
+    "compass_angle": 3.49,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:56.518904"
+  },
+  {
+    "image_id": "3973565242697334",
+    "image_path": "pothole_results/images/3973565242697334.jpg",
+    "latitude": 39.236119958367,
+    "longitude": -84.367124931429,
+    "captured_at": 1618586277326,
+    "compass_angle": 184.14976501465,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:56.572697"
+  },
+  {
+    "image_id": "3952121508242830",
+    "image_path": "pothole_results/images/3952121508242830.jpg",
+    "latitude": 39.24185065,
+    "longitude": -84.36645322,
+    "captured_at": 1492041127856,
+    "compass_angle": 74.577530384064,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:57.419084"
+  },
+  {
+    "image_id": "4237569516328002",
+    "image_path": "pothole_results/images/4237569516328002.jpg",
+    "latitude": 39.229417646741,
+    "longitude": -84.353469379182,
+    "captured_at": 1587219807250,
+    "compass_angle": 20.26,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:57.659240"
+  },
+  {
+    "image_id": "4208875725898947",
+    "image_path": "pothole_results/images/4208875725898947.jpg",
+    "latitude": 39.238190547496,
+    "longitude": -84.368989785244,
+    "captured_at": 1588000231000,
+    "compass_angle": 279.85,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:57.878024"
+  },
+  {
+    "image_id": "1856038161233935",
+    "image_path": "pothole_results/images/1856038161233935.jpg",
+    "latitude": 39.223390666667,
+    "longitude": -84.559426666667,
+    "captured_at": 1539718928456,
+    "compass_angle": 42.206909179688,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:58.725191"
+  },
+  {
+    "image_id": "5526387477435674",
+    "image_path": "pothole_results/images/5526387477435674.jpg",
+    "latitude": 39.234067099972,
+    "longitude": -84.433722299972,
+    "captured_at": 1623491938000,
+    "compass_angle": 0,
+    "num_potholes": 3,
+    "detections": [
+      {
+        "bbox": [
+          73518,
+          270600,
+          152731,
+          339080
+        ],
+        "confidence": 0.8428121209144592,
+        "class_id": 0
+      },
+      {
+        "bbox": [
+          224162,
+          267912,
+          261497,
+          327661
+        ],
+        "confidence": 0.7929016351699829,
+        "class_id": 0
+      },
+      {
+        "bbox": [
+          150785,
+          295995,
+          166416,
+          319898
+        ],
+        "confidence": 0.5375001430511475,
+        "class_id": 0
+      }
+    ],
+    "processed_at": "2025-09-24T17:11:58.744025"
+  },
+  {
+    "image_id": "4527740993926862",
+    "image_path": "pothole_results/images/4527740993926862.jpg",
+    "latitude": 39.232818188087,
+    "longitude": -84.368392502101,
+    "captured_at": 1588000004000,
+    "compass_angle": 356.83,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          149248,
+          236116,
+          189645,
+          284213
+        ],
+        "confidence": 0.6672683358192444,
+        "class_id": 0
+      }
+    ],
+    "processed_at": "2025-09-24T17:11:58.903158"
+  },
+  {
+    "image_id": "2056998194502263",
+    "image_path": "pothole_results/images/2056998194502263.jpg",
+    "latitude": 39.086212222222,
+    "longitude": -84.3360525,
+    "captured_at": 1655320474011,
+    "compass_angle": 265.5788914,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:59.092569"
+  },
+  {
+    "image_id": "1997548017104820",
+    "image_path": "pothole_results/images/1997548017104820.jpg",
+    "latitude": 39.243575032552,
+    "longitude": -84.449348958333,
+    "captured_at": 1610508883000,
+    "compass_angle": 258.23745750897,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:59.496940"
+  },
+  {
+    "image_id": "3949981905108873",
+    "image_path": "pothole_results/images/3949981905108873.jpg",
+    "latitude": 39.249785657021,
+    "longitude": -84.365427883006,
+    "captured_at": 1531674468516,
+    "compass_angle": 5.4551696777344,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:11:59.500587"
+  },
+  {
+    "image_id": "9618714648163914",
+    "image_path": "pothole_results/images/9618714648163914.jpg",
+    "latitude": 39.1188981,
+    "longitude": -84.3051292,
+    "captured_at": 1743683417000,
+    "compass_angle": 225.753,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:00.101412"
+  },
+  {
+    "image_id": "4167765736579377",
+    "image_path": "pothole_results/images/4167765736579377.jpg",
+    "latitude": 39.234739495478,
+    "longitude": -84.350987691511,
+    "captured_at": 1539460075090,
+    "compass_angle": 21.192779541016,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:00.144336"
+  },
+  {
+    "image_id": "2940317349623366",
+    "image_path": "pothole_results/images/2940317349623366.jpg",
+    "latitude": 39.0430426416,
+    "longitude": -84.3316494554,
+    "captured_at": 1578851685565,
+    "compass_angle": 203.72647094727,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          26961,
+          277281,
+          121961,
+          410131
+        ],
+        "confidence": 0.5874319076538086,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:01.300780"
+  },
+  {
+    "image_id": "4294473670636749",
+    "image_path": "pothole_results/images/4294473670636749.jpg",
+    "latitude": 39.26842184715,
+    "longitude": -84.315450534459,
+    "captured_at": 1587738163000,
+    "compass_angle": 244.05,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:01.367722"
+  },
+  {
+    "image_id": "2209526359188374",
+    "image_path": "pothole_results/images/2209526359188374.jpg",
+    "latitude": 39.245180208705,
+    "longitude": -84.370900234111,
+    "captured_at": 1588001510500,
+    "compass_angle": 99.45,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:01.370002"
+  },
+  {
+    "image_id": "4564445083574460",
+    "image_path": "pothole_results/images/4564445083574460.jpg",
+    "latitude": 39.23836297088,
+    "longitude": -84.350192557343,
+    "captured_at": 1588005494000,
+    "compass_angle": 200.91,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:01.963352"
+  },
+  {
+    "image_id": "3950716458340945",
+    "image_path": "pothole_results/images/3950716458340945.jpg",
+    "latitude": 39.192202155656,
+    "longitude": -84.387346259259,
+    "captured_at": 1595491126528,
+    "compass_angle": 223.37115067073,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:02.189693"
+  },
+  {
+    "image_id": "1845905815560109",
+    "image_path": "pothole_results/images/1845905815560109.jpg",
+    "latitude": 39.22479543,
+    "longitude": -84.60035934,
+    "captured_at": 1489080765823,
+    "compass_angle": 42.075210094452,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:02.547360"
+  },
+  {
+    "image_id": "1488458324835695",
+    "image_path": "pothole_results/images/1488458324835695.jpg",
+    "latitude": 39.103099149688,
+    "longitude": -84.249437414188,
+    "captured_at": 1545614397115,
+    "compass_angle": 58.686157226562,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:02.585999"
+  },
+  {
+    "image_id": "1727987158119316",
+    "image_path": "pothole_results/images/1727987158119316.jpg",
+    "latitude": 39.0907647,
+    "longitude": -84.4857597,
+    "captured_at": 1745328603500,
+    "compass_angle": 217.748,
+    "num_potholes": 2,
+    "detections": [
+      {
+        "bbox": [
+          192244,
+          243857,
+          208467,
+          318063
+        ],
+        "confidence": 0.5594599843025208,
+        "class_id": 1
+      },
+      {
+        "bbox": [
+          129293,
+          262331,
+          148895,
+          317621
+        ],
+        "confidence": 0.5064345598220825,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:03.521698"
+  },
+  {
+    "image_id": "4249928901757443",
+    "image_path": "pothole_results/images/4249928901757443.jpg",
+    "latitude": 39.229069917507,
+    "longitude": -84.356274917557,
+    "captured_at": 1588006115500,
+    "compass_angle": 194.09,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:03.598798"
+  },
+  {
+    "image_id": "4100872390028269",
+    "image_path": "pothole_results/images/4100872390028269.jpg",
+    "latitude": 39.237043963671,
+    "longitude": -84.451037406021,
+    "captured_at": 1588179632908,
+    "compass_angle": 0,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:03.658248"
+  },
+  {
+    "image_id": "2065984060576686",
+    "image_path": "pothole_results/images/2065984060576686.jpg",
+    "latitude": 39.1410597,
+    "longitude": -84.3324522,
+    "captured_at": 1743703729500,
+    "compass_angle": 336.709,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:04.978626"
+  },
+  {
+    "image_id": "5221654141184799",
+    "image_path": "pothole_results/images/5221654141184799.jpg",
+    "latitude": 39.24121336989,
+    "longitude": -84.37602277205,
+    "captured_at": 1588001083666,
+    "compass_angle": 4.84,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:05.237319"
+  },
+  {
+    "image_id": "4917049858310889",
+    "image_path": "pothole_results/images/4917049858310889.jpg",
+    "latitude": 39.241016603753,
+    "longitude": -84.347403902704,
+    "captured_at": 1587740909000,
+    "compass_angle": 215.88,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:05.429768"
+  },
+  {
+    "image_id": "4615301861814385",
+    "image_path": "pothole_results/images/4615301861814385.jpg",
+    "latitude": 39.232178579044,
+    "longitude": -84.355302105024,
+    "captured_at": 1588005806000,
+    "compass_angle": 10.03,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:05.696601"
+  },
+  {
+    "image_id": "5399878246723228",
+    "image_path": "pothole_results/images/5399878246723228.jpg",
+    "latitude": 39.134856,
+    "longitude": -84.4005445,
+    "captured_at": 1539650201668,
+    "compass_angle": 34.832427978516,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:06.389360"
+  },
+  {
+    "image_id": "4722162304462933",
+    "image_path": "pothole_results/images/4722162304462933.jpg",
+    "latitude": 39.238157090976,
+    "longitude": -84.357930078619,
+    "captured_at": 1587742074500,
+    "compass_angle": 291.89,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:06.914247"
+  },
+  {
+    "image_id": "1827926757368059",
+    "image_path": "pothole_results/images/1827926757368059.jpg",
+    "latitude": 39.177255555556,
+    "longitude": -84.800269444444,
+    "captured_at": 1504813807000,
+    "compass_angle": 202,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:07.387942"
+  },
+  {
+    "image_id": "4942872905727056",
+    "image_path": "pothole_results/images/4942872905727056.jpg",
+    "latitude": 39.245872847672,
+    "longitude": -84.352694539158,
+    "captured_at": 1587486171500,
+    "compass_angle": 266.54,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:07.437198"
+  },
+  {
+    "image_id": "4081227448605634",
+    "image_path": "pothole_results/images/4081227448605634.jpg",
+    "latitude": 39.143034166667,
+    "longitude": -84.363527833333,
+    "captured_at": 1539721459749,
+    "compass_angle": 114.89065551758,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:07.579959"
+  },
+  {
+    "image_id": "2734915333467977",
+    "image_path": "pothole_results/images/2734915333467977.jpg",
+    "latitude": 39.1718811,
+    "longitude": -84.2980545,
+    "captured_at": 1569683719333,
+    "compass_angle": 62.17330283643,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:08.251076"
+  },
+  {
+    "image_id": "4091848627561634",
+    "image_path": "pothole_results/images/4091848627561634.jpg",
+    "latitude": 39.098972906395,
+    "longitude": -84.257902130563,
+    "captured_at": 1545614350207,
+    "compass_angle": 58.724761962891,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          -127,
+          318592,
+          53948,
+          397005
+        ],
+        "confidence": 0.6068093180656433,
+        "class_id": 0
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:08.398333"
+  },
+  {
+    "image_id": "3172350573038972",
+    "image_path": "pothole_results/images/3172350573038972.jpg",
+    "latitude": 39.084925244593,
+    "longitude": -84.451400312316,
+    "captured_at": 1627149563845,
+    "compass_angle": 359.63412806191,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:08.776695"
+  },
+  {
+    "image_id": "4505638136130369",
+    "image_path": "pothole_results/images/4505638136130369.jpg",
+    "latitude": 39.235662897495,
+    "longitude": -84.4507287859,
+    "captured_at": 1546704283225,
+    "compass_angle": 347.13629150391,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:09.118979"
+  },
+  {
+    "image_id": "5844584262281053",
+    "image_path": "pothole_results/images/5844584262281053.jpg",
+    "latitude": 39.248589761691,
+    "longitude": -84.352798235775,
+    "captured_at": 1587567005333,
+    "compass_angle": 86.95,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:09.910963"
+  },
+  {
+    "image_id": "1826519964869757",
+    "image_path": "pothole_results/images/1826519964869757.jpg",
+    "latitude": 39.0463647,
+    "longitude": -84.3606494,
+    "captured_at": 1743516938333,
+    "compass_angle": 318.716,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:10.341968"
+  },
+  {
+    "image_id": "4220546581368774",
+    "image_path": "pothole_results/images/4220546581368774.jpg",
+    "latitude": 39.231793667775,
+    "longitude": -84.363134728021,
+    "captured_at": 1587482918000,
+    "compass_angle": 347.08,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          959,
+          247286,
+          32701,
+          308244
+        ],
+        "confidence": 0.5783239603042603,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:10.409010"
+  },
+  {
+    "image_id": "5149984531758406",
+    "image_path": "pothole_results/images/5149984531758406.jpg",
+    "latitude": 39.132746666667,
+    "longitude": -84.366145555556,
+    "captured_at": 1655216310985,
+    "compass_angle": 208.4365143,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          184238,
+          277418,
+          200067,
+          301026
+        ],
+        "confidence": 0.5637820959091187,
+        "class_id": 0
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:11.246212"
+  },
+  {
+    "image_id": "1730795427526561",
+    "image_path": "pothole_results/images/1730795427526561.jpg",
+    "latitude": 39.0255811,
+    "longitude": -84.3204119,
+    "captured_at": 1743513337000,
+    "compass_angle": 320.694,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:11.512352"
+  },
+  {
+    "image_id": "5180360175378885",
+    "image_path": "pothole_results/images/5180360175378885.jpg",
+    "latitude": 39.122883055556,
+    "longitude": -84.371259444444,
+    "captured_at": 1655300968961,
+    "compass_angle": 261.287193,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:11.571287"
+  },
+  {
+    "image_id": "1884437298402023",
+    "image_path": "pothole_results/images/1884437298402023.jpg",
+    "latitude": 39.259428524099,
+    "longitude": -84.318104313006,
+    "captured_at": 1587563998000,
+    "compass_angle": 191.73,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:11.697461"
+  },
+  {
+    "image_id": "1948795971935750",
+    "image_path": "pothole_results/images/1948795971935750.jpg",
+    "latitude": 39.265436333333,
+    "longitude": -84.318335833333,
+    "captured_at": 1539462492689,
+    "compass_angle": 185.34375,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:12.398104"
+  },
+  {
+    "image_id": "2991685911108521",
+    "image_path": "pothole_results/images/2991685911108521.jpg",
+    "latitude": 39.108099960758,
+    "longitude": -84.243201864962,
+    "captured_at": 1545614487098,
+    "compass_angle": 255.56469726562,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:12.949904"
+  },
+  {
+    "image_id": "2062208570654228",
+    "image_path": "pothole_results/images/2062208570654228.jpg",
+    "latitude": 39.112191944444,
+    "longitude": -84.372129166667,
+    "captured_at": 1655304066226,
+    "compass_angle": 144.6155708,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:13.010502"
+  },
+  {
+    "image_id": "4216652491723184",
+    "image_path": "pothole_results/images/4216652491723184.jpg",
+    "latitude": 39.254549547358,
+    "longitude": -84.353151638199,
+    "captured_at": 1587569071500,
+    "compass_angle": 347.61,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:13.701054"
+  },
+  {
+    "image_id": "2887255008270113",
+    "image_path": "pothole_results/images/2887255008270113.jpg",
+    "latitude": 39.179258333333,
+    "longitude": -84.799138888889,
+    "captured_at": 1503523001000,
+    "compass_angle": 17,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:13.934177"
+  },
+  {
+    "image_id": "3743874352405633",
+    "image_path": "pothole_results/images/3743874352405633.jpg",
+    "latitude": 39.112415099972,
+    "longitude": -84.4887413,
+    "captured_at": 1570897221500,
+    "compass_angle": 31.161298591274,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:14.013862"
+  },
+  {
+    "image_id": "3933988696646798",
+    "image_path": "pothole_results/images/3933988696646798.jpg",
+    "latitude": 39.101274435449,
+    "longitude": -84.521840132324,
+    "captured_at": 1546703538853,
+    "compass_angle": 326.12063598633,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:14.246251"
+  },
+  {
+    "image_id": "1553238908444228",
+    "image_path": "pothole_results/images/1553238908444228.jpg",
+    "latitude": 39.245068359375,
+    "longitude": -84.448160807292,
+    "captured_at": 1610454876000,
+    "compass_angle": 116.88095329,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:15.030363"
+  },
+  {
+    "image_id": "5416057685082820",
+    "image_path": "pothole_results/images/5416057685082820.jpg",
+    "latitude": 39.115349166667,
+    "longitude": -84.322439722222,
+    "captured_at": 1655238859486,
+    "compass_angle": 234.7776292,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:15.213168"
+  },
+  {
+    "image_id": "3971925832920353",
+    "image_path": "pothole_results/images/3971925832920353.jpg",
+    "latitude": 39.04691954,
+    "longitude": -84.22621942,
+    "captured_at": 1478354972148,
+    "compass_angle": 30.78669500351,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:15.217391"
+  },
+  {
+    "image_id": "4162091870535645",
+    "image_path": "pothole_results/images/4162091870535645.jpg",
+    "latitude": 39.260038908435,
+    "longitude": -84.325834229491,
+    "captured_at": 1587561807000,
+    "compass_angle": 199.25,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:15.251959"
+  },
+  {
+    "image_id": "3529031284073304",
+    "image_path": "pothole_results/images/3529031284073304.jpg",
+    "latitude": 39.090365,
+    "longitude": -84.49688,
+    "captured_at": 1745352645500,
+    "compass_angle": 40.444,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:16.219270"
+  },
+  {
+    "image_id": "3654934154612349",
+    "image_path": "pothole_results/images/3654934154612349.jpg",
+    "latitude": 39.0863833983,
+    "longitude": -84.4219682242,
+    "captured_at": 1578841544190,
+    "compass_angle": 153.17410594146,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:16.257979"
+  },
+  {
+    "image_id": "1754575678734800",
+    "image_path": "pothole_results/images/1754575678734800.jpg",
+    "latitude": 39.0901486,
+    "longitude": -84.4840675,
+    "captured_at": 1745411304000,
+    "compass_angle": 56.552,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:16.512731"
+  },
+  {
+    "image_id": "1733639440899499",
+    "image_path": "pothole_results/images/1733639440899499.jpg",
+    "latitude": 39.0753753,
+    "longitude": -84.4716761,
+    "captured_at": 1745422070333,
+    "compass_angle": 308.63,
+    "num_potholes": 2,
+    "detections": [
+      {
+        "bbox": [
+          164498,
+          226277,
+          193295,
+          294765
+        ],
+        "confidence": 0.5160459280014038,
+        "class_id": 1
+      },
+      {
+        "bbox": [
+          108316,
+          284067,
+          121956,
+          318426
+        ],
+        "confidence": 0.5136072635650635,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:16.723631"
+  },
+  {
+    "image_id": "5468776556552731",
+    "image_path": "pothole_results/images/5468776556552731.jpg",
+    "latitude": 39.087195833333,
+    "longitude": -84.340369444444,
+    "captured_at": 1655318961851,
+    "compass_angle": 262.6238782,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:17.392103"
+  },
+  {
+    "image_id": "3641545276138156",
+    "image_path": "pothole_results/images/3641545276138156.jpg",
+    "latitude": 39.0847772,
+    "longitude": -84.4858611,
+    "captured_at": 1745414996250,
+    "compass_angle": 135.548,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:18.376043"
+  },
+  {
+    "image_id": "1734827040057951",
+    "image_path": "pothole_results/images/1734827040057951.jpg",
+    "latitude": 39.149371799972,
+    "longitude": -84.421464999972,
+    "captured_at": 1570899021500,
+    "compass_angle": 4.8764270920076,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:18.424597"
+  },
+  {
+    "image_id": "4263438053750705",
+    "image_path": "pothole_results/images/4263438053750705.jpg",
+    "latitude": 39.239218209509,
+    "longitude": -84.364337270308,
+    "captured_at": 1587483658000,
+    "compass_angle": 12.01,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:18.465116"
+  },
+  {
+    "image_id": "1772644443328824",
+    "image_path": "pothole_results/images/1772644443328824.jpg",
+    "latitude": 39.0881508,
+    "longitude": -84.4891,
+    "captured_at": 1745331104000,
+    "compass_angle": 306.515,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:18.534116"
+  },
+  {
+    "image_id": "3615763118729057",
+    "image_path": "pothole_results/images/3615763118729057.jpg",
+    "latitude": 39.0850233,
+    "longitude": -84.4860225,
+    "captured_at": 1745415277500,
+    "compass_angle": 315.936,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:19.539930"
+  },
+  {
+    "image_id": "3135283613365979",
+    "image_path": "pothole_results/images/3135283613365979.jpg",
+    "latitude": 39.120398,
+    "longitude": -84.444825699972,
+    "captured_at": 1569682707500,
+    "compass_angle": 126.43729943981,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:19.692719"
+  },
+  {
+    "image_id": "3157926881110888",
+    "image_path": "pothole_results/images/3157926881110888.jpg",
+    "latitude": 39.114775,
+    "longitude": -84.4978253,
+    "captured_at": 1568314724000,
+    "compass_angle": 174.68050612103,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:19.843796"
+  },
+  {
+    "image_id": "1939747263430862",
+    "image_path": "pothole_results/images/1939747263430862.jpg",
+    "latitude": 39.0908044,
+    "longitude": -84.3203703,
+    "captured_at": 1743685668000,
+    "compass_angle": 85.276,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:20.055697"
+  },
+  {
+    "image_id": "3553192588119442",
+    "image_path": "pothole_results/images/3553192588119442.jpg",
+    "latitude": 39.152405399972,
+    "longitude": -84.322663099972,
+    "captured_at": 1569683535000,
+    "compass_angle": 44.168128073379,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:20.691802"
+  },
+  {
+    "image_id": "3601087800197540",
+    "image_path": "pothole_results/images/3601087800197540.jpg",
+    "latitude": 39.0820678,
+    "longitude": -84.4932253,
+    "captured_at": 1745346622000,
+    "compass_angle": 36.992,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:21.107279"
+  },
+  {
+    "image_id": "3184867688392096",
+    "image_path": "pothole_results/images/3184867688392096.jpg",
+    "latitude": 39.044331944444,
+    "longitude": -84.327123333333,
+    "captured_at": 1655470443383,
+    "compass_angle": 63.7053764,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:21.209291"
+  },
+  {
+    "image_id": "3776481179163414",
+    "image_path": "pothole_results/images/3776481179163414.jpg",
+    "latitude": 39.0943044,
+    "longitude": -84.4876053,
+    "captured_at": 1745411216500,
+    "compass_angle": 127.365,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:21.273565"
+  },
+  {
+    "image_id": "2925727831040843",
+    "image_path": "pothole_results/images/2925727831040843.jpg",
+    "latitude": 39.051694474483,
+    "longitude": -84.561330322759,
+    "captured_at": 1618588259315,
+    "compass_angle": 263.78558349609,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:22.297038"
+  },
+  {
+    "image_id": "3894247720624511",
+    "image_path": "pothole_results/images/3894247720624511.jpg",
+    "latitude": 39.214655743017,
+    "longitude": -84.452010830943,
+    "captured_at": 1545789516202,
+    "compass_angle": 45.010498046875,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:22.498806"
+  },
+  {
+    "image_id": "4838426502840698",
+    "image_path": "pothole_results/images/4838426502840698.jpg",
+    "latitude": 39.235810618198,
+    "longitude": -84.351386894695,
+    "captured_at": 1588005560000,
+    "compass_angle": 203.41,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:22.762754"
+  },
+  {
+    "image_id": "1758123765132809",
+    "image_path": "pothole_results/images/1758123765132809.jpg",
+    "latitude": 39.0924794,
+    "longitude": -84.4941283,
+    "captured_at": 1745348033500,
+    "compass_angle": 217.493,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:22.770190"
+  },
+  {
+    "image_id": "5236858056337596",
+    "image_path": "pothole_results/images/5236858056337596.jpg",
+    "latitude": 39.102526666667,
+    "longitude": -84.340670277778,
+    "captured_at": 1655297271879,
+    "compass_angle": 191.9824456,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:23.461580"
+  },
+  {
+    "image_id": "1737831903437162",
+    "image_path": "pothole_results/images/1737831903437162.jpg",
+    "latitude": 39.0896981,
+    "longitude": -84.3192125,
+    "captured_at": 1743685825000,
+    "compass_angle": 279.967,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:23.728738"
+  },
+  {
+    "image_id": "3213063348978314",
+    "image_path": "pothole_results/images/3213063348978314.jpg",
+    "latitude": 39.1156621,
+    "longitude": -84.498773099972,
+    "captured_at": 1568314953500,
+    "compass_angle": 205.1566462351,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          197296,
+          250899,
+          405164,
+          408306
+        ],
+        "confidence": 0.6557949781417847,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:23.901838"
+  },
+  {
+    "image_id": "2972267489662569",
+    "image_path": "pothole_results/images/2972267489662569.jpg",
+    "latitude": 39.106612499972,
+    "longitude": -84.532969399972,
+    "captured_at": 1569158684500,
+    "compass_angle": 284.73779844205,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:23.944179"
+  },
+  {
+    "image_id": "1747064725625629",
+    "image_path": "pothole_results/images/1747064725625629.jpg",
+    "latitude": 39.1329835,
+    "longitude": -84.517049099972,
+    "captured_at": 1568138568000,
+    "compass_angle": 354.13051392308,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:24.680740"
+  },
+  {
+    "image_id": "3779318025546526",
+    "image_path": "pothole_results/images/3779318025546526.jpg",
+    "latitude": 39.0909853,
+    "longitude": -84.5002044,
+    "captured_at": 1745338745666,
+    "compass_angle": 91.344,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:24.998753"
+  },
+  {
+    "image_id": "3405726726197571",
+    "image_path": "pothole_results/images/3405726726197571.jpg",
+    "latitude": 39.135360599972,
+    "longitude": -84.506402399972,
+    "captured_at": 1568467367500,
+    "compass_angle": 79.399605170291,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          231259,
+          267487,
+          408019,
+          409115
+        ],
+        "confidence": 0.6098334789276123,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:25.123443"
+  },
+  {
+    "image_id": "2909275272624895",
+    "image_path": "pothole_results/images/2909275272624895.jpg",
+    "latitude": 39.111358666667,
+    "longitude": -84.527593166667,
+    "captured_at": 1539645620443,
+    "compass_angle": 182.17596435547,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          39972,
+          303314,
+          149432,
+          382047
+        ],
+        "confidence": 0.5855631828308105,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:25.219720"
+  },
+  {
+    "image_id": "1894590087599363",
+    "image_path": "pothole_results/images/1894590087599363.jpg",
+    "latitude": 39.206497395831,
+    "longitude": -84.465094401043,
+    "captured_at": 1610455110200,
+    "compass_angle": 119.40318168863,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:25.916574"
+  },
+  {
+    "image_id": "3558410280930721",
+    "image_path": "pothole_results/images/3558410280930721.jpg",
+    "latitude": 39.103575912341,
+    "longitude": -84.510284252543,
+    "captured_at": 1539641040044,
+    "compass_angle": 123.45300292969,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:26.177451"
+  },
+  {
+    "image_id": "1764484134449783",
+    "image_path": "pothole_results/images/1764484134449783.jpg",
+    "latitude": 39.0921811,
+    "longitude": -84.4987425,
+    "captured_at": 1745338110750,
+    "compass_angle": 216.559,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:26.335604"
+  },
+  {
+    "image_id": "5744866358886854",
+    "image_path": "pothole_results/images/5744866358886854.jpg",
+    "latitude": 39.1750966,
+    "longitude": -84.2806656,
+    "captured_at": 1569684001666,
+    "compass_angle": 109.95299716741,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:26.535155"
+  },
+  {
+    "image_id": "3996837737215360",
+    "image_path": "pothole_results/images/3996837737215360.jpg",
+    "latitude": 39.1139419,
+    "longitude": -84.3780422,
+    "captured_at": 1743697164333,
+    "compass_angle": 146.23,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:27.330394"
+  },
+  {
+    "image_id": "2666172350340350",
+    "image_path": "pothole_results/images/2666172350340350.jpg",
+    "latitude": 39.107770799972,
+    "longitude": -84.5524757,
+    "captured_at": 1569158815500,
+    "compass_angle": 194.57083828831,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:27.569979"
+  },
+  {
+    "image_id": "2718900278410890",
+    "image_path": "pothole_results/images/2718900278410890.jpg",
+    "latitude": 39.102474685815,
+    "longitude": -84.725471691752,
+    "captured_at": 1600616457495,
+    "compass_angle": 28.366561907835,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:27.628583"
+  },
+  {
+    "image_id": "8277200848986944",
+    "image_path": "pothole_results/images/8277200848986944.jpg",
+    "latitude": 39.110185,
+    "longitude": -84.380083055556,
+    "captured_at": 1655304865517,
+    "compass_angle": 44.898781696,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:28.055988"
+  },
+  {
+    "image_id": "1856435898038860",
+    "image_path": "pothole_results/images/1856435898038860.jpg",
+    "latitude": 39.211361490871,
+    "longitude": -84.462011718758,
+    "captured_at": 1610455064400,
+    "compass_angle": 112.7249970258,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:28.407405"
+  },
+  {
+    "image_id": "1496241684124285",
+    "image_path": "pothole_results/images/1496241684124285.jpg",
+    "latitude": 39.050255277778,
+    "longitude": -84.356485277778,
+    "captured_at": 1655475370297,
+    "compass_angle": 206.434854,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:28.496058"
+  },
+  {
+    "image_id": "1849163022136376",
+    "image_path": "pothole_results/images/1849163022136376.jpg",
+    "latitude": 39.24619140625,
+    "longitude": -84.447428385417,
+    "captured_at": 1610454871000,
+    "compass_angle": 113.49798189771,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:28.765295"
+  },
+  {
+    "image_id": "3231099843779558",
+    "image_path": "pothole_results/images/3231099843779558.jpg",
+    "latitude": 39.120983072926,
+    "longitude": -84.535709635417,
+    "captured_at": 1610456002800,
+    "compass_angle": 90,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:29.085259"
+  },
+  {
+    "image_id": "1811906928972999",
+    "image_path": "pothole_results/images/1811906928972999.jpg",
+    "latitude": 39.259117350151,
+    "longitude": -84.597254926236,
+    "captured_at": 1562377701634,
+    "compass_angle": 231.4598236084,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:29.477060"
+  },
+  {
+    "image_id": "5294460357315486",
+    "image_path": "pothole_results/images/5294460357315486.jpg",
+    "latitude": 39.106505,
+    "longitude": -84.337379722222,
+    "captured_at": 1655237619148,
+    "compass_angle": 295.138057,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:29.687645"
+  },
+  {
+    "image_id": "3944368002316795",
+    "image_path": "pothole_results/images/3944368002316795.jpg",
+    "latitude": 39.262818,
+    "longitude": -84.5911746,
+    "captured_at": 1495110393649,
+    "compass_angle": 228.25934913904,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:29.893209"
+  },
+  {
+    "image_id": "3706675336103660",
+    "image_path": "pothole_results/images/3706675336103660.jpg",
+    "latitude": 39.100889333333,
+    "longitude": -84.530297666667,
+    "captured_at": 1539645776437,
+    "compass_angle": 186.82257080078,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:30.209276"
+  },
+  {
+    "image_id": "3167952783475819",
+    "image_path": "pothole_results/images/3167952783475819.jpg",
+    "latitude": 39.060769615941,
+    "longitude": -84.528543592475,
+    "captured_at": 1647792277838,
+    "compass_angle": 85.96533203125,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:30.541274"
+  },
+  {
+    "image_id": "1860671657424399",
+    "image_path": "pothole_results/images/1860671657424399.jpg",
+    "latitude": 39.22202402,
+    "longitude": -84.58677309,
+    "captured_at": 1489076921649,
+    "compass_angle": 0.79507064819336,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:30.787479"
+  },
+  {
+    "image_id": "3860412357406332",
+    "image_path": "pothole_results/images/3860412357406332.jpg",
+    "latitude": 39.250816459878,
+    "longitude": -84.786749505499,
+    "captured_at": 1562378390741,
+    "compass_angle": 316.05120849609,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:30.962698"
+  },
+  {
+    "image_id": "3360067884264526",
+    "image_path": "pothole_results/images/3360067884264526.jpg",
+    "latitude": 39.061752929678,
+    "longitude": -84.525569661474,
+    "captured_at": 1610456308400,
+    "compass_angle": 142.30569487912,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          260867,
+          234101,
+          409581,
+          320756
+        ],
+        "confidence": 0.5633943676948547,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:31.479735"
+  },
+  {
+    "image_id": "3633027453635603",
+    "image_path": "pothole_results/images/3633027453635603.jpg",
+    "latitude": 39.147690429672,
+    "longitude": -84.539176432284,
+    "captured_at": 1610509872400,
+    "compass_angle": 203.31209703224,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:31.870860"
+  },
+  {
+    "image_id": "9142353625876394",
+    "image_path": "pothole_results/images/9142353625876394.jpg",
+    "latitude": 39.0952694,
+    "longitude": -84.3184681,
+    "captured_at": 1743686081666,
+    "compass_angle": 181.731,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:32.049333"
+  },
+  {
+    "image_id": "3455516307881924",
+    "image_path": "pothole_results/images/3455516307881924.jpg",
+    "latitude": 39.090394166667,
+    "longitude": -84.533335,
+    "captured_at": 1587310489188,
+    "compass_angle": 325.899133,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:32.271742"
+  },
+  {
+    "image_id": "3558477927711695",
+    "image_path": "pothole_results/images/3558477927711695.jpg",
+    "latitude": 39.084356388889,
+    "longitude": -84.509628888889,
+    "captured_at": 1587073145100,
+    "compass_angle": 11.80591944,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:32.791123"
+  },
+  {
+    "image_id": "3699236453539341",
+    "image_path": "pothole_results/images/3699236453539341.jpg",
+    "latitude": 39.093730475331,
+    "longitude": -84.288389858512,
+    "captured_at": 1562534989295,
+    "compass_angle": 12.241149902344,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:32.939497"
+  },
+  {
+    "image_id": "1763009083871893",
+    "image_path": "pothole_results/images/1763009083871893.jpg",
+    "latitude": 39.056852726591,
+    "longitude": -84.434345895483,
+    "captured_at": 1578840403135,
+    "compass_angle": 164.98889160156,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:33.035059"
+  },
+  {
+    "image_id": "1723653995701693",
+    "image_path": "pothole_results/images/1723653995701693.jpg",
+    "latitude": 39.1138342,
+    "longitude": -84.3375144,
+    "captured_at": 1743691678000,
+    "compass_angle": 33.966,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:33.439822"
+  },
+  {
+    "image_id": "3248054068779472",
+    "image_path": "pothole_results/images/3248054068779472.jpg",
+    "latitude": 39.222790527344,
+    "longitude": -84.455550130208,
+    "captured_at": 1610508973000,
+    "compass_angle": 266.1538935772,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:33.777192"
+  },
+  {
+    "image_id": "1738871120379647",
+    "image_path": "pothole_results/images/1738871120379647.jpg",
+    "latitude": 39.0812817,
+    "longitude": -84.4929867,
+    "captured_at": 1745333900666,
+    "compass_angle": 37.107,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:33.896843"
+  },
+  {
+    "image_id": "3142118686018501",
+    "image_path": "pothole_results/images/3142118686018501.jpg",
+    "latitude": 39.08535,
+    "longitude": -84.520663611111,
+    "captured_at": 1587247114599,
+    "compass_angle": 187.5559446,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:34.357011"
+  },
+  {
+    "image_id": "2953369651563923",
+    "image_path": "pothole_results/images/2953369651563923.jpg",
+    "latitude": 39.148426999972,
+    "longitude": -84.7740761,
+    "captured_at": 1569160806000,
+    "compass_angle": 241.25650224815,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:34.656949"
+  },
+  {
+    "image_id": "1610999142435004",
+    "image_path": "pothole_results/images/1610999142435004.jpg",
+    "latitude": 39.1024552,
+    "longitude": -84.554098999972,
+    "captured_at": 1569158865000,
+    "compass_angle": 196.87108847362,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:35.047703"
+  },
+  {
+    "image_id": "3378294102274165",
+    "image_path": "pothole_results/images/3378294102274165.jpg",
+    "latitude": 39.068783611111,
+    "longitude": -84.514365,
+    "captured_at": 1587231044123,
+    "compass_angle": 309.830243,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:35.515679"
+  },
+  {
+    "image_id": "1947869995374187",
+    "image_path": "pothole_results/images/1947869995374187.jpg",
+    "latitude": 39.206931655204,
+    "longitude": -84.705445203878,
+    "captured_at": 1562378081700,
+    "compass_angle": 247.93099975586,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:35.608434"
+  },
+  {
+    "image_id": "3937809386326945",
+    "image_path": "pothole_results/images/3937809386326945.jpg",
+    "latitude": 39.045148611111,
+    "longitude": -84.499247222222,
+    "captured_at": 1587402605738,
+    "compass_angle": 274.905695,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:35.832660"
+  },
+  {
+    "image_id": "1742619252600171",
+    "image_path": "pothole_results/images/1742619252600171.jpg",
+    "latitude": 39.052178939431,
+    "longitude": -84.430617329188,
+    "captured_at": 1578839857689,
+    "compass_angle": 331.29311411956,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:36.345928"
+  },
+  {
+    "image_id": "1629760550747810",
+    "image_path": "pothole_results/images/1629760550747810.jpg",
+    "latitude": 39.148838099972,
+    "longitude": -84.739168899972,
+    "captured_at": 1569161303500,
+    "compass_angle": 114.94622947702,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:36.556509"
+  },
+  {
+    "image_id": "4094470950784311",
+    "image_path": "pothole_results/images/4094470950784311.jpg",
+    "latitude": 39.1071536,
+    "longitude": -84.3389183,
+    "captured_at": 1743692262000,
+    "compass_angle": 342.447,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:36.904485"
+  },
+  {
+    "image_id": "3572583832842776",
+    "image_path": "pothole_results/images/3572583832842776.jpg",
+    "latitude": 39.074188333333,
+    "longitude": -84.502758333333,
+    "captured_at": 1587221929188,
+    "compass_angle": 100.25165808,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:37.164159"
+  },
+  {
+    "image_id": "1773289956188273",
+    "image_path": "pothole_results/images/1773289956188273.jpg",
+    "latitude": 39.062222061808,
+    "longitude": -84.468741102904,
+    "captured_at": 1627139558587,
+    "compass_angle": 204.14256856828,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:37.332925"
+  },
+  {
+    "image_id": "3932613803519200",
+    "image_path": "pothole_results/images/3932613803519200.jpg",
+    "latitude": 39.082877777778,
+    "longitude": -84.536971111111,
+    "captured_at": 1587394714501,
+    "compass_angle": 230.04552,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:37.856736"
+  },
+  {
+    "image_id": "5230708070331404",
+    "image_path": "pothole_results/images/5230708070331404.jpg",
+    "latitude": 39.119744722222,
+    "longitude": -84.325153333333,
+    "captured_at": 1655296452769,
+    "compass_angle": 273.167428,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:38.394905"
+  },
+  {
+    "image_id": "2964899653756679",
+    "image_path": "pothole_results/images/2964899653756679.jpg",
+    "latitude": 39.074938466505,
+    "longitude": -84.293265757133,
+    "captured_at": 1578842187189,
+    "compass_angle": 28.064520917039,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:38.422771"
+  },
+  {
+    "image_id": "4017124558343678",
+    "image_path": "pothole_results/images/4017124558343678.jpg",
+    "latitude": 39.089679516216,
+    "longitude": -84.243631670686,
+    "captured_at": 1562375939100,
+    "compass_angle": 289.43298339844,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:38.724281"
+  },
+  {
+    "image_id": "4235537563148798",
+    "image_path": "pothole_results/images/4235537563148798.jpg",
+    "latitude": 39.234659642579,
+    "longitude": -84.352905210461,
+    "captured_at": 1588004585500,
+    "compass_angle": 252.09,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:38.941680"
+  },
+  {
+    "image_id": "3930483333702956",
+    "image_path": "pothole_results/images/3930483333702956.jpg",
+    "latitude": 39.091302777778,
+    "longitude": -84.804641666667,
+    "captured_at": 1504814185000,
+    "compass_angle": 111,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:39.471781"
+  },
+  {
+    "image_id": "4105761333000593",
+    "image_path": "pothole_results/images/4105761333000593.jpg",
+    "latitude": 39.0970222,
+    "longitude": -84.3295161,
+    "captured_at": 1743689061000,
+    "compass_angle": 272.062,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:39.646138"
+  },
+  {
+    "image_id": "1651810108339577",
+    "image_path": "pothole_results/images/1651810108339577.jpg",
+    "latitude": 39.16775105,
+    "longitude": -84.55473812,
+    "captured_at": 1480255122043,
+    "compass_angle": 52.148284912109,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:39.979940"
+  },
+  {
+    "image_id": "9647915985323770",
+    "image_path": "pothole_results/images/9647915985323770.jpg",
+    "latitude": 39.0936606,
+    "longitude": -84.3350472,
+    "captured_at": 1743687973000,
+    "compass_angle": 161.315,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:40.188767"
+  },
+  {
+    "image_id": "3893817347321065",
+    "image_path": "pothole_results/images/3893817347321065.jpg",
+    "latitude": 39.211325,
+    "longitude": -84.756688888889,
+    "captured_at": 1503523169000,
+    "compass_angle": 55,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:40.535975"
+  },
+  {
+    "image_id": "2053093391853405",
+    "image_path": "pothole_results/images/2053093391853405.jpg",
+    "latitude": 39.0938031,
+    "longitude": -84.336075,
+    "captured_at": 1743688064000,
+    "compass_angle": 78.041,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:40.741988"
+  },
+  {
+    "image_id": "3864956846907488",
+    "image_path": "pothole_results/images/3864956846907488.jpg",
+    "latitude": 39.111903249507,
+    "longitude": -84.531322320567,
+    "captured_at": 1498242036479,
+    "compass_angle": 1.4345362186432,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:40.922169"
+  },
+  {
+    "image_id": "2875222459404770",
+    "image_path": "pothole_results/images/2875222459404770.jpg",
+    "latitude": 39.175201999972,
+    "longitude": -84.2810302,
+    "captured_at": 1569683999500,
+    "compass_angle": 110.20233742891,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          245119,
+          291819,
+          313149,
+          404281
+        ],
+        "confidence": 0.5376298427581787,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:41.351072"
+  },
+  {
+    "image_id": "1818260241665013",
+    "image_path": "pothole_results/images/1818260241665013.jpg",
+    "latitude": 39.187577,
+    "longitude": -84.253657666667,
+    "captured_at": 1539567002684,
+    "compass_angle": 92.481323242188,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:41.512238"
+  },
+  {
+    "image_id": "4140166832670575",
+    "image_path": "pothole_results/images/4140166832670575.jpg",
+    "latitude": 39.238905555556,
+    "longitude": -84.767508333333,
+    "captured_at": 1503523404000,
+    "compass_angle": 303,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:41.634168"
+  },
+  {
+    "image_id": "1609396892603541",
+    "image_path": "pothole_results/images/1609396892603541.jpg",
+    "latitude": 39.19820877,
+    "longitude": -84.57795871,
+    "captured_at": 1489076678985,
+    "compass_angle": 356.43429899216,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:41.897951"
+  },
+  {
+    "image_id": "2094294754375182",
+    "image_path": "pothole_results/images/2094294754375182.jpg",
+    "latitude": 39.0969397,
+    "longitude": -84.3373228,
+    "captured_at": 1743688894000,
+    "compass_angle": 62.385,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:42.467076"
+  },
+  {
+    "image_id": "3991312097650990",
+    "image_path": "pothole_results/images/3991312097650990.jpg",
+    "latitude": 39.175992,
+    "longitude": -84.2116484,
+    "captured_at": 1569684495500,
+    "compass_angle": 86.38174183577,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:42.666362"
+  },
+  {
+    "image_id": "1800487383644055",
+    "image_path": "pothole_results/images/1800487383644055.jpg",
+    "latitude": 39.105390624993,
+    "longitude": -84.530107421866,
+    "captured_at": 1610510080200,
+    "compass_angle": 181.51608678308,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:42.929574"
+  },
+  {
+    "image_id": "2075915302822589",
+    "image_path": "pothole_results/images/2075915302822589.jpg",
+    "latitude": 39.0789914,
+    "longitude": -84.3126019,
+    "captured_at": 1743603226000,
+    "compass_angle": 14.91,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:43.135488"
+  },
+  {
+    "image_id": "4049699021912702",
+    "image_path": "pothole_results/images/4049699021912702.jpg",
+    "latitude": 39.0866522,
+    "longitude": -84.3240117,
+    "captured_at": 1743604660000,
+    "compass_angle": 292.134,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:43.790122"
+  },
+  {
+    "image_id": "3978526588903139",
+    "image_path": "pothole_results/images/3978526588903139.jpg",
+    "latitude": 39.099770506218,
+    "longitude": -84.282696596995,
+    "captured_at": 1578842304089,
+    "compass_angle": 70.114227294922,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:43.874529"
+  },
+  {
+    "image_id": "5802653653079910",
+    "image_path": "pothole_results/images/5802653653079910.jpg",
+    "latitude": 39.175519,
+    "longitude": -84.2950074,
+    "captured_at": 1569683882000,
+    "compass_angle": 37.785286436148,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:44.314999"
+  },
+  {
+    "image_id": "2890892464459819",
+    "image_path": "pothole_results/images/2890892464459819.jpg",
+    "latitude": 39.096346646584,
+    "longitude": -84.268186977212,
+    "captured_at": 1545613775096,
+    "compass_angle": 105.91015625,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:44.867909"
+  },
+  {
+    "image_id": "1698011093741870",
+    "image_path": "pothole_results/images/1698011093741870.jpg",
+    "latitude": 39.110778472527,
+    "longitude": -84.279084857842,
+    "captured_at": 1562376181329,
+    "compass_angle": 14.186157226562,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:45.206309"
+  },
+  {
+    "image_id": "3984647698293436",
+    "image_path": "pothole_results/images/3984647698293436.jpg",
+    "latitude": 39.156191381662,
+    "longitude": -84.267166648139,
+    "captured_at": 1545613368113,
+    "compass_angle": 173.75067138672,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:45.240809"
+  },
+  {
+    "image_id": "9422831027766064",
+    "image_path": "pothole_results/images/9422831027766064.jpg",
+    "latitude": 39.0413189,
+    "longitude": -84.3251061,
+    "captured_at": 1743514059666,
+    "compass_angle": 254.81,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:45.382668"
+  },
+  {
+    "image_id": "2632431587057653",
+    "image_path": "pothole_results/images/2632431587057653.jpg",
+    "latitude": 39.1751876,
+    "longitude": -84.2346699,
+    "captured_at": 1569684379500,
+    "compass_angle": 81.390245856528,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:46.016762"
+  },
+  {
+    "image_id": "9755453387853830",
+    "image_path": "pothole_results/images/9755453387853830.jpg",
+    "latitude": 39.0907328,
+    "longitude": -84.3300492,
+    "captured_at": 1743687367500,
+    "compass_angle": 264.585,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:46.379084"
+  },
+  {
+    "image_id": "2060651761111622",
+    "image_path": "pothole_results/images/2060651761111622.jpg",
+    "latitude": 39.0815233,
+    "longitude": -84.3269003,
+    "captured_at": 1743604339333,
+    "compass_angle": 86.608,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:46.466640"
+  },
+  {
+    "image_id": "24098607106393774",
+    "image_path": "pothole_results/images/24098607106393774.jpg",
+    "latitude": 39.0780969,
+    "longitude": -84.3127097,
+    "captured_at": 1743603416000,
+    "compass_angle": 174.726,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:46.655765"
+  },
+  {
+    "image_id": "4077193045670856",
+    "image_path": "pothole_results/images/4077193045670856.jpg",
+    "latitude": 39.087576961896,
+    "longitude": -84.316136440075,
+    "captured_at": 1578850591189,
+    "compass_angle": 275.82380789085,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:47.067589"
+  },
+  {
+    "image_id": "1497991267284975",
+    "image_path": "pothole_results/images/1497991267284975.jpg",
+    "latitude": 39.049308333333,
+    "longitude": -84.365914444444,
+    "captured_at": 1655475597327,
+    "compass_angle": 323.293916,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:47.715545"
+  },
+  {
+    "image_id": "3943174795949085",
+    "image_path": "pothole_results/images/3943174795949085.jpg",
+    "latitude": 39.0472086,
+    "longitude": -84.3658939,
+    "captured_at": 1743517449000,
+    "compass_angle": 30.164,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          225208,
+          265160,
+          247582,
+          306838
+        ],
+        "confidence": 0.7328827977180481,
+        "class_id": 0
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:47.719417"
+  },
+  {
+    "image_id": "1614213498772214",
+    "image_path": "pothole_results/images/1614213498772214.jpg",
+    "latitude": 39.051892900001,
+    "longitude": -84.5589375,
+    "captured_at": 1530187717692,
+    "compass_angle": 27,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          225121,
+          253088,
+          287221,
+          408591
+        ],
+        "confidence": 0.6954508423805237,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:47.747488"
+  },
+  {
+    "image_id": "24148765548047188",
+    "image_path": "pothole_results/images/24148765548047188.jpg",
+    "latitude": 39.0379589,
+    "longitude": -84.3244858,
+    "captured_at": 1743514024000,
+    "compass_angle": 327.295,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          214742,
+          265796,
+          227440,
+          316713
+        ],
+        "confidence": 0.7064313888549805,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:48.378947"
+  },
+  {
+    "image_id": "3052117461739743",
+    "image_path": "pothole_results/images/3052117461739743.jpg",
+    "latitude": 39.029311881695,
+    "longitude": -84.35997278,
+    "captured_at": 1578839436190,
+    "compass_angle": 279.88842525297,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:48.820877"
+  },
+  {
+    "image_id": "1518991512390661",
+    "image_path": "pothole_results/images/1518991512390661.jpg",
+    "latitude": 39.0481147,
+    "longitude": -84.3652439,
+    "captured_at": 1743517525000,
+    "compass_angle": 286.258,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:48.877562"
+  },
+  {
+    "image_id": "1697084324553219",
+    "image_path": "pothole_results/images/1697084324553219.jpg",
+    "latitude": 39.0439789,
+    "longitude": -84.320225,
+    "captured_at": 1743514149333,
+    "compass_angle": 153.235,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:49.110635"
+  },
+  {
+    "image_id": "5045127745598194",
+    "image_path": "pothole_results/images/5045127745598194.jpg",
+    "latitude": 39.042201388889,
+    "longitude": -84.325770833333,
+    "captured_at": 1655470472503,
+    "compass_angle": 149.2629129,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:49.517694"
+  },
+  {
+    "image_id": "5799813510047946",
+    "image_path": "pothole_results/images/5799813510047946.jpg",
+    "latitude": 39.050391111111,
+    "longitude": -84.333345555556,
+    "captured_at": 1655471386478,
+    "compass_angle": 244.535893,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:49.980923"
+  },
+  {
+    "image_id": "3927974200761413",
+    "image_path": "pothole_results/images/3927974200761413.jpg",
+    "latitude": 39.110211111111,
+    "longitude": -84.341534444444,
+    "captured_at": 1655237894758,
+    "compass_angle": 342.251359,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:50.301747"
+  },
+  {
+    "image_id": "3272268573040100",
+    "image_path": "pothole_results/images/3272268573040100.jpg",
+    "latitude": 39.084351944444,
+    "longitude": -84.316916666667,
+    "captured_at": 1655228683434,
+    "compass_angle": 357.400804,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:50.338278"
+  },
+  {
+    "image_id": "2081241905728907",
+    "image_path": "pothole_results/images/2081241905728907.jpg",
+    "latitude": 39.0486314,
+    "longitude": -84.3596864,
+    "captured_at": 1743516898000,
+    "compass_angle": 122.751,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:50.783580"
+  },
+  {
+    "image_id": "3534707926825629",
+    "image_path": "pothole_results/images/3534707926825629.jpg",
+    "latitude": 39.1057456,
+    "longitude": -84.3278653,
+    "captured_at": 1743690110000,
+    "compass_angle": 191.205,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:51.001345"
+  },
+  {
+    "image_id": "5246515625438480",
+    "image_path": "pothole_results/images/5246515625438480.jpg",
+    "latitude": 39.090171944444,
+    "longitude": -84.313463055556,
+    "captured_at": 1655231311557,
+    "compass_angle": 282.41562,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:51.568475"
+  },
+  {
+    "image_id": "3167902993432908",
+    "image_path": "pothole_results/images/3167902993432908.jpg",
+    "latitude": 39.051014444444,
+    "longitude": -84.354620277778,
+    "captured_at": 1655474734116,
+    "compass_angle": 263.912848,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:51.716692"
+  },
+  {
+    "image_id": "1715118246105875",
+    "image_path": "pothole_results/images/1715118246105875.jpg",
+    "latitude": 39.0880933,
+    "longitude": -84.31242,
+    "captured_at": 1743605053000,
+    "compass_angle": 261.291,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:51.996237"
+  },
+  {
+    "image_id": "3190725494544026",
+    "image_path": "pothole_results/images/3190725494544026.jpg",
+    "latitude": 39.117337777778,
+    "longitude": -84.338619444444,
+    "captured_at": 1655238258269,
+    "compass_angle": 328.9487632,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:52.510335"
+  },
+  {
+    "image_id": "1734192510784430",
+    "image_path": "pothole_results/images/1734192510784430.jpg",
+    "latitude": 39.0916286,
+    "longitude": -84.3171744,
+    "captured_at": 1743685877500,
+    "compass_angle": 165.766,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:52.716814"
+  },
+  {
+    "image_id": "1762508031336223",
+    "image_path": "pothole_results/images/1762508031336223.jpg",
+    "latitude": 39.091935,
+    "longitude": -84.3186003,
+    "captured_at": 1743685861500,
+    "compass_angle": 169.091,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:52.811706"
+  },
+  {
+    "image_id": "9451352901579142",
+    "image_path": "pothole_results/images/9451352901579142.jpg",
+    "latitude": 39.0908508,
+    "longitude": -84.3316278,
+    "captured_at": 1743687561500,
+    "compass_angle": 264.568,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:53.524871"
+  },
+  {
+    "image_id": "4878565609035111",
+    "image_path": "pothole_results/images/4878565609035111.jpg",
+    "latitude": 39.0939947,
+    "longitude": -84.3245042,
+    "captured_at": 1743686761500,
+    "compass_angle": 49.622,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:53.540353"
+  },
+  {
+    "image_id": "4025273557593839",
+    "image_path": "pothole_results/images/4025273557593839.jpg",
+    "latitude": 39.026249192593,
+    "longitude": -84.320966287957,
+    "captured_at": 1578851809689,
+    "compass_angle": 130.00667324409,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:53.807082"
+  },
+  {
+    "image_id": "1877468076343742",
+    "image_path": "pothole_results/images/1877468076343742.jpg",
+    "latitude": 39.0898058,
+    "longitude": -84.3192236,
+    "captured_at": 1743685826000,
+    "compass_angle": 272.24,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:53.970924"
+  },
+  {
+    "image_id": "3263011487267526",
+    "image_path": "pothole_results/images/3263011487267526.jpg",
+    "latitude": 39.094292222222,
+    "longitude": -84.315833333333,
+    "captured_at": 1655232200719,
+    "compass_angle": 187.7884747,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:54.636943"
+  },
+  {
+    "image_id": "2816745411875819",
+    "image_path": "pothole_results/images/2816745411875819.jpg",
+    "latitude": 39.151626399972,
+    "longitude": -84.754101099972,
+    "captured_at": 1569160620500,
+    "compass_angle": 226.7181721127,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:54.778905"
+  },
+  {
+    "image_id": "2885993381718815",
+    "image_path": "pothole_results/images/2885993381718815.jpg",
+    "latitude": 39.164881999972,
+    "longitude": -84.3101053,
+    "captured_at": 1569683637000,
+    "compass_angle": 50.850510370666,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:54.910252"
+  },
+  {
+    "image_id": "2101534493321953",
+    "image_path": "pothole_results/images/2101534493321953.jpg",
+    "latitude": 39.03258143,
+    "longitude": -84.3317064,
+    "captured_at": 1578851769671,
+    "compass_angle": 119.84753417969,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:55.253495"
+  },
+  {
+    "image_id": "3030867923812148",
+    "image_path": "pothole_results/images/3030867923812148.jpg",
+    "latitude": 39.128784299972,
+    "longitude": -84.5281379,
+    "captured_at": 1568050885500,
+    "compass_angle": 123.03841265064,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:55.616133"
+  },
+  {
+    "image_id": "3232233190336572",
+    "image_path": "pothole_results/images/3232233190336572.jpg",
+    "latitude": 39.083385833333,
+    "longitude": -84.510323333333,
+    "captured_at": 1587072358063,
+    "compass_angle": 192.4057031,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:55.858742"
+  },
+  {
+    "image_id": "1771449656369654",
+    "image_path": "pothole_results/images/1771449656369654.jpg",
+    "latitude": 39.107533833333,
+    "longitude": -84.514535,
+    "captured_at": 1539645254112,
+    "compass_angle": 346.25549316406,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          154445,
+          314810,
+          190514,
+          376929
+        ],
+        "confidence": 0.7444254159927368,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:56.222609"
+  },
+  {
+    "image_id": "1653575559370973",
+    "image_path": "pothole_results/images/1653575559370973.jpg",
+    "latitude": 39.0853919,
+    "longitude": -84.340545,
+    "captured_at": 1743624262666,
+    "compass_angle": 88.607,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:56.253306"
+  },
+  {
+    "image_id": "1854360281383682",
+    "image_path": "pothole_results/images/1854360281383682.jpg",
+    "latitude": 39.180516666667,
+    "longitude": -84.798588888889,
+    "captured_at": 1450904376000,
+    "compass_angle": 21,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:56.507179"
+  },
+  {
+    "image_id": "5416444291771654",
+    "image_path": "pothole_results/images/5416444291771654.jpg",
+    "latitude": 39.117425555556,
+    "longitude": -84.311795555556,
+    "captured_at": 1655218104832,
+    "compass_angle": 21.92872978,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:56.833045"
+  },
+  {
+    "image_id": "4069454736422975",
+    "image_path": "pothole_results/images/4069454736422975.jpg",
+    "latitude": 39.089860220779,
+    "longitude": -84.244302667532,
+    "captured_at": 1562375942199,
+    "compass_angle": 289.73834228516,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:56.987755"
+  },
+  {
+    "image_id": "3067352586885059",
+    "image_path": "pothole_results/images/3067352586885059.jpg",
+    "latitude": 39.114683333333,
+    "longitude": -84.500188888889,
+    "captured_at": 1463244924000,
+    "compass_angle": 9,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:57.067931"
+  },
+  {
+    "image_id": "2842059249339902",
+    "image_path": "pothole_results/images/2842059249339902.jpg",
+    "latitude": 39.264656097473,
+    "longitude": -84.8046279,
+    "captured_at": 1568054919023,
+    "compass_angle": 133.56186511062,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:57.465065"
+  },
+  {
+    "image_id": "3886172364794408",
+    "image_path": "pothole_results/images/3886172364794408.jpg",
+    "latitude": 39.180295,
+    "longitude": -84.276994,
+    "captured_at": 1539722209181,
+    "compass_angle": 56.294158935547,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:58.264219"
+  },
+  {
+    "image_id": "4203233836390397",
+    "image_path": "pothole_results/images/4203233836390397.jpg",
+    "latitude": 39.257836592487,
+    "longitude": -84.316202346392,
+    "captured_at": 1587563930000,
+    "compass_angle": 352.84,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:58.398039"
+  },
+  {
+    "image_id": "1630649644420668",
+    "image_path": "pothole_results/images/1630649644420668.jpg",
+    "latitude": 39.0858661,
+    "longitude": -84.4761478,
+    "captured_at": 1745418065750,
+    "compass_angle": 153.259,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          134035,
+          280322,
+          169902,
+          313587
+        ],
+        "confidence": 0.791703462600708,
+        "class_id": 0
+      }
+    ],
+    "processed_at": "2025-09-24T17:12:58.502034"
+  },
+  {
+    "image_id": "1654113334978793",
+    "image_path": "pothole_results/images/1654113334978793.jpg",
+    "latitude": 39.078446111111,
+    "longitude": -84.528338055556,
+    "captured_at": 1587395387314,
+    "compass_angle": 333.051479,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:58.678459"
+  },
+  {
+    "image_id": "3043880615851224",
+    "image_path": "pothole_results/images/3043880615851224.jpg",
+    "latitude": 39.048060833333,
+    "longitude": -84.504738333333,
+    "captured_at": 1587405840467,
+    "compass_angle": 299.384577,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:58.758965"
+  },
+  {
+    "image_id": "4356145764441730",
+    "image_path": "pothole_results/images/4356145764441730.jpg",
+    "latitude": 39.256586682663,
+    "longitude": -84.32373576808,
+    "captured_at": 1587562263000,
+    "compass_angle": 268.48,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:59.277409"
+  },
+  {
+    "image_id": "1728959907493308",
+    "image_path": "pothole_results/images/1728959907493308.jpg",
+    "latitude": 39.146990999972,
+    "longitude": -84.439283099972,
+    "captured_at": 1568468091000,
+    "compass_angle": 49.592770923101,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:59.536981"
+  },
+  {
+    "image_id": "4143281745752818",
+    "image_path": "pothole_results/images/4143281745752818.jpg",
+    "latitude": 39.150800799972,
+    "longitude": -84.3259998,
+    "captured_at": 1569683519000,
+    "compass_angle": 64.65738830904,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:12:59.972625"
+  },
+  {
+    "image_id": "4532250273466410",
+    "image_path": "pothole_results/images/4532250273466410.jpg",
+    "latitude": 39.237089087696,
+    "longitude": -84.350282101691,
+    "captured_at": 1588005409000,
+    "compass_angle": 18.2,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:00.379641"
+  },
+  {
+    "image_id": "4261737670612891",
+    "image_path": "pothole_results/images/4261737670612891.jpg",
+    "latitude": 39.248701435519,
+    "longitude": -84.350350623901,
+    "captured_at": 1587567032333,
+    "compass_angle": 85.9,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:01.230827"
+  },
+  {
+    "image_id": "4741149179307902",
+    "image_path": "pothole_results/images/4741149179307902.jpg",
+    "latitude": 39.248902223883,
+    "longitude": -84.375269689218,
+    "captured_at": 1587742899285,
+    "compass_angle": 4.03,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:01.413768"
+  },
+  {
+    "image_id": "3055059968002805",
+    "image_path": "pothole_results/images/3055059968002805.jpg",
+    "latitude": 39.0944394,
+    "longitude": -84.4711806,
+    "captured_at": 1745326881000,
+    "compass_angle": 190.308,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:01.452329"
+  },
+  {
+    "image_id": "4893217497374402",
+    "image_path": "pothole_results/images/4893217497374402.jpg",
+    "latitude": 39.236719346654,
+    "longitude": -84.354710515785,
+    "captured_at": 1588004759000,
+    "compass_angle": 259.29,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:01.946753"
+  },
+  {
+    "image_id": "3879458075483195",
+    "image_path": "pothole_results/images/3879458075483195.jpg",
+    "latitude": 39.1108593,
+    "longitude": -84.527621899972,
+    "captured_at": 1568553621500,
+    "compass_angle": 184.80336809742,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:02.496901"
+  },
+  {
+    "image_id": "4020027841368827",
+    "image_path": "pothole_results/images/4020027841368827.jpg",
+    "latitude": 39.136911166667,
+    "longitude": -84.402950666667,
+    "captured_at": 1539721177729,
+    "compass_angle": 123.32348632812,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:02.629180"
+  },
+  {
+    "image_id": "1686424095063366",
+    "image_path": "pothole_results/images/1686424095063366.jpg",
+    "latitude": 39.119969166667,
+    "longitude": -84.303708333333,
+    "captured_at": 1655218211482,
+    "compass_angle": 224.44645475,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:03.135034"
+  },
+  {
+    "image_id": "5921351544573452",
+    "image_path": "pothole_results/images/5921351544573452.jpg",
+    "latitude": 39.253672276735,
+    "longitude": -84.312683098583,
+    "captured_at": 1587563640000,
+    "compass_angle": 6.57,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:03.505702"
+  },
+  {
+    "image_id": "3212224105715000",
+    "image_path": "pothole_results/images/3212224105715000.jpg",
+    "latitude": 39.047600277778,
+    "longitude": -84.361664166667,
+    "captured_at": 1655475026327,
+    "compass_angle": 299.1257624,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:03.634470"
+  },
+  {
+    "image_id": "1806503363028440",
+    "image_path": "pothole_results/images/1806503363028440.jpg",
+    "latitude": 39.089138055556,
+    "longitude": -84.317148888889,
+    "captured_at": 1655231788713,
+    "compass_angle": 181.895879,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:03.797142"
+  },
+  {
+    "image_id": "3225218854472590",
+    "image_path": "pothole_results/images/3225218854472590.jpg",
+    "latitude": 39.118564166667,
+    "longitude": -84.305567777778,
+    "captured_at": 1655218191207,
+    "compass_angle": 223.849873,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:04.783506"
+  },
+  {
+    "image_id": "4390438757644708",
+    "image_path": "pothole_results/images/4390438757644708.jpg",
+    "latitude": 39.241555670336,
+    "longitude": -84.362745605008,
+    "captured_at": 1588001628000,
+    "compass_angle": 99.03,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:05.103699"
+  },
+  {
+    "image_id": "1895841037896790",
+    "image_path": "pothole_results/images/1895841037896790.jpg",
+    "latitude": 39.0376189,
+    "longitude": -84.3245508,
+    "captured_at": 1743514006500,
+    "compass_angle": 235.504,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          164750,
+          263300,
+          190018,
+          311447
+        ],
+        "confidence": 0.5620497465133667,
+        "class_id": 2
+      }
+    ],
+    "processed_at": "2025-09-24T17:13:05.115709"
+  },
+  {
+    "image_id": "1727346721552704",
+    "image_path": "pothole_results/images/1727346721552704.jpg",
+    "latitude": 39.0763178,
+    "longitude": -84.4726333,
+    "captured_at": 1745422135000,
+    "compass_angle": 277.314,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:06.191079"
+  },
+  {
+    "image_id": "1916174958544136",
+    "image_path": "pothole_results/images/1916174958544136.jpg",
+    "latitude": 39.249479113702,
+    "longitude": -84.34685919413,
+    "captured_at": 1587740084000,
+    "compass_angle": 190.61,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:06.354276"
+  },
+  {
+    "image_id": "5375970795816260",
+    "image_path": "pothole_results/images/5375970795816260.jpg",
+    "latitude": 39.049017222222,
+    "longitude": -84.321373333333,
+    "captured_at": 1655470185348,
+    "compass_angle": 22.6761514,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:06.361760"
+  },
+  {
+    "image_id": "1654812531800825",
+    "image_path": "pothole_results/images/1654812531800825.jpg",
+    "latitude": 39.0661494,
+    "longitude": -84.318805,
+    "captured_at": 1743599573500,
+    "compass_angle": 267.17,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:06.605957"
+  },
+  {
+    "image_id": "3030015283838536",
+    "image_path": "pothole_results/images/3030015283838536.jpg",
+    "latitude": 39.1060967,
+    "longitude": -84.3240658,
+    "captured_at": 1743690141333,
+    "compass_angle": 161.288,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:06.911745"
+  },
+  {
+    "image_id": "3260043187644010",
+    "image_path": "pothole_results/images/3260043187644010.jpg",
+    "latitude": 39.128311360697,
+    "longitude": -84.534114583322,
+    "captured_at": 1610455966600,
+    "compass_angle": 114.11042745838,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          282162,
+          211444,
+          345001,
+          410198
+        ],
+        "confidence": 0.8318592309951782,
+        "class_id": 1
+      }
+    ],
+    "processed_at": "2025-09-24T17:13:06.947937"
+  },
+  {
+    "image_id": "4492684184084842",
+    "image_path": "pothole_results/images/4492684184084842.jpg",
+    "latitude": 39.241593228766,
+    "longitude": -84.362172885272,
+    "captured_at": 1588001642000,
+    "compass_angle": 334.3,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:07.196439"
+  },
+  {
+    "image_id": "3048555212040088",
+    "image_path": "pothole_results/images/3048555212040088.jpg",
+    "latitude": 39.095899834868,
+    "longitude": -84.511012081142,
+    "captured_at": 1586013378000,
+    "compass_angle": 257.29,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:07.584346"
+  },
+  {
+    "image_id": "1935825219902265",
+    "image_path": "pothole_results/images/1935825219902265.jpg",
+    "latitude": 39.210869666667,
+    "longitude": -84.4847065,
+    "captured_at": 1539638285665,
+    "compass_angle": 183.88427734375,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:07.985642"
+  },
+  {
+    "image_id": "1736190300587759",
+    "image_path": "pothole_results/images/1736190300587759.jpg",
+    "latitude": 39.0905064,
+    "longitude": -84.4848028,
+    "captured_at": 1745411320500,
+    "compass_angle": 307.243,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:08.049377"
+  },
+  {
+    "image_id": "3939692309411991",
+    "image_path": "pothole_results/images/3939692309411991.jpg",
+    "latitude": 39.124494599972,
+    "longitude": -84.458161,
+    "captured_at": 1569682652500,
+    "compass_angle": 101.48928055933,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:08.133482"
+  },
+  {
+    "image_id": "3831960846902850",
+    "image_path": "pothole_results/images/3831960846902850.jpg",
+    "latitude": 39.115327179256,
+    "longitude": -84.519864294814,
+    "captured_at": 1491758516960,
+    "compass_angle": 349.02268764282,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:08.650126"
+  },
+  {
+    "image_id": "3782064078582694",
+    "image_path": "pothole_results/images/3782064078582694.jpg",
+    "latitude": 39.1664315,
+    "longitude": -84.307012799972,
+    "captured_at": 1569683655000,
+    "compass_angle": 67.910577855589,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:08.849926"
+  },
+  {
+    "image_id": "1643460376026559",
+    "image_path": "pothole_results/images/1643460376026559.jpg",
+    "latitude": 39.075053055556,
+    "longitude": -84.380394166667,
+    "captured_at": 1655388011289,
+    "compass_angle": 265.895464,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:09.088897"
+  },
+  {
+    "image_id": "1655709098147092",
+    "image_path": "pothole_results/images/1655709098147092.jpg",
+    "latitude": 39.067818055556,
+    "longitude": -84.385930833333,
+    "captured_at": 1655385586106,
+    "compass_angle": 203.4449104,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:09.314911"
+  },
+  {
+    "image_id": "4245717145507716",
+    "image_path": "pothole_results/images/4245717145507716.jpg",
+    "latitude": 39.28013729961,
+    "longitude": -84.319115499326,
+    "captured_at": 1587220580000,
+    "compass_angle": 223.93,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:09.980982"
+  },
+  {
+    "image_id": "1624690154885827",
+    "image_path": "pothole_results/images/1624690154885827.jpg",
+    "latitude": 39.0478444,
+    "longitude": -84.3543433,
+    "captured_at": 1743516569500,
+    "compass_angle": 117.596,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:10.441894"
+  },
+  {
+    "image_id": "4140057656063878",
+    "image_path": "pothole_results/images/4140057656063878.jpg",
+    "latitude": 39.276079303016,
+    "longitude": -84.367168591751,
+    "captured_at": 1587743244166,
+    "compass_angle": 0.81,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:11.019987"
+  },
+  {
+    "image_id": "4238684649586134",
+    "image_path": "pothole_results/images/4238684649586134.jpg",
+    "latitude": 39.269164270661,
+    "longitude": -84.32977590744,
+    "captured_at": 1587220197000,
+    "compass_angle": 29.47,
+    "num_potholes": 1,
+    "detections": [
+      {
+        "bbox": [
+          326540,
+          290269,
+          350691,
+          323353
+        ],
+        "confidence": 0.5042296648025513,
+        "class_id": 0
+      }
+    ],
+    "processed_at": "2025-09-24T17:13:11.190720"
+  },
+  {
+    "image_id": "1842079986139398",
+    "image_path": "pothole_results/images/1842079986139398.jpg",
+    "latitude": 39.234252115874,
+    "longitude": -84.450462239581,
+    "captured_at": 1610508921200,
+    "compass_angle": 216.33624388977,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:11.335730"
+  },
+  {
+    "image_id": "4866715820010136",
+    "image_path": "pothole_results/images/4866715820010136.jpg",
+    "latitude": 39.250570974803,
+    "longitude": -84.344227419823,
+    "captured_at": 1587219993200,
+    "compass_angle": 12.28,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:12.288006"
+  },
+  {
+    "image_id": "4661697063840970",
+    "image_path": "pothole_results/images/4661697063840970.jpg",
+    "latitude": 39.25340778418,
+    "longitude": -84.314839370729,
+    "captured_at": 1587563563000,
+    "compass_angle": 109.84,
+    "num_potholes": 0,
+    "detections": [],
+    "processed_at": "2025-09-24T17:13:13.766634"
+  }
+]
